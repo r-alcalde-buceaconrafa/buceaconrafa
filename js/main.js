@@ -247,3 +247,45 @@ setTimeout(() => {
   document.querySelectorAll('#hero .fi').forEach((el, i) =>
     setTimeout(() => el.classList.add('v'), 150 + i * 120));
 }, 60);
+
+// ─── COOKIE BANNER (RGPD COMPLIANCE) ───
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieConsent = localStorage.getItem('buceaconrafa_cookies');
+
+  if (!cookieConsent) {
+    // Inyectar HTML del banner al final del body
+    const bannerHTML = `
+      <div id="cookie-banner">
+        <div class="cb-content">
+          <div class="cb-text">
+            <p>Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte contenido personalizado. Puedes aceptarlas todas o configurarlas. Más información en nuestra <a href="/politica-cookies">Política de Cookies</a>.</p>
+          </div>
+          <div class="cb-btns">
+            <button id="cb-reject" class="cb-btn cb-reject">Rechazar</button>
+            <button id="cb-accept" class="cb-btn cb-accept">Aceptar Todas</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', bannerHTML);
+
+    const banner = document.getElementById('cookie-banner');
+    const btnAccept = document.getElementById('cb-accept');
+    const btnReject = document.getElementById('cb-reject');
+
+    // Animar entrada tras 1s
+    setTimeout(() => {
+      banner.classList.add('show');
+    }, 1000);
+
+    const closeBanner = (status) => {
+      localStorage.setItem('buceaconrafa_cookies', status);
+      banner.classList.remove('show');
+      setTimeout(() => banner.remove(), 500);
+    };
+
+    btnAccept.addEventListener('click', () => closeBanner('accepted'));
+    btnReject.addEventListener('click', () => closeBanner('rejected'));
+  }
+});

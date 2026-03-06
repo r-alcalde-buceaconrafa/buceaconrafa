@@ -3409,3 +3409,105 @@
       color: var(--gold);
       transform: translateY(-2px) scale(1.1);
     }
+
+    /* ─── BANNER DE COOKIES (RGPD) ─── */
+    #cookie-banner {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      right: 0;
+      background: rgba(14, 32, 48, 0.98);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid var(--gold);
+      box-shadow: 0 -10px 40px rgba(0,0,0,0.3);
+      z-index: 9999;
+      padding: 24px var(--sp-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: bottom 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    #cookie-banner.show {
+      bottom: 0;
+    }
+
+    .cb-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .cb-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    .cb-text p {
+      font-family: var(--fb);
+      font-size: 0.85rem;
+      color: var(--sand);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .cb-text a {
+      color: var(--gold);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .cb-btns {
+      display: flex;
+      gap: 12px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      .cb-btns {
+        width: auto;
+        flex-shrink: 0;
+      }
+    }
+
+    .cb-btn {
+      padding: 10px 24px;
+      font-family: var(--fb);
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border: none;
+      border-radius: var(--r);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cb-accept {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy);
+    }
+
+    .cb-accept:hover {
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-2px);
+    }
+
+    .cb-reject {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--sand);
+    }
+
+    .cb-reject:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: var(--sand);
+    }
