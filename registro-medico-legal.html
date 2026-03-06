@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html class="dark" lang="es">
-
-<head>
+<!DOCTYPE html><html class="dark" lang="es"><head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Registro Médico-Legal SSI | Academia BuceaConRafa</title>
+    &lt;!-- Open Graph / RRSS --&gt;
+    <meta property="og:title" content="Registro Médico-Legal SSI | Academia BuceaConRafa">
+    <meta property="og:description" content="Formación de buceo individualizada en La Azohía (Murcia). Ratio máximo 2:1.">
+    <meta property="og:image" content="https://buceaconrafa.com/img/instructor-buceo-buceaconrafa-curso-open-water-diver-ssi-iniciacion-la-azohia-cartagena-murcia.png">
+    <meta property="og:url" content="https://buceaconrafa.com/registro-medico-legal">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BuceaConRafa">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="css/style.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@300;400;700&family=Cormorant+Garamond:ital,wght@1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Outfit:wght@300;400;700&amp;family=Cormorant+Garamond:ital,wght@1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
         tailwind.config = {
@@ -82,6 +84,8 @@
             border-radius: 8px;
         }
     </style>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
 </head>
 
 <body class="bg-background-dark text-[#F3EBD4] font-body selection:bg-accent/30">
@@ -89,19 +93,15 @@
     <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-4 group">
-                <div
-                    class="w-32 sm:w-40 md:w-52 h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-500 flex items-center">
-                    <img src="img/LOGO-BUCEACONRAFA.png" alt="BuceaConRafa Logo"
-                        class="w-24 h-auto object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+                <div class="w-32 sm:w-40 md:w-52 h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-500 flex items-center">
+                    <img src="img/LOGO-BUCEACONRAFA.png" alt="BuceaConRafa Logo" class="w-24 h-auto object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
                 </div>
                 <div class="flex flex-col justify-center -mt-1 hidden sm:flex">
-                    <span
-                        class="text-xl font-bold tracking-[0.15em] text-white uppercase group-hover:tracking-[0.2em] transition-all duration-300">BUCEACONRAFA</span>
+                    <span class="text-xl font-bold tracking-[0.15em] text-white uppercase group-hover:tracking-[0.2em] transition-all duration-300">BUCEACONRAFA</span>
                 </div>
             </a>
             <div class="hidden md:flex items-center gap-10 h-full">
-                <a class="text-sm font-medium text-white hover:text-accent transition-colors"
-                    href="index.html">Inicio</a>
+                <a class="text-sm font-medium text-white hover:text-accent transition-colors" href="index.html">Inicio</a>
             </div>
             <!-- Mobile Menu -->
             <div class="md:hidden text-white">
@@ -115,8 +115,7 @@
             <header class="text-center space-y-4">
                 <span class="text-primary text-[10px] font-body font-bold uppercase tracking-[0.12em]">Seguridad Ante
                     Todo</span>
-                <h1 class="text-3xl md:text-5xl font-light font-display leading-tight text-white">Tu Salud es la <span
-                        class="font-black italic palette-gradient text-glow-gold">Prioridad.</span></h1>
+                <h1 class="text-3xl md:text-5xl font-light font-display leading-tight text-white">Tu Salud es la <span class="font-black italic palette-gradient text-glow-gold">Prioridad.</span></h1>
                 <p class="text-[#A39485] font-light font-body max-w-xl mx-auto">Este formulario es obligatorio para
                     realizar
                     inmersiones. Tus datos se transmiten de forma cifrada y segura a Rafael Alcalde Molina.</p>
@@ -125,37 +124,28 @@
             <form id="medicalForm" class="space-y-12">
                 <!-- SECCIÓN 1: Registro Completo de Alumno -->
                 <div class="glass-panel p-8 rounded-2xl space-y-8">
-                    <h2
-                        class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
+                    <h2 class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
                         <span class="material-symbols-outlined text-primary">person_add</span> 1. Ficha de Registro del
                         Alumno
                     </h2>
 
                     <!-- FOTOGRAFÍA SELFIE -->
-                    <div
-                        class="flex flex-col items-center justify-center p-6 bg-white/5 rounded-xl border border-white/10 space-y-4">
-                        <div id="selfie-container"
-                            class="w-32 h-40 bg-black/40 rounded-lg border-2 border-dashed border-white/20 flex items-center justify-center overflow-hidden relative">
-                            <span id="selfie-placeholder"
-                                class="material-symbols-outlined text-4xl text-white/20">add_a_photo</span>
-                            <video id="selfie-video" class="hidden w-full h-full object-cover" autoplay
-                                playsinline></video>
+                    <div class="flex flex-col items-center justify-center p-6 bg-white/5 rounded-xl border border-white/10 space-y-4">
+                        <div id="selfie-container" class="w-32 h-40 bg-black/40 rounded-lg border-2 border-dashed border-white/20 flex items-center justify-center overflow-hidden relative">
+                            <span id="selfie-placeholder" class="material-symbols-outlined text-4xl text-white/20">add_a_photo</span>
+                            <video id="selfie-video" class="hidden w-full h-full object-cover" autoplay="" playsinline=""></video>
                             <canvas id="selfie-canvas" class="hidden w-full h-full object-cover"></canvas>
-                            <img id="selfie-preview" class="hidden w-full h-full object-cover" src=""
-                                alt="Vista previa">
+                            <img id="selfie-preview" class="hidden w-full h-full object-cover" src="" alt="Vista previa">
                         </div>
                         <div class="flex gap-4">
-                            <button type="button" id="start-camera"
-                                class="text-[10px] uppercase font-bold text-primary hover:text-white transition-colors flex items-center gap-2">
+                            <button type="button" id="start-camera" class="text-[10px] uppercase font-bold text-primary hover:text-white transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined text-sm">videocam</span> Abrir Cámara
                             </button>
-                            <button type="button" id="take-photo"
-                                class="hidden text-[10px] uppercase font-bold text-accent hover:text-white transition-colors flex items-center gap-2">
+                            <button type="button" id="take-photo" class="hidden text-[10px] uppercase font-bold text-accent hover:text-white transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined text-sm">photo_camera</span> Capturar
                             </button>
                             <input type="file" id="upload-photo" accept="image/*" class="hidden">
-                            <button type="button" id="trigger-upload"
-                                class="text-[10px] uppercase font-bold text-white/40 hover:text-white transition-colors flex items-center gap-2">
+                            <button type="button" id="trigger-upload" class="text-[10px] uppercase font-bold text-white/40 hover:text-white transition-colors flex items-center gap-2">
                                 <span class="material-symbols-outlined text-sm">upload</span> Subir Foto
                             </button>
                         </div>
@@ -167,48 +157,38 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <!-- Nombre y Apellidos -->
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Nombre
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Nombre
                                 (Sin Ñ ni tildes)</label>
-                            <input type="text" name="firstName" id="firstName" required
-                                class="input-dark font-body uppercase" placeholder="EJ: RAFAEL">
+                            <input type="text" name="firstName" id="firstName" required="" class="input-dark font-body uppercase" placeholder="EJ: RAFAEL">
                         </div>
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Apellidos
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Apellidos
                                 (Sin Ñ ni tildes)</label>
-                            <input type="text" name="lastName" id="lastName" required
-                                class="input-dark font-body uppercase" placeholder="EJ: ALCALDE MOLINA">
+                            <input type="text" name="lastName" id="lastName" required="" class="input-dark font-body uppercase" placeholder="EJ: ALCALDE MOLINA">
                         </div>
 
                         <!-- Email y Teléfono -->
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Correo
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Correo
                                 Electrónico</label>
-                            <input type="email" name="email" required class="input-dark font-body"
-                                placeholder="tu@email.com">
+                            <input type="email" name="email" required="" class="input-dark font-body" placeholder="tu@email.com">
                         </div>
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Teléfono
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Teléfono
                                 (Con prefijo)</label>
-                            <input type="tel" name="phone" required class="input-dark font-body"
-                                placeholder="+34 600 000 000">
+                            <input type="tel" name="phone" required="" class="input-dark font-body" placeholder="+34 600 000 000">
                         </div>
 
                         <!-- Fecha Nacimiento y Sexo -->
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Fecha
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Fecha
                                 de Nacimiento</label>
-                            <input type="date" name="birthDate" required class="input-dark font-body">
+                            <input type="date" name="birthDate" required="" class="input-dark font-body">
                         </div>
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Sexo</label>
-                            <select name="gender" required class="input-dark font-body appearance-none">
-                                <option value="" disabled selected>Seleccionar...</option>
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Sexo</label>
+                            <select name="gender" required="" class="input-dark font-body appearance-none">
+                                <option value="" disabled="" selected="">Seleccionar...</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Femenino">Femenino</option>
                                 <option value="Otro">Otro / No binario</option>
@@ -219,44 +199,32 @@
                     <!-- Dirección -->
                     <div class="space-y-6 pt-4 border-t border-white/5">
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Dirección
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Dirección
                                 Línea 1</label>
-                            <input type="text" name="address1" required class="input-dark font-body"
-                                placeholder="Calle, número, piso...">
+                            <input type="text" name="address1" required="" class="input-dark font-body" placeholder="Calle, número, piso...">
                         </div>
                         <div class="space-y-2">
-                            <label
-                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Dirección
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Dirección
                                 Línea 2 (Opcional)</label>
-                            <input type="text" name="address2" class="input-dark font-body"
-                                placeholder="Bloque, puerta, urbanización...">
+                            <input type="text" name="address2" class="input-dark font-body" placeholder="Bloque, puerta, urbanización...">
                         </div>
 
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <div class="space-y-2">
-                                <label
-                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">CP</label>
-                                <input type="text" name="zipCode" required class="input-dark font-body"
-                                    placeholder="30868">
+                                <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">CP</label>
+                                <input type="text" name="zipCode" required="" class="input-dark font-body" placeholder="30868">
                             </div>
                             <div class="space-y-2">
-                                <label
-                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Población</label>
-                                <input type="text" name="city" required class="input-dark font-body"
-                                    placeholder="Isla Plana">
+                                <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Población</label>
+                                <input type="text" name="city" required="" class="input-dark font-body" placeholder="Isla Plana">
                             </div>
                             <div class="space-y-2">
-                                <label
-                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Provincia</label>
-                                <input type="text" name="province" required class="input-dark font-body"
-                                    placeholder="Murcia">
+                                <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Provincia</label>
+                                <input type="text" name="province" required="" class="input-dark font-body" placeholder="Murcia">
                             </div>
                             <div class="space-y-2">
-                                <label
-                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">País</label>
-                                <input type="text" name="country" required class="input-dark font-body"
-                                    placeholder="España">
+                                <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">País</label>
+                                <input type="text" name="country" required="" class="input-dark font-body" placeholder="España">
                             </div>
                         </div>
                     </div>
@@ -265,11 +233,9 @@
                     <div class="p-4 bg-primary/5 rounded-xl border border-primary/20">
                         <label class="flex items-start gap-4 cursor-pointer group">
                             <div class="pt-1">
-                                <input type="checkbox" name="ssiRegistrationConsent" required
-                                    class="accent-primary w-4 h-4">
+                                <input type="checkbox" name="ssiRegistrationConsent" required="" class="accent-primary w-4 h-4">
                             </div>
-                            <span
-                                class="text-[10px] leading-relaxed text-white/60 group-hover:text-white transition-colors font-body">
+                            <span class="text-[10px] leading-relaxed text-white/60 group-hover:text-white transition-colors font-body">
                                 <strong>AUTORIZACIÓN DE TRAMITACIÓN SSI:</strong> Autorizo expresamente a Rafael Alcalde
                                 Molina a utilizar estos datos para gestionar mi alta oficial en la plataforma **MySSI**
                                 y tramitar toda mi documentación académica y certificaciones de buceo.
@@ -282,14 +248,12 @@
                         <div class="space-y-2">
                             <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em]">Instructor
                                 Académico</label>
-                            <input type="text" value="Rafael Alcalde Molina (SSI #117596)" readonly
-                                class="input-dark font-body text-[10px] bg-white/5 cursor-not-allowed">
+                            <input type="text" value="Rafael Alcalde Molina (SSI #117596)" readonly="" class="input-dark font-body text-[10px] bg-white/5 cursor-not-allowed">
                         </div>
                         <div class="space-y-2">
                             <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em]">Centro de
                                 Formación</label>
-                            <input type="text" value="Training Center Rivemar (#711021)" readonly
-                                class="input-dark font-body text-[10px] bg-white/5 cursor-not-allowed">
+                            <input type="text" value="Training Center Rivemar (#711021)" readonly="" class="input-dark font-body text-[10px] bg-white/5 cursor-not-allowed">
                         </div>
                     </div>
                 </div>
@@ -297,8 +261,7 @@
                 <!-- SECCIÓN 2: Cuestionario del Participante (Pág. 1) -->
                 <div class="glass-panel p-8 rounded-2xl space-y-8">
                     <div class="space-y-4">
-                        <h2
-                            class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
+                        <h2 class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
                             <span class="material-symbols-outlined text-primary">fact_check</span> 2. Cuestionario de
                             Salud (Confidencial)
                         </h2>
@@ -318,16 +281,13 @@
                                 pulmones/respiración, corazón o sangre o he sido diagnosticado con el COVID-19</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p1" value="si" onclick="toggleBox('box-a', true)"
-                                        class="accent-primary w-4 h-4" required>
+                                    <input type="radio" name="p1" value="si" onclick="toggleBox('box-a', true)" class="accent-primary w-4 h-4" required="">
                                     <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
                                         (Ir Cuadro A)</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p1" value="no" onclick="toggleBox('box-a', false)"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p1" value="no" onclick="toggleBox('box-a', false)" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -336,16 +296,13 @@
                             <span class="text-sm font-body leading-tight max-w-xl">2. Tengo más de 45 años.</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p2" value="si" onclick="toggleBox('box-b', true)"
-                                        class="accent-primary w-4 h-4" required>
+                                    <input type="radio" name="p2" value="si" onclick="toggleBox('box-b', true)" class="accent-primary w-4 h-4" required="">
                                     <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
                                         (Ir Cuadro B)</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p2" value="no" onclick="toggleBox('box-b', false)"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p2" value="no" onclick="toggleBox('box-b', false)" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -356,17 +313,13 @@
                                 física normal en los últimos 12 meses.*</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p3" value="si" onchange="checkMedical()"
-                                        class="accent-primary w-4 h-4" required>
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
+                                    <input type="radio" name="p3" value="si" onchange="checkMedical()" class="accent-primary w-4 h-4" required="">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
                                         *</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p3" value="no" onchange="checkMedical()"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p3" value="no" onchange="checkMedical()" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -376,16 +329,13 @@
                                 oídos, o fosas nasales / senos paranasales.</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p4" value="si" onclick="toggleBox('box-c', true)"
-                                        class="accent-primary w-4 h-4" required>
+                                    <input type="radio" name="p4" value="si" onclick="toggleBox('box-c', true)" class="accent-primary w-4 h-4" required="">
                                     <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
                                         (Ir Cuadro C)</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p4" value="no" onclick="toggleBox('box-c', false)"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p4" value="no" onclick="toggleBox('box-c', false)" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -396,17 +346,13 @@
                                 anterior.*</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p5" value="si" onchange="checkMedical()"
-                                        class="accent-primary w-4 h-4" required>
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
+                                    <input type="radio" name="p5" value="si" onchange="checkMedical()" class="accent-primary w-4 h-4" required="">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
                                         *</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p5" value="no" onchange="checkMedical()"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p5" value="no" onchange="checkMedical()" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -416,16 +362,13 @@
                                 migrañas, convulsiones, ACV, lesión en la cabeza o enfermedad neurológica.</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p6" value="si" onclick="toggleBox('box-d', true)"
-                                        class="accent-primary w-4 h-4" required>
+                                    <input type="radio" name="p6" value="si" onclick="toggleBox('box-d', true)" class="accent-primary w-4 h-4" required="">
                                     <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
                                         (Ir Cuadro D)</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p6" value="no" onclick="toggleBox('box-d', false)"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p6" value="no" onclick="toggleBox('box-d', false)" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -435,16 +378,13 @@
                                 ataques de pánico o adicciones en los últimos 5 años.</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p7" value="si" onclick="toggleBox('box-e', true)"
-                                        class="accent-primary w-4 h-4" required>
+                                    <input type="radio" name="p7" value="si" onclick="toggleBox('box-e', true)" class="accent-primary w-4 h-4" required="">
                                     <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
                                         (Ir Cuadro E)</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p7" value="no" onclick="toggleBox('box-e', false)"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p7" value="no" onclick="toggleBox('box-e', false)" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -454,16 +394,13 @@
                                 hernia, úlceras o diabetes.</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p8" value="si" onclick="toggleBox('box-f', true)"
-                                        class="accent-primary w-4 h-4" required>
+                                    <input type="radio" name="p8" value="si" onclick="toggleBox('box-f', true)" class="accent-primary w-4 h-4" required="">
                                     <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
                                         (Ir Cuadro F)</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p8" value="no" onclick="toggleBox('box-f', false)"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p8" value="no" onclick="toggleBox('box-f', false)" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -473,16 +410,13 @@
                                 intestinales, incluyendo diarrea reciente.</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p9" value="si" onclick="toggleBox('box-g', true)"
-                                        class="accent-primary w-4 h-4" required>
+                                    <input type="radio" name="p9" value="si" onclick="toggleBox('box-g', true)" class="accent-primary w-4 h-4" required="">
                                     <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
                                         (Ir Cuadro G)</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p9" value="no" onclick="toggleBox('box-g', false)"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p9" value="no" onclick="toggleBox('box-g', false)" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -492,17 +426,13 @@
                                 recetados (excluida anticoncepción o antipalúdicos Lariam).*</span>
                             <div class="flex items-center gap-6">
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p10" value="si" onchange="checkMedical()"
-                                        class="accent-primary w-4 h-4" required>
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
+                                    <input type="radio" name="p10" value="si" onchange="checkMedical()" class="accent-primary w-4 h-4" required="">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
                                         *</span>
                                 </label>
                                 <label class="flex items-center gap-2 cursor-pointer group">
-                                    <input type="radio" name="p10" value="no" onchange="checkMedical()"
-                                        class="accent-primary w-4 h-4">
-                                    <span
-                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                    <input type="radio" name="p10" value="no" onchange="checkMedical()" class="accent-primary w-4 h-4">
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
                                 </label>
                             </div>
                         </div>
@@ -517,32 +447,27 @@
                             TENGO/HE TENIDO:</h3>
                         <div class="space-y-3">
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="a1" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="a1" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Cirugía torácica, cardíaca, de válvula,
                                     stent o neumotórax.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="a2" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="a2" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Asma, sibilancias o alergias graves en los
                                     últimos 12 meses que limiten actividad.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="a3" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="a3" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Problema de corazón (angina, dolor pecho,
                                     insuficiencia, ACV).</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="a4" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="a4" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Bronquitis recurrente, tos persistente (12
                                     meses) o enfisema.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="a5" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="a5" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Un diagnóstico de COVID-19.</span>
                             </label>
                         </div>
@@ -554,19 +479,16 @@
                             TENGO MÁS DE 45 AÑOS Y:</h3>
                         <div class="space-y-3">
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="b1" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="b1" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Fumo o inhalo nicotina actualmente.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="b2" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="b2" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Tengo colesterol alto o presión arterial
                                     alta.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="b3" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="b3" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Antecedentes familiares de muerte súbita o
                                     enfermedad cardíaca antes de los 50.</span>
                             </label>
@@ -579,20 +501,17 @@
                             TENGO/HE TENIDO:</h3>
                         <div class="space-y-3">
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="c1" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="c1" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Cirugía sinusal en los últimos 6
                                     meses.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="c2" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="c2" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Enfermedades del oído, cirugía, pérdida de
                                     audición o equilibrio.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="c3" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="c3" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Sinusitis recurrente (12 meses) o cirugía
                                     ocular (3 meses).</span>
                             </label>
@@ -605,26 +524,22 @@
                             TENGO/HE TENIDO:</h3>
                         <div class="space-y-3">
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="d1" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="d1" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Lesión cabeza con pérdida conciencia (5
                                     años).</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="d2" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="d2" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Lesiones o enfermedades neurológicas
                                     persistentes.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="d3" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="d3" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Migrañas recurrentes (12 meses) o
                                     desvanecimientos/desmayos (5 años).</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="d4" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="d4" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Epilepsia, ataques o convulsiones.</span>
                             </label>
                         </div>
@@ -636,26 +551,22 @@
                             TENGO/HE TENIDO:</h3>
                         <div class="space-y-3">
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="e1" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="e1" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Problemas mentales o psicológicos
                                     (tratamiento médico/psiquiátrico).</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="e2" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="e2" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Depresión mayor, tendencia suicida, pánico
                                     o trastorno bipolar.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="e3" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="e3" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Trastorno de aprendizaje/desarrollo que
                                     requiera atención continua.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="e4" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="e4" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Adicción a drogas o alcohol en los últimos
                                     5 años.</span>
                             </label>
@@ -668,20 +579,17 @@
                             TENGO/HE TENIDO:</h3>
                         <div class="space-y-3">
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="f1" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="f1" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Problemas recurrentes espalda (6 meses)
                                     que limitan actividad.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="f2" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="f2" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Cirugía de espalda o columna vertebral (12
                                     meses).</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="f3" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="f3" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Diabetes o hernia no corregida.</span>
                             </label>
                         </div>
@@ -693,26 +601,22 @@
                             TENGO:</h3>
                         <div class="space-y-3">
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="g1" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="g1" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Ostomía sin autorización médica para
                                     nadar.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="g2" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="g2" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Deshidratación que requirió intervención
                                     médica (7 días).</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="g3" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="g3" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Úlceras estomacales, ardor frecuente
                                     (ERGE) o Colitis/Crohn.</span>
                             </label>
                             <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
-                                <input type="checkbox" name="g4" onchange="checkMedical()"
-                                    class="accent-primary w-4 h-4 mt-1">
+                                <input type="checkbox" name="g4" onchange="checkMedical()" class="accent-primary w-4 h-4 mt-1">
                                 <span class="text-xs font-body leading-tight">Cirugía bariátrica en los últimos 12
                                     meses.</span>
                             </label>
@@ -727,18 +631,13 @@
 
                     <div class="space-y-4">
                         <!-- Política de Privacidad -->
-                        <details
-                            class="bg-white/5 rounded-xl group overflow-hidden transition-all duration-300 border border-white/5">
-                            <summary
-                                class="p-4 cursor-pointer flex items-center justify-between hover:bg-white/5 transition-colors list-none">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-widest text-white/60 group-open:text-primary">I.
+                        <details class="bg-white/5 rounded-xl group overflow-hidden transition-all duration-300 border border-white/5">
+                            <summary class="p-4 cursor-pointer flex items-center justify-between hover:bg-white/5 transition-colors list-none">
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-white/60 group-open:text-primary">I.
                                     Política de Privacidad de SSI</span>
-                                <span
-                                    class="material-symbols-outlined text-white/20 group-open:rotate-180 transition-transform text-sm">expand_more</span>
+                                <span class="material-symbols-outlined text-white/20 group-open:rotate-180 transition-transform text-sm">expand_more</span>
                             </summary>
-                            <div
-                                class="p-6 pt-0 space-y-4 text-[10px] leading-relaxed text-white/40 font-body border-t border-white/5">
+                            <div class="p-6 pt-0 space-y-4 text-[10px] leading-relaxed text-white/40 font-body border-t border-white/5">
                                 <p>Esta Política de privacidad explica por qué los centros de formación SSI obtienen tus
                                     datos personales con el fin de impartir la formación, emitir certificaciones y
                                     gestionar
@@ -752,18 +651,13 @@
                         </details>
 
                         <!-- Código del Buceador Responsable -->
-                        <details
-                            class="bg-white/5 rounded-xl group overflow-hidden transition-all duration-300 border border-white/5">
-                            <summary
-                                class="p-4 cursor-pointer flex items-center justify-between hover:bg-white/5 transition-colors list-none">
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-widest text-white/60 group-open:text-primary">II.
+                        <details class="bg-white/5 rounded-xl group overflow-hidden transition-all duration-300 border border-white/5">
+                            <summary class="p-4 cursor-pointer flex items-center justify-between hover:bg-white/5 transition-colors list-none">
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-white/60 group-open:text-primary">II.
                                     Código del Buceador Responsable SSI</span>
-                                <span
-                                    class="material-symbols-outlined text-white/20 group-open:rotate-180 transition-transform text-sm">expand_more</span>
+                                <span class="material-symbols-outlined text-white/20 group-open:rotate-180 transition-transform text-sm">expand_more</span>
                             </summary>
-                            <div
-                                class="p-6 pt-0 space-y-4 text-[10px] leading-relaxed text-white/40 font-body border-t border-white/5">
+                            <div class="p-6 pt-0 space-y-4 text-[10px] leading-relaxed text-white/40 font-body border-t border-white/5">
                                 <p>Como buceador responsable, me comprometo a:</p>
                                 <ul class="list-decimal pl-4 space-y-2">
                                     <li>Bucear de forma competente y dentro de mis límites.</li>
@@ -782,12 +676,10 @@
                     <div class="pt-4 border-t border-white/5">
                         <label class="flex items-start gap-4 cursor-pointer group">
                             <div class="pt-1">
-                                <input type="checkbox" id="legal-check" name="legalConsent" required
-                                    class="w-4 h-4 rounded border-white/10 bg-white/5 text-primary focus:ring-primary focus:ring-offset-0 transition-all">
+                                <input type="checkbox" id="legal-check" name="legalConsent" required="" class="w-4 h-4 rounded border-white/10 bg-white/5 text-primary focus:ring-primary focus:ring-offset-0 transition-all">
                             </div>
                             <div class="space-y-1">
-                                <p
-                                    class="text-[10px] uppercase font-bold tracking-widest text-white/80 group-hover:text-primary transition-colors">
+                                <p class="text-[10px] uppercase font-bold tracking-widest text-white/80 group-hover:text-primary transition-colors">
                                     Acepto los términos y condiciones de SSI</p>
                                 <p class="text-[9px] leading-relaxed text-white/40 font-body">
                                     Confirmo que he leído y acepto la Política de Privacidad y el Código del Buceador
@@ -801,8 +693,7 @@
 
                 <!-- SECCIÓN 5: Firma Digital -->
                 <div class="glass-panel p-8 rounded-2xl space-y-6">
-                    <h2
-                        class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
+                    <h2 class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
                         <span class="material-symbols-outlined text-primary">draw</span> 3. Firma del Participante
                     </h2>
                     <p class="text-[10px] text-white/50 leading-relaxed font-body">
@@ -820,8 +711,7 @@
                     </div>
 
                     <div class="flex justify-center pt-8">
-                        <button type="button" id="sig-clearBtn"
-                            class="text-[10px] uppercase font-bold text-primary/60 hover:text-primary transition-colors flex items-center gap-2">
+                        <button type="button" id="sig-clearBtn" class="text-[10px] uppercase font-bold text-primary/60 hover:text-primary transition-colors flex items-center gap-2">
                             <span class="material-symbols-outlined text-sm">ink_eraser</span> Limpiar Firma
                         </button>
                     </div>
@@ -829,10 +719,8 @@
 
                 <!-- SECCIÓN 6: Resultado Médico y Envío -->
                 <div class="glass-panel p-8 rounded-2xl space-y-8 bg-black/20">
-                    <div id="medical-status"
-                        class="flex items-start gap-4 p-6 rounded-xl border transition-all duration-500 bg-white/5 border-white/10 translate-y-0 opacity-100">
-                        <div id="status-icon"
-                            class="w-12 h-12 rounded-full flex items-center justify-center bg-white/5">
+                    <div id="medical-status" class="flex items-start gap-4 p-6 rounded-xl border transition-all duration-500 bg-white/5 border-white/10 translate-y-0 opacity-100">
+                        <div id="status-icon" class="w-12 h-12 rounded-full flex items-center justify-center bg-white/5">
                             <span class="material-symbols-outlined text-white/30">info</span>
                         </div>
                         <div class="space-y-1">
@@ -844,26 +732,22 @@
                     </div>
 
 
-                    <button type="submit" id="submitBtn"
-                        class="w-full bg-primary hover:bg-primary/90 text-black py-5 rounded-xl font-black uppercase tracking-[0.2em] transform transition hover:scale-[1.02] shadow-2xl flex items-center justify-center gap-3">
+                    <button type="submit" id="submitBtn" class="w-full bg-primary hover:bg-primary/90 text-black py-5 rounded-xl font-black uppercase tracking-[0.2em] transform transition hover:scale-[1.02] shadow-2xl flex items-center justify-center gap-3">
                         <span class="material-symbols-outlined">verified</span>
                         Finalizar y Enviar Informe
                     </button>
                 </div>
             </form>
 
-            <div id="successOverlay"
-                class="fixed inset-0 z-[300] bg-black flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-700">
+            <div id="successOverlay" class="fixed inset-0 z-[300] bg-black flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-700">
                 <div class="text-center space-y-6 p-8">
-                    <div
-                        class="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary/30">
+                    <div class="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary/30">
                         <span class="material-symbols-outlined text-5xl text-primary">verified</span>
                     </div>
                     <h2 class="text-3xl font-light">Informe Enviado.</h2>
                     <p class="text-[#A39485] font-light">Rafael ha recibido tus datos. Nos vemos pronto bajo el azul.
                     </p>
-                    <a href="index.html"
-                        class="inline-block glass-button px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest text-primary border-primary/20 hover:bg-primary/10 mt-8">Volver
+                    <a href="index.html" class="inline-block glass-button px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest text-primary border-primary/20 hover:bg-primary/10 mt-8">Volver
                         a la Academia</a>
                 </div>
             </div>
@@ -1320,8 +1204,7 @@
                         en buceo recreativo con alma DIR</p>
                 </div>
             </div>
-            <div
-                class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-12 text-white/50 text-[9px] md:text-[10px] uppercase tracking-[0.2em]">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-12 text-white/50 text-[9px] md:text-[10px] uppercase tracking-[0.2em]">
                 <span class="text-[#C29547] font-bold">La Azohía, Murcia</span>
                 <span class="hidden md:block opacity-30">|</span>
                 <div class="flex gap-4 uppercase">
@@ -1331,10 +1214,10 @@
                 </div>
             </div>
             <div class="text-slate-600 text-[8px] md:text-[9px] uppercase tracking-[0.2em] text-center">
-                &copy; 2024 BuceaConRafa Academia. Todos los derechos reservados.
+                © 2024 BuceaConRafa Academia. Todos los derechos reservados.
             </div>
         </div>
     </footer>
-</body>
 
-</html>
+
+</body></html>
