@@ -248,10 +248,43 @@ setTimeout(() => {
     setTimeout(() => el.classList.add('v'), 150 + i * 120));
 }, 60);
 
-// ─── COOKIE BANNER (RGPD COMPLIANCE) ───
+// ─── COOKIE BANNER & GOOGLE ANALYTICS 4 (CONSENT MODE V2) ───
+// 1. Inicializar la capa de datos de Google obligatoria
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+
+// 2. Establecer el consentimiento por defecto como DENEGADO (Ley Europea RGPD)
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied'
+});
+
+// 3. Inyectar el script principal de GA4
+const gaScript = document.createElement('script');
+gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-PCZK4ZWVYP';
+gaScript.async = true;
+document.head.appendChild(gaScript);
+
+// 4. Configurar la propiedad
+gtag('js', new Date());
+gtag('config', 'G-PCZK4ZWVYP');
+
 document.addEventListener('DOMContentLoaded', () => {
   const cookieConsent = localStorage.getItem('buceaconrafa_cookies');
 
+  // Si el usuario ya aceptó en una visita anterior, actualizamos el permiso a CONCEDIDO
+  if (cookieConsent === 'accepted') {
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
+    });
+  }
+
+  // Si no hay decisión, mostramos el banner
   if (!cookieConsent) {
     // Inyectar HTML del banner al final del body
     const bannerHTML = `
@@ -283,6 +316,16 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('buceaconrafa_cookies', status);
       banner.classList.remove('show');
       setTimeout(() => banner.remove(), 500);
+
+      // Si le da a Aceptar, disparamos el permiso a Google Analytics
+      if (status === 'accepted') {
+        gtag('consent', 'update', {
+          'analytics_storage': 'granted',
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted'
+        });
+      }
     };
 
     btnAccept.addEventListener('click', () => closeBanner('accepted'));
