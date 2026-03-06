@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/divezone/style.css" />
+<link rel="pingback" href="https://divezone.net/xmlrpc.php" />
+<title>Page not found &#8211; Divezone
+</title>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="ie.css" media="screen"/>
+<![endif]-->
+<script type="text/javascript" src="https://divezone.net/wp-content/themes/divezone/js/jquery.js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-content/themes/divezone/js/common.js"></script>
+<script type="text/javascript" src="/wp-content/themes/divezone/js/jquery-ui.js" ></script>
+<meta name='robots' content='noindex, follow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v25.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://divezone.net/#website","url":"https://divezone.net/","name":"Divezone","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://divezone.net/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Divezone &raquo; Feed" href="https://divezone.net/feed" />
+<link rel="alternate" type="application/rss+xml" title="Divezone &raquo; Comments Feed" href="https://divezone.net/comments/feed" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/divezone.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://divezone.net/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://divezone.net/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://divezone.net/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='view_editor_gutenberg_frontend_assets-css' href='https://divezone.net/wp-content/plugins/wp-views/public/css/views-frontend.css?ver=3.6.20' type='text/css' media='all' />
+<style id='view_editor_gutenberg_frontend_assets-inline-css' type='text/css'>
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}
+.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item a {color: #444;background-color: #fff;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default a:focus {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-default .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #eee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item {border-color: #cdcdcd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item a {color: #444;background-color: #eeeeee;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey a:focus {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-grey .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #e5e5e5;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue > span.wpv-sort-list,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item {border-color: #0099cc;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item a {color: #444;background-color: #cbddeb;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:hover,.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue a:focus {color: #000;background-color: #95bedd;}.wpv-sort-list-dropdown.wpv-sort-list-dropdown-style-blue .wpv-sort-list-item.wpv-sort-list-current a {color: #000;background-color: #95bedd;}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blue: #1982d1;--wp--preset--color--dark-gray: #373737;--wp--preset--color--medium-gray: #666;--wp--preset--color--light-gray: #e2e2e2;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://divezone.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://divezone.net/wp-includes/css/dashicons.min.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rmp-menu-styles-css' href='https://divezone.net/wp-content/uploads/rmp-menu/css/rmp-menu.css?ver=04.48.19' type='text/css' media='all' />
+<link rel='stylesheet' id='stcr-font-awesome-css' href='https://divezone.net/wp-content/plugins/subscribe-to-comments-reloaded/includes/css/font-awesome.min.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='stcr-style-css' href='https://divezone.net/wp-content/plugins/subscribe-to-comments-reloaded/includes/css/stcr-style.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-postratings-css' href='https://divezone.net/wp-content/plugins/wp-postratings/css/postratings-css.css?ver=1.91.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyeleven-block-style-css' href='https://divezone.net/wp-content/themes/twentyeleven/blocks.css?ver=20181230' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-glyphs-css' href='https://divezone.net/wp-content/plugins/wpjobboard/public/css/wpjb-glyphs.css?ver=5.10.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpjb-css-css' href='https://divezone.net/wp-content/plugins/wpjobboard/public/css/frontend.css?ver=5.10.1' type='text/css' media='all' />
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/wp-views/vendor/toolset/common-es/public/toolset-common-es-frontend.js?ver=175000" id="toolset-common-es-frontend-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script.min.js?ver=1" id="wpml-legacy-dropdown-0-js"></script>
+<script type="text/javascript" id="wpjb-js-js-extra">
+/* <![CDATA[ */
+var WpjbData = {"no_jobs_found":"No job listings found","no_resumes_found":"No resumes found","load_x_more":"Load %d more","date_format":"Y\/m\/d","datepicker_date_format":"yy\/mm\/dd","max_date":"9999\/12\/31"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/wpjobboard/public/js/frontend.js?ver=5.10.1" id="wpjb-js-js"></script>
+<script type="text/javascript" id="wpml-xdomain-data-js-extra">
+/* <![CDATA[ */
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"https:\/\/divezone.net\/wp-admin\/admin-ajax.php","current_lang":"en","_nonce":"66684eb389"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/sitepress-multilingual-cms/res/js/xdomain-data.js?ver=476000" id="wpml-xdomain-data-js" defer="defer" data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://divezone.net/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://divezone.net/xmlrpc.php?rsd" />
+<meta name="generator" content="WPML ver:4.7.6 stt:1,4;" />
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+<style type="text/css" >.wpjb-fieldset-field_required { display: none !important; }</style> <script> window.addEventListener("load",function(){ var c={script:false,link:false}; function ls(s) { if(!['script','link'].includes(s)||c[s]){return;}c[s]=true; var d=document,f=d.getElementsByTagName(s)[0],j=d.createElement(s); if(s==='script'){j.async=true;j.src='/wp-content/plugins/wp-views/vendor/toolset/blocks/public/js/frontend.js?v=1.6.16';}else{ j.rel='stylesheet';j.href='/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css?v=1.6.16';} f.parentNode.insertBefore(j, f); }; function ex(){ls('script');ls('link')} window.addEventListener("scroll", ex, {once: true}); if (('IntersectionObserver' in window) && ('IntersectionObserverEntry' in window) && ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) { var i = 0, fb = document.querySelectorAll("[class^='tb-']"), o = new IntersectionObserver(es => { es.forEach(e => { o.unobserve(e.target); if (e.intersectionRatio > 0) { ex();o.disconnect();}else{ i++;if(fb.length>i){o.observe(fb[i])}} }) }); if (fb.length) { o.observe(fb[i]) } } }) </script>
+	<noscript>
+		<link rel="stylesheet" href="/wp-content/plugins/wp-views/vendor/toolset/blocks/public/css/style.css">
+	</noscript><!-- begin Fast Secure reCAPTCHA - page header css -->
+<style type="text/css">
+div.fs-recaptcha-comments { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-bp-comments { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-login { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-side-login { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-registration { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-bp-registration { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-ms-registration { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-lostpassword { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-wc-checkout { display:block; clear:both; margin-bottom:1em; }
+div.fs-recaptcha-jetpack { display:block; clear:both; margin-bottom:1em; }
+.fs-recaptcha-jetpack p { color:#DC3232; }
+</style>
+<!-- end Fast Secure reCAPTCHA - page header css -->
+
+    <script type="text/javascript">
+        var _mtm = _mtm || [];
+        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtmStart'});
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://analytics.divezone.net/js/container_yViErZOA.js'; s.parentNode.insertBefore(g,s);
+    </script>
+
+</head>
+<body class="error404 wp-embed-responsive wp-theme-twentyeleven wp-child-theme-divezone two-column right-sidebar">
+			<button type="button"  aria-controls="rmp-container-42369" aria-label="Menu Trigger" id="rmp_menu_trigger-42369"  class="rmp_menu_trigger rmp-menu-trigger-boring">
+								<span class="rmp-trigger-box">
+									<span class="responsive-menu-pro-inner"></span>
+								</span>
+					</button>
+						<div id="rmp-container-42369" class="rmp-container rmp-container rmp-slide-left">
+							<div id="rmp-menu-title-42369" class="rmp-menu-title">
+									<span class="rmp-menu-title-link">
+										<span>Divezone.net</span>					</span>
+							</div>
+						<div id="rmp-menu-additional-content-42369" class="rmp-menu-additional-content">
+					Choose your next Dive destination!				</div>
+			<div id="rmp-menu-wrap-42369" class="rmp-menu-wrap"><ul id="rmp-menu-42369" class="rmp-menu" role="menubar" aria-label="Divezone Top Menu"><li id="rmp-menu-item-43223" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item" role="none"><a  class="rmp-menu-item-link"  role="menuitem"  >Asia<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Asia"
+            role="menu" data-depth="2"
+            class="rmp-submenu rmp-submenu-depth-1"><li id="rmp-menu-item-3095" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/indonesia"  class="rmp-menu-item-link"  role="menuitem"  >Indonesia<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Indonesia"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-3096" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/komodo-island"  class="rmp-menu-item-link"  role="menuitem"  >Komodo Islands</a></li><li id="rmp-menu-item-3098" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/raja-ampat"  class="rmp-menu-item-link"  role="menuitem"  >Raja Ampat</a></li><li id="rmp-menu-item-3930" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/raja-ampat-liveaboard"  class="rmp-menu-item-link"  role="menuitem"  >Raja Ampat Liveaboard</a></li><li id="rmp-menu-item-3092" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/bali"  class="rmp-menu-item-link"  role="menuitem"  >Bali</a></li><li id="rmp-menu-item-3093" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/bunaken-manado"  class="rmp-menu-item-link"  role="menuitem"  >Bunaken, Manado</a></li><li id="rmp-menu-item-3094" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/gili-islands-lombok"  class="rmp-menu-item-link"  role="menuitem"  >Gili Islands, Lombok</a></li><li id="rmp-menu-item-3097" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/lembeh-strait"  class="rmp-menu-item-link"  role="menuitem"  >Lembeh Strait</a></li><li id="rmp-menu-item-3099" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/wakatobi"  class="rmp-menu-item-link"  role="menuitem"  >Wakatobi</a></li><li id="rmp-menu-item-30783" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/papua-new-guinea#dive"  class="rmp-menu-item-link"  role="menuitem"  >Papua New Guinea</a></li><li id="rmp-menu-item-33334" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/best-diving-centers-in-jakarta"  class="rmp-menu-item-link"  role="menuitem"  >Best Diving Centers in Jakarta</a></li></ul></li><li id="rmp-menu-item-2637" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/malaysia"  class="rmp-menu-item-link"  role="menuitem"  >Malaysia<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Malaysia"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-2686" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/kapalai-sabah"  class="rmp-menu-item-link"  role="menuitem"  >Kapalai, Sabah</a></li><li id="rmp-menu-item-2692" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/langkawi-island"  class="rmp-menu-item-link"  role="menuitem"  >Langkawi Island</a></li><li id="rmp-menu-item-2693" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/lankayan"  class="rmp-menu-item-link"  role="menuitem"  >Lankayan</a></li><li id="rmp-menu-item-2694" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/layang-layang"  class="rmp-menu-item-link"  role="menuitem"  >Layang Layang</a></li><li id="rmp-menu-item-2696" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/mabul-island"  class="rmp-menu-item-link"  role="menuitem"  >Mabul Island</a></li><li id="rmp-menu-item-2701" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/mataking-island"  class="rmp-menu-item-link"  role="menuitem"  >Mataking Island</a></li><li id="rmp-menu-item-2709" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/perenthians-islands"  class="rmp-menu-item-link"  role="menuitem"  >Perhentian Islands</a></li><li id="rmp-menu-item-2723" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/tioman-island"  class="rmp-menu-item-link"  role="menuitem"  >Tioman island</a></li><li id="rmp-menu-item-2719" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/sipadan"  class="rmp-menu-item-link"  role="menuitem"  >Sipadan</a></li><li id="rmp-menu-item-33720" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/best-diving-centers-in-singapore"  class="rmp-menu-item-link"  role="menuitem"  >Best Diving Centers in Singapore</a></li></ul></li><li id="rmp-menu-item-2644" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/thailand"  class="rmp-menu-item-link"  role="menuitem"  >Thailand<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Thailand"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-2688" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/koh-lanta"  class="rmp-menu-item-link"  role="menuitem"  >Koh Lanta</a></li><li id="rmp-menu-item-2689" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/koh-phi-phi"  class="rmp-menu-item-link"  role="menuitem"  >Koh Phi Phi</a></li><li id="rmp-menu-item-2687" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/khao-lak"  class="rmp-menu-item-link"  role="menuitem"  >Khao Lak</a></li><li id="rmp-menu-item-2690" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/koh-tao"  class="rmp-menu-item-link"  role="menuitem"  >Koh Tao</a></li><li id="rmp-menu-item-2711" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/phuket"  class="rmp-menu-item-link"  role="menuitem"  >Phuket</a></li><li id="rmp-menu-item-2718" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/similan-islands"  class="rmp-menu-item-link"  role="menuitem"  >Similan Islands</a></li><li id="rmp-menu-item-6885" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/best-similan-islands-liveaboard-reviews-2013"  class="rmp-menu-item-link"  role="menuitem"  >Similan Islands Liveaboard Reviews</a></li><li id="rmp-menu-item-2721" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/surin-islands"  class="rmp-menu-item-link"  role="menuitem"  >Surin Islands</a></li></ul></li><li id="rmp-menu-item-2642" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/philippines"  class="rmp-menu-item-link"  role="menuitem"  >Philippines<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Philippines"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-2666" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/anilao-batangas"  class="rmp-menu-item-link"  role="menuitem"  >Anilao, Batangas</a></li><li id="rmp-menu-item-2670" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/bohol-island"  class="rmp-menu-item-link"  role="menuitem"  >Bohol Island</a></li><li id="rmp-menu-item-2671" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/boracay-island"  class="rmp-menu-item-link"  role="menuitem"  >Boracay Island</a></li><li id="rmp-menu-item-2676" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/coron-palawan"  class="rmp-menu-item-link"  role="menuitem"  >Coron, Palawan</a></li><li id="rmp-menu-item-2678" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/donsol"  class="rmp-menu-item-link"  role="menuitem"  >Donsol</a></li><li id="rmp-menu-item-2697" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/malapascua-island"  class="rmp-menu-item-link"  role="menuitem"  >Malapascua Island</a></li><li id="rmp-menu-item-2714" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/puerto-galera"  class="rmp-menu-item-link"  role="menuitem"  >Puerto Galera</a></li><li id="rmp-menu-item-2720" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/subic-bay"  class="rmp-menu-item-link"  role="menuitem"  >Subic Bay</a></li></ul></li><li id="rmp-menu-item-2641" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/maldives"  class="rmp-menu-item-link"  role="menuitem"  >Maldives<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Maldives"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-4010" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="http://divezone.net/maldives-liveaboard"  class="rmp-menu-item-link"  role="menuitem"  >Maldives Liveaboard</a></li><li id="rmp-menu-item-30692" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/india"  class="rmp-menu-item-link"  role="menuitem"  >India</a></li><li id="rmp-menu-item-33034" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/madagascar"  class="rmp-menu-item-link"  role="menuitem"  >Madagascar</a></li><li id="rmp-menu-item-33421" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/mauritius"  class="rmp-menu-item-link"  role="menuitem"  >Mauritius</a></li></ul></li><li id="rmp-menu-item-32504" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/south-korea"  class="rmp-menu-item-link"  role="menuitem"  >South Korea</a></li><li id="rmp-menu-item-32817" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/japan"  class="rmp-menu-item-link"  role="menuitem"  >Japan</a></li></ul></li><li id="rmp-menu-item-27182" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item" role="none"><a  href="https://divezone.net/diving/the-caribbean"  class="rmp-menu-item-link"  role="menuitem"  >The Caribbean<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="The Caribbean"
+            role="menu" data-depth="2"
+            class="rmp-submenu rmp-submenu-depth-1"><li id="rmp-menu-item-25805" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/bahamas"  class="rmp-menu-item-link"  role="menuitem"  >Bahamas</a></li><li id="rmp-menu-item-35540" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/aruba"  class="rmp-menu-item-link"  role="menuitem"  >Aruba</a></li><li id="rmp-menu-item-28132" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/bonaire"  class="rmp-menu-item-link"  role="menuitem"  >Bonaire</a></li><li id="rmp-menu-item-28347" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/cayman-islands"  class="rmp-menu-item-link"  role="menuitem"  >Cayman Islands</a></li><li id="rmp-menu-item-29125" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/cuba"  class="rmp-menu-item-link"  role="menuitem"  >Cuba</a></li><li id="rmp-menu-item-35549" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/jamaica"  class="rmp-menu-item-link"  role="menuitem"  >Jamaica</a></li><li id="rmp-menu-item-28366" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/us-virgin-islands"  class="rmp-menu-item-link"  role="menuitem"  >U.S. Virgin Islands</a></li><li id="rmp-menu-item-27902" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/st-kitts-and-nevis"  class="rmp-menu-item-link"  role="menuitem"  >St. Kitts and Nevis</a></li><li id="rmp-menu-item-27075" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/turks-caicos"  class="rmp-menu-item-link"  role="menuitem"  >Turks &amp; Caicos</a></li><li id="rmp-menu-item-27049" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/saint-martin"  class="rmp-menu-item-link"  role="menuitem"  >Saint Martin</a></li><li id="rmp-menu-item-26579" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/dominican-republic"  class="rmp-menu-item-link"  role="menuitem"  >Dominican Republic</a></li><li id="rmp-menu-item-27183" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/saba"  class="rmp-menu-item-link"  role="menuitem"  >Saba</a></li></ul></li><li id="rmp-menu-item-43226" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item" role="none"><a  class="rmp-menu-item-link"  role="menuitem"  >America<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="America"
+            role="menu" data-depth="2"
+            class="rmp-submenu rmp-submenu-depth-1"><li id="rmp-menu-item-26576" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/costa-rica"  class="rmp-menu-item-link"  role="menuitem"  >Costa Rica<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Costa Rica"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-14000" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/cocos-island-costa-rica"  class="rmp-menu-item-link"  role="menuitem"  >Cocos Island Costa Rica</a></li></ul></li><li id="rmp-menu-item-32204" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/panama"  class="rmp-menu-item-link"  role="menuitem"  >Panama</a></li><li id="rmp-menu-item-28437" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/bay-islands-honduras"  class="rmp-menu-item-link"  role="menuitem"  >Bay Islands Honduras</a></li><li id="rmp-menu-item-19174" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/belize"  class="rmp-menu-item-link"  role="menuitem"  >Belize</a></li><li id="rmp-menu-item-35536" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/british-columbia"  class="rmp-menu-item-link"  role="menuitem"  >British-Columbia</a></li><li id="rmp-menu-item-35525" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/eastern-canada"  class="rmp-menu-item-link"  role="menuitem"  >Eastern Canada</a></li><li id="rmp-menu-item-35516" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/united-states-west-coast"  class="rmp-menu-item-link"  role="menuitem"  >West Coast USA</a></li><li id="rmp-menu-item-28200" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/florida"  class="rmp-menu-item-link"  role="menuitem"  >Florida</a></li><li id="rmp-menu-item-28762" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/hawaii"  class="rmp-menu-item-link"  role="menuitem"  >Hawaii</a></li><li id="rmp-menu-item-28969" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/mexico"  class="rmp-menu-item-link"  role="menuitem"  >Mexico<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Mexico"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-28968" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/yucatan-mexico"  class="rmp-menu-item-link"  role="menuitem"  >Yucatán, Mexico</a></li><li id="rmp-menu-item-28970" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/baja-california-mexico"  class="rmp-menu-item-link"  role="menuitem"  >Baja California, Mexico</a></li></ul></li></ul></li><li id="rmp-menu-item-43224" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item" role="none"><a  class="rmp-menu-item-link"  role="menuitem"  >Africa<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Africa"
+            role="menu" data-depth="2"
+            class="rmp-submenu rmp-submenu-depth-1"><li id="rmp-menu-item-2643" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/red-sea"  class="rmp-menu-item-link"  role="menuitem"  >Red Sea<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Red Sea"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-6887" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/liveaboard-diving-in-the-red-sea"  class="rmp-menu-item-link"  role="menuitem"  >Red Sea Liveaboard Reviews</a></li><li id="rmp-menu-item-2667" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/aqaba"  class="rmp-menu-item-link"  role="menuitem"  >Aqaba</a></li><li id="rmp-menu-item-2677" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/dahab"  class="rmp-menu-item-link"  role="menuitem"  >Dahab</a></li><li id="rmp-menu-item-2679" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/eilat"  class="rmp-menu-item-link"  role="menuitem"  >Eilat</a></li><li id="rmp-menu-item-2682" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/hamata"  class="rmp-menu-item-link"  role="menuitem"  >Hamata</a></li><li id="rmp-menu-item-2683" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/hurghada"  class="rmp-menu-item-link"  role="menuitem"  >Hurghada</a></li><li id="rmp-menu-item-2700" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/marsa-alam"  class="rmp-menu-item-link"  role="menuitem"  >Marsa Alam</a></li><li id="rmp-menu-item-2706" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/nuweiba"  class="rmp-menu-item-link"  role="menuitem"  >Nuweiba</a></li><li id="rmp-menu-item-2717" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/sharm-el-sheikh"  class="rmp-menu-item-link"  role="menuitem"  >Sharm El Sheikh</a></li></ul></li><li id="rmp-menu-item-33074" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/south-africa"  class="rmp-menu-item-link"  role="menuitem"  >South Africa</a></li><li id="rmp-menu-item-28967" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/djibouti"  class="rmp-menu-item-link"  role="menuitem"  >Djibouti</a></li><li id="rmp-menu-item-33077" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/mozambique"  class="rmp-menu-item-link"  role="menuitem"  >Mozambique</a></li><li id="rmp-menu-item-33081" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/tanzania"  class="rmp-menu-item-link"  role="menuitem"  >Tanzania</a></li><li id="rmp-menu-item-19173" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/seychelles"  class="rmp-menu-item-link"  role="menuitem"  >Seychelles</a></li></ul></li><li id="rmp-menu-item-43225" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item" role="none"><a  class="rmp-menu-item-link"  role="menuitem"  >Pacific Islands<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Pacific Islands"
+            role="menu" data-depth="2"
+            class="rmp-submenu rmp-submenu-depth-1"><li id="rmp-menu-item-11937" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/galapagos"  class="rmp-menu-item-link"  role="menuitem"  >Galapagos</a></li><li id="rmp-menu-item-2638" class=" menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/australia"  class="rmp-menu-item-link"  role="menuitem"  >Australia<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Australia"
+            role="menu" data-depth="3"
+            class="rmp-submenu rmp-submenu-depth-2"><li id="rmp-menu-item-2681" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/great-barrier-reef"  class="rmp-menu-item-link"  role="menuitem"  >Great Barrier Reef</a></li><li id="rmp-menu-item-6886" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/best-great-barrier-reef-australia-liveaboard-reviews-2013"  class="rmp-menu-item-link"  role="menuitem"  >Great Barrier Reef Liveaboard Reviews</a></li><li id="rmp-menu-item-2673" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/cairns"  class="rmp-menu-item-link"  role="menuitem"  >Cairns</a></li><li id="rmp-menu-item-2704" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/ningaloo-reef"  class="rmp-menu-item-link"  role="menuitem"  >Ningaloo Reef</a></li><li id="rmp-menu-item-2713" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/port-douglas"  class="rmp-menu-item-link"  role="menuitem"  >Port Douglas</a></li><li id="rmp-menu-item-2724" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/townsville"  class="rmp-menu-item-link"  role="menuitem"  >Townsville</a></li><li id="rmp-menu-item-2727" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/whitsunday-islands"  class="rmp-menu-item-link"  role="menuitem"  >Whitsunday Islands</a></li></ul></li><li id="rmp-menu-item-33412" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/new-zealand"  class="rmp-menu-item-link"  role="menuitem"  >New-Zealand</a></li><li id="rmp-menu-item-31586" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/solomon-islands"  class="rmp-menu-item-link"  role="menuitem"  >Solomon Islands</a></li><li id="rmp-menu-item-32197" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/french-polynesia#dive"  class="rmp-menu-item-link"  role="menuitem"  >French Polynesia</a></li><li id="rmp-menu-item-21988" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/fiji"  class="rmp-menu-item-link"  role="menuitem"  >Fiji</a></li><li id="rmp-menu-item-30572" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/yap-and-chuuk"  class="rmp-menu-item-link"  role="menuitem"  >Yap &#038; Chuuk (Truk)</a></li><li id="rmp-menu-item-19172" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/palau"  class="rmp-menu-item-link"  role="menuitem"  >Palau</a></li></ul></li><li id="rmp-menu-item-34343" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item" role="none"><a  href="https://divezone.net/diving/europe"  class="rmp-menu-item-link"  role="menuitem"  >Europe<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Europe"
+            role="menu" data-depth="2"
+            class="rmp-submenu rmp-submenu-depth-1"><li id="rmp-menu-item-35436" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/croatia"  class="rmp-menu-item-link"  role="menuitem"  >Croatia</a></li><li id="rmp-menu-item-34310" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/greece"  class="rmp-menu-item-link"  role="menuitem"  >Greece</a></li><li id="rmp-menu-item-30669" class=" menu-item menu-item-type-post_type menu-item-object-diving rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/italy"  class="rmp-menu-item-link"  role="menuitem"  >Italy</a></li><li id="rmp-menu-item-34282" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/malta"  class="rmp-menu-item-link"  role="menuitem"  >Malta</a></li><li id="rmp-menu-item-33729" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/portugal"  class="rmp-menu-item-link"  role="menuitem"  >Portugal</a></li><li id="rmp-menu-item-33730" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/spain"  class="rmp-menu-item-link"  role="menuitem"  >Spain</a></li><li id="rmp-menu-item-33462" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/france"  class="rmp-menu-item-link"  role="menuitem"  >France</a></li><li id="rmp-menu-item-33456" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/iceland"  class="rmp-menu-item-link"  role="menuitem"  >Iceland</a></li><li id="rmp-menu-item-34319" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/ireland"  class="rmp-menu-item-link"  role="menuitem"  >Ireland</a></li><li id="rmp-menu-item-34352" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/diving/scotland"  class="rmp-menu-item-link"  role="menuitem"  >Scotland</a></li></ul></li><li id="rmp-menu-item-26602" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item" role="none"><a  href="https://divezone.net/liveaboard-reviews"  class="rmp-menu-item-link"  role="menuitem"  >Liveaboards<div class="rmp-menu-subarrow">▼</div></a><ul aria-label="Liveaboards"
+            role="menu" data-depth="2"
+            class="rmp-submenu rmp-submenu-depth-1"><li id="rmp-menu-item-23734" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="https://divezone.net/liveaboard-special-offers-last-minute-deals"  class="rmp-menu-item-link"  role="menuitem"  >Liveaboard Deals</a></li><li id="rmp-menu-item-26603" class=" menu-item menu-item-type-custom menu-item-object-custom rmp-menu-item rmp-menu-sub-level-item" role="none"><a  href="http://divezone.net/liveaboard"  class="rmp-menu-item-link"  role="menuitem"  >All Liveaboards</a></li></ul></li><li id="rmp-menu-item-3240" class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-top-level-item" role="none"><a  href="https://divezone.net/jobs"  class="rmp-menu-item-link"  role="menuitem"  >Diving Jobs</a></li></ul></div>			<div id="rmp-search-box-42369" class="rmp-search-box">
+					<form action="https://divezone.net/" class="rmp-search-form" role="search">
+						<input type="search" name="s" title="Search" placeholder="Search" class="rmp-search-box">
+					</form>
+				</div>
+						</div>
+			
+<div id="wrapper">
+	<div class="w1">
+		<div id="header">
+			<a title='Where to dive next?' href='/best-dive-sites'><div id='logoclick'></div></a>
+			<strong class="logo"><a href="/">Divezone: Where to dive next?</a></strong>
+        <div class="menu-dz-menu-marron-en-haut-container"><ul id="nav" class="menu"><li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-397"><a href="https://divezone.net/"><span>Home</span></a></li>
+<li id="menu-item-5662" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-5662"><a><span><img src="/wp-content/themes/images/down.png" style="vertical-align: middle;"> Destinations</span></a>
+<div class="drop"><div class="holder"><div class="container"><div class="column column0"><ul>	<li id="menu-item-1671" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-1671"><a href="https://divezone.net/diving/maldives"><span>&rsaquo; Maldives</span></a></li>
+	<li id="menu-item-1709" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-1709"><a href="https://divezone.net/diving/indonesia"><span>&rsaquo; Indonesia</span></a></li>
+	<li id="menu-item-1675" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-1675"><a href="https://divezone.net/diving/thailand"><span>&rsaquo; Thailand</span></a></li>
+	<li id="menu-item-1670" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-1670"><a href="https://divezone.net/diving/malaysia"><span>&rsaquo; Malaysia</span></a></li>
+	<li id="menu-item-1672" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-1672"><a href="https://divezone.net/diving/philippines"><span>&rsaquo; Philippines</span></a></li>
+	<li id="menu-item-1707" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-1707"><a href="https://divezone.net/diving/australia"><span>&rsaquo; Australia</span></a></li>
+	<li id="menu-item-1706" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-1706"><a href="https://divezone.net/diving/red-sea"><span>&rsaquo; Red Sea</span></a></li>
+	<li id="menu-item-9432" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9432"><a href="http://divezone.net/liveaboard"><span>&rsaquo; Liveaboards</span></a></li>
+	<li id="menu-item-23733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23733"><a href="https://divezone.net/liveaboard-special-offers-last-minute-deals"><span>&rsaquo; Liveaboard Special Offers</span></a></li>
+</ul></div></div></div></div></li>
+<li id="menu-item-9433" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-9433"><a href="http://divezone.net/liveaboard-reviews"><span><img src="/wp-content/themes/images/down.png" style="vertical-align: middle;"> Liveaboards</span></a>
+<div class="drop"><div class="holder"><div class="container"><div class="column column0"><ul>	<li id="menu-item-9441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9441"><a href="https://divezone.net/maldives-liveaboard"><span>&rsaquo; Maldives Liveaboard</span></a></li>
+	<li id="menu-item-9442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9442"><a href="https://divezone.net/raja-ampat-liveaboard"><span>&rsaquo; Raja Ampat</span></a></li>
+	<li id="menu-item-9435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9435"><a href="https://divezone.net/cocos-islands-liveaboard"><span>&rsaquo; Cocos Island</span></a></li>
+	<li id="menu-item-9445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9445"><a href="https://divezone.net/best-similan-islands-liveaboard-reviews-2013"><span>&rsaquo; Similan Islands</span></a></li>
+	<li id="menu-item-9444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9444"><a href="https://divezone.net/budget-komodo-liveaboard"><span>&rsaquo; Komodo Islands</span></a></li>
+	<li id="menu-item-9446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9446"><a href="https://divezone.net/best-great-barrier-reef-australia-liveaboard-reviews-2013"><span>&rsaquo; Great Barrier Reef</span></a></li>
+	<li id="menu-item-9436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9436"><a href="https://divezone.net/mexico-liveaboard-reviews-2013"><span>&rsaquo; Mexico</span></a></li>
+	<li id="menu-item-9447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9447"><a href="https://divezone.net/liveaboard-diving-in-the-red-sea"><span>&rsaquo; Red Sea, Egypt</span></a></li>
+	<li id="menu-item-9437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9437"><a href="https://divezone.net/burma-liveaboard-reviews-2013"><span>&rsaquo; Burma</span></a></li>
+	<li id="menu-item-9451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9451"><a href="https://divezone.net/palau-liveaboard-reviews"><span>&rsaquo; Palau, Micronesia</span></a></li>
+	<li id="menu-item-9438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9438"><a href="https://divezone.net/fiji-liveaboard-reviews"><span>&rsaquo; Fiji</span></a></li>
+	<li id="menu-item-9439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9439"><a href="https://divezone.net/belize-liveaboard-reviews-2013"><span>&rsaquo; Belize</span></a></li>
+	<li id="menu-item-9565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9565"><a href="https://divezone.net/best-cuba-liveaboard-reviews"><span>&rsaquo; Cuba</span></a></li>
+	<li id="menu-item-26601" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26601"><a href="http://divezone.net/liveaboard"><span>&rsaquo; All Liveaboards</span></a></li>
+</ul></div></div></div></div></li>
+<li id="menu-item-43227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43227"><a href="https://divezone.net/contact"><span>Contact</span></a></li>
+</ul></div><div class="bg-nav"></div>
+			<div class="chains"></div>
+		</div>
+		        <div id='submenu' class="nav nav-main"><a name='dive'></a>
+        <div class="menu-sub-menu-destinations-dz-en-container"><ul id="menu-sub-menu-destinations-dz-en" class="menu fadeThis clear-block"><li id="menu-item-43223" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43223"><a>Asia<span class="p"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-3095" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-3095"><a href="https://divezone.net/diving/indonesia">Indonesia<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-3096" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-3096"><a href="https://divezone.net/diving/komodo-island">Komodo Islands<span class="p"></span></a></li>
+		<li id="menu-item-3098" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-3098"><a href="https://divezone.net/diving/raja-ampat">Raja Ampat<span class="p"></span></a></li>
+		<li id="menu-item-3930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3930"><a href="https://divezone.net/raja-ampat-liveaboard">Raja Ampat Liveaboard<span class="p"></span></a></li>
+		<li id="menu-item-3092" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-3092"><a href="https://divezone.net/diving/bali">Bali<span class="p"></span></a></li>
+		<li id="menu-item-3093" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-3093"><a href="https://divezone.net/diving/bunaken-manado">Bunaken, Manado<span class="p"></span></a></li>
+		<li id="menu-item-3094" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-3094"><a href="https://divezone.net/diving/gili-islands-lombok">Gili Islands, Lombok<span class="p"></span></a></li>
+		<li id="menu-item-3097" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-3097"><a href="https://divezone.net/diving/lembeh-strait">Lembeh Strait<span class="p"></span></a></li>
+		<li id="menu-item-3099" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-3099"><a href="https://divezone.net/diving/wakatobi">Wakatobi<span class="p"></span></a></li>
+		<li id="menu-item-30783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30783"><a href="https://divezone.net/diving/papua-new-guinea#dive">Papua New Guinea<span class="p"></span></a></li>
+		<li id="menu-item-33334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33334"><a href="https://divezone.net/best-diving-centers-in-jakarta">Best Diving Centers in Jakarta<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2637" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-2637"><a href="https://divezone.net/diving/malaysia">Malaysia<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-2686" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2686"><a href="https://divezone.net/diving/kapalai-sabah">Kapalai, Sabah<span class="p"></span></a></li>
+		<li id="menu-item-2692" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2692"><a href="https://divezone.net/diving/langkawi-island">Langkawi Island<span class="p"></span></a></li>
+		<li id="menu-item-2693" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2693"><a href="https://divezone.net/diving/lankayan">Lankayan<span class="p"></span></a></li>
+		<li id="menu-item-2694" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2694"><a href="https://divezone.net/diving/layang-layang">Layang Layang<span class="p"></span></a></li>
+		<li id="menu-item-2696" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2696"><a href="https://divezone.net/diving/mabul-island">Mabul Island<span class="p"></span></a></li>
+		<li id="menu-item-2701" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2701"><a href="https://divezone.net/diving/mataking-island">Mataking Island<span class="p"></span></a></li>
+		<li id="menu-item-2709" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2709"><a href="https://divezone.net/diving/perenthians-islands">Perhentian Islands<span class="p"></span></a></li>
+		<li id="menu-item-2723" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2723"><a href="https://divezone.net/diving/tioman-island">Tioman island<span class="p"></span></a></li>
+		<li id="menu-item-2719" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2719"><a href="https://divezone.net/diving/sipadan">Sipadan<span class="p"></span></a></li>
+		<li id="menu-item-33720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33720"><a href="https://divezone.net/best-diving-centers-in-singapore">Best Diving Centers in Singapore<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2644" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-2644"><a href="https://divezone.net/diving/thailand">Thailand<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-2688" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2688"><a href="https://divezone.net/diving/koh-lanta">Koh Lanta<span class="p"></span></a></li>
+		<li id="menu-item-2689" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2689"><a href="https://divezone.net/diving/koh-phi-phi">Koh Phi Phi<span class="p"></span></a></li>
+		<li id="menu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2687"><a href="https://divezone.net/diving/khao-lak">Khao Lak<span class="p"></span></a></li>
+		<li id="menu-item-2690" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2690"><a href="https://divezone.net/diving/koh-tao">Koh Tao<span class="p"></span></a></li>
+		<li id="menu-item-2711" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2711"><a href="https://divezone.net/diving/phuket">Phuket<span class="p"></span></a></li>
+		<li id="menu-item-2718" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2718"><a href="https://divezone.net/diving/similan-islands">Similan Islands<span class="p"></span></a></li>
+		<li id="menu-item-6885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6885"><a href="https://divezone.net/best-similan-islands-liveaboard-reviews-2013">Similan Islands Liveaboard Reviews<span class="p"></span></a></li>
+		<li id="menu-item-2721" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2721"><a href="https://divezone.net/diving/surin-islands">Surin Islands<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2642" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-2642"><a href="https://divezone.net/diving/philippines">Philippines<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-2666" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2666"><a href="https://divezone.net/diving/anilao-batangas">Anilao, Batangas<span class="p"></span></a></li>
+		<li id="menu-item-2670" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2670"><a href="https://divezone.net/diving/bohol-island">Bohol Island<span class="p"></span></a></li>
+		<li id="menu-item-2671" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2671"><a href="https://divezone.net/diving/boracay-island">Boracay Island<span class="p"></span></a></li>
+		<li id="menu-item-2676" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2676"><a href="https://divezone.net/diving/coron-palawan">Coron, Palawan<span class="p"></span></a></li>
+		<li id="menu-item-2678" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2678"><a href="https://divezone.net/diving/donsol">Donsol<span class="p"></span></a></li>
+		<li id="menu-item-2697" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2697"><a href="https://divezone.net/diving/malapascua-island">Malapascua Island<span class="p"></span></a></li>
+		<li id="menu-item-2714" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2714"><a href="https://divezone.net/diving/puerto-galera">Puerto Galera<span class="p"></span></a></li>
+		<li id="menu-item-2720" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2720"><a href="https://divezone.net/diving/subic-bay">Subic Bay<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-2641" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-2641"><a href="https://divezone.net/diving/maldives">Maldives<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-4010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4010"><a href="http://divezone.net/maldives-liveaboard">Maldives Liveaboard<span class="p"></span></a></li>
+		<li id="menu-item-30692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30692"><a href="https://divezone.net/diving/india">India<span class="p"></span></a></li>
+		<li id="menu-item-33034" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33034"><a href="https://divezone.net/diving/madagascar">Madagascar<span class="p"></span></a></li>
+		<li id="menu-item-33421" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33421"><a href="https://divezone.net/diving/mauritius">Mauritius<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-32504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32504"><a href="https://divezone.net/diving/south-korea">South Korea<span class="p"></span></a></li>
+	<li id="menu-item-32817" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32817"><a href="https://divezone.net/diving/japan">Japan<span class="p"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-27182" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-27182"><a href="https://divezone.net/diving/the-caribbean">The Caribbean<span class="p"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-25805" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-25805"><a href="https://divezone.net/diving/bahamas">Bahamas<span class="p"></span></a></li>
+	<li id="menu-item-35540" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35540"><a href="https://divezone.net/diving/aruba">Aruba<span class="p"></span></a></li>
+	<li id="menu-item-28132" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28132"><a href="https://divezone.net/diving/bonaire">Bonaire<span class="p"></span></a></li>
+	<li id="menu-item-28347" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28347"><a href="https://divezone.net/diving/cayman-islands">Cayman Islands<span class="p"></span></a></li>
+	<li id="menu-item-29125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29125"><a href="https://divezone.net/diving/cuba">Cuba<span class="p"></span></a></li>
+	<li id="menu-item-35549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35549"><a href="https://divezone.net/diving/jamaica">Jamaica<span class="p"></span></a></li>
+	<li id="menu-item-28366" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28366"><a href="https://divezone.net/diving/us-virgin-islands">U.S. Virgin Islands<span class="p"></span></a></li>
+	<li id="menu-item-27902" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-27902"><a href="https://divezone.net/diving/st-kitts-and-nevis">St. Kitts and Nevis<span class="p"></span></a></li>
+	<li id="menu-item-27075" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-27075"><a href="https://divezone.net/diving/turks-caicos">Turks &amp; Caicos<span class="p"></span></a></li>
+	<li id="menu-item-27049" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-27049"><a href="https://divezone.net/diving/saint-martin">Saint Martin<span class="p"></span></a></li>
+	<li id="menu-item-26579" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-26579"><a href="https://divezone.net/diving/dominican-republic">Dominican Republic<span class="p"></span></a></li>
+	<li id="menu-item-27183" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-27183"><a href="https://divezone.net/diving/saba">Saba<span class="p"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-43226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43226"><a>America<span class="p"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-26576" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-26576"><a href="https://divezone.net/diving/costa-rica">Costa Rica<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-14000" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-14000"><a href="https://divezone.net/diving/cocos-island-costa-rica">Cocos Island Costa Rica<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-32204" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32204"><a href="https://divezone.net/diving/panama">Panama<span class="p"></span></a></li>
+	<li id="menu-item-28437" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28437"><a href="https://divezone.net/diving/bay-islands-honduras">Bay Islands Honduras<span class="p"></span></a></li>
+	<li id="menu-item-19174" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-19174"><a href="https://divezone.net/diving/belize">Belize<span class="p"></span></a></li>
+	<li id="menu-item-35536" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35536"><a href="https://divezone.net/diving/british-columbia">British-Columbia<span class="p"></span></a></li>
+	<li id="menu-item-35525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35525"><a href="https://divezone.net/diving/eastern-canada">Eastern Canada<span class="p"></span></a></li>
+	<li id="menu-item-35516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35516"><a href="https://divezone.net/diving/united-states-west-coast">West Coast USA<span class="p"></span></a></li>
+	<li id="menu-item-28200" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28200"><a href="https://divezone.net/diving/florida">Florida<span class="p"></span></a></li>
+	<li id="menu-item-28762" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28762"><a href="https://divezone.net/diving/hawaii">Hawaii<span class="p"></span></a></li>
+	<li id="menu-item-28969" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-28969"><a href="https://divezone.net/diving/mexico">Mexico<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-28968" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28968"><a href="https://divezone.net/diving/yucatan-mexico">Yucatán, Mexico<span class="p"></span></a></li>
+		<li id="menu-item-28970" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28970"><a href="https://divezone.net/diving/baja-california-mexico">Baja California, Mexico<span class="p"></span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-43224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43224"><a>Africa<span class="p"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-2643" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-2643"><a href="https://divezone.net/diving/red-sea">Red Sea<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-6887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6887"><a href="https://divezone.net/liveaboard-diving-in-the-red-sea">Red Sea Liveaboard Reviews<span class="p"></span></a></li>
+		<li id="menu-item-2667" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2667"><a href="https://divezone.net/diving/aqaba">Aqaba<span class="p"></span></a></li>
+		<li id="menu-item-2677" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2677"><a href="https://divezone.net/diving/dahab">Dahab<span class="p"></span></a></li>
+		<li id="menu-item-2679" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2679"><a href="https://divezone.net/diving/eilat">Eilat<span class="p"></span></a></li>
+		<li id="menu-item-2682" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2682"><a href="https://divezone.net/diving/hamata">Hamata<span class="p"></span></a></li>
+		<li id="menu-item-2683" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2683"><a href="https://divezone.net/diving/hurghada">Hurghada<span class="p"></span></a></li>
+		<li id="menu-item-2700" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2700"><a href="https://divezone.net/diving/marsa-alam">Marsa Alam<span class="p"></span></a></li>
+		<li id="menu-item-2706" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2706"><a href="https://divezone.net/diving/nuweiba">Nuweiba<span class="p"></span></a></li>
+		<li id="menu-item-2717" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2717"><a href="https://divezone.net/diving/sharm-el-sheikh">Sharm El Sheikh<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-33074" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33074"><a href="https://divezone.net/diving/south-africa">South Africa<span class="p"></span></a></li>
+	<li id="menu-item-28967" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-28967"><a href="https://divezone.net/diving/djibouti">Djibouti<span class="p"></span></a></li>
+	<li id="menu-item-33077" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33077"><a href="https://divezone.net/diving/mozambique">Mozambique<span class="p"></span></a></li>
+	<li id="menu-item-33081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33081"><a href="https://divezone.net/diving/tanzania">Tanzania<span class="p"></span></a></li>
+	<li id="menu-item-19173" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-19173"><a href="https://divezone.net/diving/seychelles">Seychelles<span class="p"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-43225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43225"><a>Pacific Islands<span class="p"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-11937" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-11937"><a href="https://divezone.net/diving/galapagos">Galapagos<span class="p"></span></a></li>
+	<li id="menu-item-2638" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-has-children menu-item-2638"><a href="https://divezone.net/diving/australia">Australia<span class="p"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-2681" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2681"><a href="https://divezone.net/diving/great-barrier-reef">Great Barrier Reef<span class="p"></span></a></li>
+		<li id="menu-item-6886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6886"><a href="https://divezone.net/best-great-barrier-reef-australia-liveaboard-reviews-2013">Great Barrier Reef Liveaboard Reviews<span class="p"></span></a></li>
+		<li id="menu-item-2673" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2673"><a href="https://divezone.net/diving/cairns">Cairns<span class="p"></span></a></li>
+		<li id="menu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2704"><a href="https://divezone.net/diving/ningaloo-reef">Ningaloo Reef<span class="p"></span></a></li>
+		<li id="menu-item-2713" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2713"><a href="https://divezone.net/diving/port-douglas">Port Douglas<span class="p"></span></a></li>
+		<li id="menu-item-2724" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2724"><a href="https://divezone.net/diving/townsville">Townsville<span class="p"></span></a></li>
+		<li id="menu-item-2727" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-2727"><a href="https://divezone.net/diving/whitsunday-islands">Whitsunday Islands<span class="p"></span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-33412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33412"><a href="https://divezone.net/diving/new-zealand">New-Zealand<span class="p"></span></a></li>
+	<li id="menu-item-31586" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31586"><a href="https://divezone.net/diving/solomon-islands">Solomon Islands<span class="p"></span></a></li>
+	<li id="menu-item-32197" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32197"><a href="https://divezone.net/diving/french-polynesia#dive">French Polynesia<span class="p"></span></a></li>
+	<li id="menu-item-21988" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-21988"><a href="https://divezone.net/diving/fiji">Fiji<span class="p"></span></a></li>
+	<li id="menu-item-30572" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-30572"><a href="https://divezone.net/diving/yap-and-chuuk">Yap &#038; Chuuk (Truk)<span class="p"></span></a></li>
+	<li id="menu-item-19172" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-19172"><a href="https://divezone.net/diving/palau">Palau<span class="p"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-34343" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34343"><a href="https://divezone.net/diving/europe">Europe<span class="p"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-35436" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35436"><a href="https://divezone.net/diving/croatia">Croatia<span class="p"></span></a></li>
+	<li id="menu-item-34310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34310"><a href="https://divezone.net/diving/greece">Greece<span class="p"></span></a></li>
+	<li id="menu-item-30669" class="menu-item menu-item-type-post_type menu-item-object-diving menu-item-30669"><a href="https://divezone.net/diving/italy">Italy<span class="p"></span></a></li>
+	<li id="menu-item-34282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34282"><a href="https://divezone.net/diving/malta">Malta<span class="p"></span></a></li>
+	<li id="menu-item-33729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33729"><a href="https://divezone.net/diving/portugal">Portugal<span class="p"></span></a></li>
+	<li id="menu-item-33730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33730"><a href="https://divezone.net/diving/spain">Spain<span class="p"></span></a></li>
+	<li id="menu-item-33462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33462"><a href="https://divezone.net/diving/france">France<span class="p"></span></a></li>
+	<li id="menu-item-33456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33456"><a href="https://divezone.net/diving/iceland">Iceland<span class="p"></span></a></li>
+	<li id="menu-item-34319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34319"><a href="https://divezone.net/diving/ireland">Ireland<span class="p"></span></a></li>
+	<li id="menu-item-34352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34352"><a href="https://divezone.net/diving/scotland">Scotland<span class="p"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-26602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-26602"><a href="https://divezone.net/liveaboard-reviews">Liveaboards<span class="p"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-23734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23734"><a href="https://divezone.net/liveaboard-special-offers-last-minute-deals">Liveaboard Deals<span class="p"></span></a></li>
+	<li id="menu-item-26603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26603"><a href="http://divezone.net/liveaboard">All Liveaboards<span class="p"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-3240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3240"><a href="https://divezone.net/jobs">Diving Jobs<span class="p"></span></a></li>
+</ul></div>        </div>
+			
+		<div id="main">
+			<div class="main-holder">
+				<div class="main-frame">
+            		<div id="content">
+						<div class="content-holder">
+
+<style>
+#content { font-size:14px;}
+</style>
+
+		<div id="primary">
+			<div id="content" role="main">
+<h1>Page not found... </h1>
+<h2>... Now looking in the big blue!</h2>
+
+		<p>Let me help you find what you came here for:</p>
+		<p><strong>1) Were you looking for one of the following posts or pages?</strong></p><ul><li><a href="https://divezone.net/company/robin-carmichael">Robin Carmichael</a></li><li><a href="https://divezone.net/company/hope-private-care-llc">Hope Private Care LLC</a></li><li><a href="https://divezone.net/company/dr-daphne">Dr Daphne</a></li><li><a href="https://divezone.net/resume/assured-home-nursing">Assured Home Nursing</a></li><li><a href="https://divezone.net/company/8-ball-jacket">8 Ball Jacket</a></li><li><a href="https://divezone.net/company/ledlightexpert">LedLightExpert</a></li><li><a href="https://divezone.net/company/socially">Socially</a></li><li><a href="https://divezone.net/company/king-custom-cones">king custom cones</a></li><li><a href="https://divezone.net/company/pin-up-6">Pin Up</a></li><li><a href="https://divezone.net/company/888_starz">888_starz</a></li><li><a href="https://divezone.net/company/pinup-5">PinUp</a></li><li><a href="https://divezone.net/company/miniature-jns">Miniature JNS</a></li><li><a href="https://divezone.net/company/thesis-writing-service-germany">Thesis Writing Service Germany</a></li><li><a href="https://divezone.net/company/luluat-al-noor">Luluat Al Noor</a></li><li><a href="https://divezone.net/company/corporate-hiring-solutions">Corporate Hiring Solutions</a></li><li><a href="https://divezone.net/company/finance-assignment-helper">Finance Assignment Helper</a></li><li><a href="https://divezone.net/company/power-blitzz">Power Blitzz</a></li><li><a href="https://divezone.net/company/pin-up-5">Pin Up</a></li><li><a href="https://divezone.net/company/affordable-dissertation-uk">Affordable Dissertation UK</a></li><li><a href="https://divezone.net/company/seo-solutions-qatar">SEO Solutions Qatar</a></li><li><a href="https://divezone.net/company/pin-up-4">Pin Up</a></li><li><a href="https://divezone.net/company/a-mark-of-excellence-llc">A Mark Of Excellence LLC</a></li><li><a href="https://divezone.net/company/assignment-help-australia">Assignment Help Australia</a></li><li><a href="https://divezone.net/company/lint-away-duct-cleaning-2">Lint Away Duct Cleaning</a></li><li><a href="https://divezone.net/company/affordable-assignments">Affordable assignments</a></li></ul><p>If not, don't worry, we've got a few more tips for you to find it:</p>
+<p>
+<div class='searchInContent'>
+<div class='intro'><strong>2) Search </strong> for it:</div>
+<div class="form-block">
+	<form  method="get" action="https://divezone.net/">
+		<fieldset>
+		<div class="field">
+        <input type="text" class="field" name="s" id="s" value="" placeholder="Search" />
+        </div>
+		<input type="submit" value="Search" class="btn-search" />
+		</fieldset>
+	</form>
+</div>
+</div>
+			<p><strong>3) If you typed in a URL...</strong> make sure the spelling, cApitALiZaTiOn, and punctuation are correct. Then try reloading the page.			</p>
+			<p><strong>4) Look </strong> for it in the <a href='https://divezone.net/sitemap.htm'>sitemap</a>.			</p>
+			<p><strong>or Start over again</strong> at our <a href="https://divezone.net">homepage</a>  
+						(and please <a href='mailto:hello@divezone.net?subject=404 page'> contact me </a> to say what went wrong, so I can fix it).</p>
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+						<br/><br/>
+                		<div class='backToTop'><a href="#">&uarr; Back to top</a></div>
+					</div>
+				</div>
+				<div id="sidebar">
+                <div class="form-block">
+	<form  method="get" action="https://divezone.net/">
+		<fieldset>
+		<div class="field">
+        <input type="text" class="field" name="s" id="s" value="" placeholder="Search" />
+        </div>
+		<input type="submit" value="Search" class="btn-search" />
+		</fieldset>
+	</form>
+</div>
+<div class='socialwidget'>	
+    		<a target='_blank' href='http://facebook.com/Divezone.net'><img title='Facebook!'
+src='/wp-content/themes/images/facebook.png'></a><a target='_blank' href='http://twitter.com/Divezone'><img src='/wp-content/themes/images/twitter.png' title='Twitter!'></a><a target='_blank' href='/feed/'><img src='/wp-content/themes/images/rss.png' title='Blog RSS  - You can use a Blog Feed Reader to automatically get new updates from Divezone!'></a></div> 
+    		<aside id="wp_views-13" class="widget widget_wp_views">
+
+
+<div id="wpv-view-layout-35762-CPID46435" class="js-wpv-view-layout js-wpv-layout-responsive js-wpv-view-layout-35762-CPID46435" data-viewnumber="35762-CPID46435" data-pagination="{&quot;id&quot;:35762,&quot;query&quot;:&quot;normal&quot;,&quot;type&quot;:&quot;disabled&quot;,&quot;effect&quot;:&quot;fade&quot;,&quot;duration&quot;:&quot;500&quot;,&quot;speed&quot;:5,&quot;pause_on_hover&quot;:&quot;disabled&quot;,&quot;stop_rollover&quot;:&quot;false&quot;,&quot;cache_pages&quot;:&quot;enabled&quot;,&quot;preload_images&quot;:&quot;enabled&quot;,&quot;preload_pages&quot;:&quot;enabled&quot;,&quot;preload_reach&quot;:1,&quot;spinner&quot;:&quot;builtin&quot;,&quot;spinner_image&quot;:&quot;/wp-content/plugins/wp-views/embedded/res/img/ajax-loader.gif&quot;,&quot;callback_next&quot;:&quot;&quot;,&quot;manage_history&quot;:&quot;disabled&quot;,&quot;has_controls_in_form&quot;:&quot;disabled&quot;,&quot;infinite_tolerance&quot;:&quot;0&quot;,&quot;max_pages&quot;:1,&quot;page&quot;:1,&quot;base_permalink&quot;:&quot;/wp-content/uploads/2012/03/ssi-logo.png?wpv_view_count=35762-CPID46435&amp;wpv_paged=WPV_PAGE_NUM&quot;,&quot;loop&quot;:{&quot;type&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;data&quot;:[],&quot;id&quot;:0}}" data-permalink="/wp-content/uploads/2012/03/ssi-logo.png?wpv_view_count=35762-CPID46435">
+
+
+</div>
+
+
+
+
+</aside><aside id="text-7" class="widget widget_text">			<div class="textwidget"><h3>About Divezone.net</h3>
+<p>I have been really lucky to dive all over the globe over the past few years. I hope all of the info you find on this website will help you plan your next dive trip!</p>
+<p><a href='/about-us'><img class='imgequipe' src='/wp-content/uploads/2012/04/julien-huc-200x300.jpg' title='Julien, Creator of Divezone'><br /><b>About Divezone</b></a></p>
+</div>
+		</aside><aside id="text-59" class="widget widget_text">			<div class="textwidget"><!-- Guest review image -->
+
+<br/><br/>
+<a href="/write-your-review"><img border="0" src="/wp-content/themes/images/dive-review.jpg"></a><br>
+<br/><br/>
+</div>
+		</aside><aside id="block-2" class="widget widget_block">
+<div class="tb-social-share tb-social-share--092 tb-social-share--round" data-shareurl="https://divezone.net/company/affordable-assignments" data-title="" data-image="" data-toolset-blocks-social-share="0dca341914f74e73041f0e098c6a7963"><div class="tb-social-share__excerpt"></div><div class="tb-social-share__network"><div role="button" class="SocialMediaShareButton SocialMediaShareButton--facebook SocialMediaShareButton--disabled disabled tb-social-share__facebook__share-button"></div></div><div class="tb-social-share__network"><div role="button" class="SocialMediaShareButton SocialMediaShareButton--twitter SocialMediaShareButton--disabled disabled tb-social-share__twitter__share-button"></div></div><div class="tb-social-share__network"><div role="button" class="SocialMediaShareButton SocialMediaShareButton--email SocialMediaShareButton--disabled disabled tb-social-share__email__share-button"></div></div></div>
+</aside>				</div>
+			</div>
+			<div class="main-b"></div>
+		</div>
+	</div>
+</div>
+		
+<div id="footer">
+	<div class="footer-bg">
+		<div class="footer-holder">
+    		<div class="title copyright">
+    			©  2026 - I have been really lucky to dive all over the globe over the past few years. I hope all of the info you find on this website will help you plan your next dive trip! 
+    			<br/><b><a href='/about-us'>Learn more</a>
+			    - <a href='/advertise'>Advertise</a>
+			     - <a href='https://divezone.net/partners'>Our Partners!</a> - <a href='https://divezone.net/blog'>Blog</a>		    </b><br/>
+    		</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.listdivesites,.listdestinations').click(function() {
+            window.location.href = $('a', this).attr('href');
+        });
+                $('.listliveaboardsContainer .noresult,.listdestinationsContainer .noresult,.listdivesitesContainer .noresult').parents('.content-section').hide();
+            $('.widget .noresult').parent().toggle();
+        $('.travel .noresult').hide();
+        $('.edit-link, .post-edit-link').hide();
+        $('.diving .content-section .noresult').hide();
+        $('aside').each( function() { if($(this).text().trim()==''){ $(this).hide();} } );
+        $('.backToTop').click( function() {
+            $.scrollTo(0, 800);
+            return false;
+        });
+                $('div.crfp-rating-0:empty').remove();
+    });
+</script>
+
+<!-- Divezone A/B Test -->
+
+<!-- Divezone A/B Test -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['AbTesting::create', {
+        name: 'AffiliateLinkEffectiveness', // you can also use '9' (ID of the experiment) to hide the name
+        percentage: 100,
+        includedTargets: [{"attribute":"path","inverted":"0","type":"starts_with","value":"\/diving\/"}],
+        excludedTargets: [],
+        variations: [
+            {
+                name: 'original',
+                activate: function (event) {
+                    // usually nothing needs to be done here
+                }
+            },
+            {
+                name: 'WithoutLastAd', // you can also use '21' (ID of the variation) to hide the name
+                activate: function(event) {
+                    $('.text-frame').children('a[href*=liveaboard]').last().remove();
+                }
+            },                        {
+                name: 'WithoutRightSidebarLink', // you can also use '22' (ID of the variation) to hide the name
+                activate: function(event) {
+                    $('#sidebar a:contains(Check Liveaboard Prices)').remove();
+                }
+            },                        {
+                name: 'WithoutGoogleAds', // you can also use '23' (ID of the variation) to hide the name
+                activate: function(event) {
+                    $('.adsbygoogle').last().remove();
+                }
+            }
+        ],
+        trigger: function () {
+            return true; // here you can further customize which of your visitors will participate in this experiment
+        }
+    }]);
+</script>
+<!-- Divezone A/B Test -->
+
+
+<!-- Divezone A/B Test -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['AbTesting::create', {
+        name: 'IDivedThereLinkMove', // you can also use '10' (ID of the experiment) to hide the name
+        percentage: 100,
+        includedTargets: [{"attribute":"url","inverted":"0","type":"contains","value":"\/diving\/"}],
+        excludedTargets: [],
+        variations: [
+            {
+                name: 'original',
+                activate: function (event) {
+                    // usually nothing needs to be done here
+                }
+            },
+            {
+                name: 'LinkToCommentForm', // you can also use '24' (ID of the variation) to hide the name
+                activate: function(event) {
+                    $('a:contains(I dived there)').each(function () {
+                        $(this).attr('href', '#respond');
+                    });
+                }
+            }
+        ],
+        trigger: function () {
+            return true; // here you can further customize which of your visitors will participate in this experiment
+        }
+    }]);
+</script>
+<!-- Divezone A/B Test -->
+
+
+<!-- Divezone A/B Test -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['AbTesting::create', {
+        name: 'JobsListingCallToActionChange', // you can also use '11' (ID of the experiment) to hide the name
+        percentage: 100,
+        includedTargets: [{"attribute":"url","inverted":"0","type":"equals_simple","value":"https:\/\/divezone.net\/jobs"}],
+        excludedTargets: [],
+        variations: [
+            {
+                name: 'original',
+                activate: function (event) {
+                    // usually nothing needs to be done here
+                }
+            },
+            {
+                name: 'UserOrientedCTA', // you can also use '25' (ID of the variation) to hide the name
+                activate: function(event) {
+                    var buttonStyles = 'background-color: #3D82A9;border-radius: 5px;color: white;font-size: 32px;padding: 10px;display: block;margin: 0 auto;';
+                    $('.entry-content a[href*=\\/jobs\\/add]:eq(0)').html('<button style="' + buttonStyles + '">I\'m an employer!</button>');
+                    $('.entry-content a[href*=\\/resumes\\/register]:eq(0)').html('<button style="' + buttonStyles + '">I\'m a job seeker!</button>');
+
+                    $('body').append('<style>.entry-content a[href*=\\/jobs\\/add]:hover, .entry-content a[href*=\\/resumes\\/register]:hover { text-decoration: none; }</style>');
+                }
+            }
+        ],
+        trigger: function () {
+            return true; // here you can further customize which of your visitors will participate in this experiment
+        }
+    }]);
+</script>
+<!-- Divezone A/B Test -->
+
+<!-- Divezone A/B Test -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['AbTesting::create', {
+        name: 'JobPageRelevantCallToAction', // you can also use '12' (ID of the experiment) to hide the name
+        percentage: 100,
+        includedTargets: [{"attribute":"url","inverted":"0","type":"contains","value":"\/jobs\/view\/"}],
+        excludedTargets: [],
+        variations: [
+            {
+                name: 'original',
+                activate: function (event) {
+                    // usually nothing needs to be done here
+                }
+            },
+            {
+                name: 'ApplyNow', // you can also use '26' (ID of the variation) to hide the name
+                activate: function(event) {
+                    var buttonStyles = 'background-color: #3D82A9;border-radius: 5px;color: white;font-size: 32px;padding: 10px;display: block;margin: 0 auto;';
+                    var applyNowUrl = $('.wpjb-button').attr('href');
+
+                    $('.entry-content a[href*=\\/jobs\\/add]:eq(0)').parent().remove();
+                    $('.entry-content a[href*=\\/resumes\\/register]:eq(0)').replaceWith('<a id="top-apply-now" href="' + applyNowUrl + '"><button style="' + buttonStyles + '">Apply now!</button></a>');
+
+                    $('body').append('<style>a#top-apply-now:hover { text-decoration: none; }</style>');
+                }
+            }
+        ],
+        trigger: function () {
+            return true; // here you can further customize which of your visitors will participate in this experiment
+        }
+    }]);
+</script>
+<!-- Divezone A/B Test -->
+
+<!-- Piwik A/B Test -->
+<script type="text/javascript">
+    // Experiment liveaboard-review ---> Check prices text
+    $('[src*="divezone.net/wp-content/uploads/2013/01/liveaboard-review.jpg"]').attr({'src': 'https://divezone.net/wp-content/uploads/2016/09/Check_Prices.png', 'height': '', 'width': ''});
+
+    $('.btn-orange-big[href*="liveaboard.com"]').text(window.location.hostname == 'blogplongee.fr' ? 'Voir les prix' : 'Check prices');
+
+</script>
+
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        (function(){
+            var cookies = getCookies();
+
+var idSiteToUse = 1;
+
+var u=(("https:" == document.location.protocol) ? "https://analytics.div"+"ezone.net/" : "http://analytics.div"+"ezone.net/");
+
+
+
+           _paq.push(['setSiteId', idSiteToUse ]);
+            _paq.push(['setCustomVariable', '1','type','company']);
+_paq.push(['setCustomVariable', '5','company-rating','4']);
+_paq.push(['setCustomVariable', '1','page-author', 'Myryame', 'page']);
+_paq.push(['setCustomDimension', 2, 'Myryame']);
+_paq.push(['setCustomVariable', '2','post-age', '-5 days', 'page']);
+_paq.push(['setCustomDimension', 3, '-5 days']);
+_paq.push(['setCustomDimension', 5, 'company']);
+_paq.push(['setCustomVariable', '6', '4']);
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+
+            
+            _paq.push(['setCustomDimension', 1, 'anonymous']);
+
+            if (typeof window.matomoTotalSearchResults !== 'undefined') {
+                var baseUrl = document.URL + (document.URL.indexOf('?') === -1 ? '?' : '&');
+                _paq.push(['setCustomUrl', baseUrl + 'search_count=' + window.matomoTotalSearchResults]);
+            }
+
+            // form conversions
+            if (checkForFormConversionCookie('matomo_just_commented', null, 'commentform')) {
+                _paq.push(['trackGoal', 9]);
+            }
+            checkForFormConversionCookie('matomo_just_commented', null, 'commentform');
+            checkForFormConversionCookie('matomo_remember_addjob', 'wpjb-form-job-add');
+            checkForFormConversionCookie('matomo_remember_resume_register', 'wpjb-form-register');
+            checkForFormConversionCookie('matomo_remember_apply_job', null, 'wpjb-apply-form');
+            checkForFormConversionCookie('matomo_remember_resume_save', null, 'wpjb-resume');
+
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            _paq.push(['trackVisibleContentImpressions']);
+            var d=document,
+                g=d.createElement('script'),
+                s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript';
+            g.defer=true;
+            g.async=true;
+            g.src=u+'piwik.js';
+            s.parentNode.insertBefore(g,s);
+
+            function getCookies() {
+                var pairs = document.cookie.split(";");
+                var cookies = {};
+                for (var i=0; i<pairs.length; i++){
+                    var pair = pairs[i].split("=");
+                    cookies[(pair[0]+'').trim()] = decodeURIComponent(pair[1]);
+                }
+                return cookies;
+            }
+
+            function checkForFormConversionCookie(cookieName, formNameOrNode, formId) {
+                if (!cookies[cookieName]) {
+                    return;
+                }
+
+                _paq.push(['FormAnalytics::trackFormConversion', formNameOrNode, formId]);
+
+                document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            }
+        })();
+    </script>
+    <!-- End Piwik Code -->
+
+
+<script type="text/javascript">
+const wpvViewHead = document.getElementsByTagName( "head" )[ 0 ];
+const wpvViewExtraCss = document.createElement( "style" );
+wpvViewExtraCss.textContent = '<!--[if IE 7]><style>.wpv-pagination { *zoom: 1; }</style><![endif]-->';
+wpvViewHead.appendChild( wpvViewExtraCss );
+</script>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/divezone\/*","\/wp-content\/themes\/twentyeleven\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.1" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/divezone.net\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.1" id="contact-form-7-js"></script>
+<script type="text/javascript" id="rmp_menu_scripts-js-extra">
+/* <![CDATA[ */
+var rmp_menu = {"ajaxURL":"https:\/\/divezone.net\/wp-admin\/admin-ajax.php","wp_nonce":"a74e80f0fd","menu":[{"menu_theme":"Default","theme_type":"default","theme_location_menu":"0","submenu_submenu_arrow_width":"40","submenu_submenu_arrow_width_unit":"px","submenu_submenu_arrow_height":"39","submenu_submenu_arrow_height_unit":"px","submenu_arrow_position":"right","submenu_sub_arrow_background_colour":"","submenu_sub_arrow_background_hover_colour":"","submenu_sub_arrow_background_colour_active":"","submenu_sub_arrow_background_hover_colour_active":"","submenu_sub_arrow_border_width":"","submenu_sub_arrow_border_width_unit":"px","submenu_sub_arrow_border_colour":"#1d4354","submenu_sub_arrow_border_hover_colour":"#3f3f3f","submenu_sub_arrow_border_colour_active":"#1d4354","submenu_sub_arrow_border_hover_colour_active":"#3f3f3f","submenu_sub_arrow_shape_colour":"#fff","submenu_sub_arrow_shape_hover_colour":"#fff","submenu_sub_arrow_shape_colour_active":"#fff","submenu_sub_arrow_shape_hover_colour_active":"#fff","use_header_bar":"off","header_bar_items_order":{"logo":"off","title":"on","additional content":"off","menu":"on","search":"off"},"header_bar_title":"Responsive Menu","header_bar_html_content":"","header_bar_logo":"","header_bar_logo_link":"","header_bar_logo_width":"","header_bar_logo_width_unit":"%","header_bar_logo_height":"","header_bar_logo_height_unit":"px","header_bar_height":"80","header_bar_height_unit":"px","header_bar_padding":{"top":"0px","right":"5%","bottom":"0px","left":"5%"},"header_bar_font":"","header_bar_font_size":"14","header_bar_font_size_unit":"px","header_bar_text_color":"#ffffff","header_bar_background_color":"#1d4354","header_bar_breakpoint":"8000","header_bar_position_type":"fixed","header_bar_adjust_page":"on","header_bar_scroll_enable":"off","header_bar_scroll_background_color":"#36bdf6","mobile_breakpoint":"600","tablet_breakpoint":"1200","transition_speed":"0.5","sub_menu_speed":"0.2","show_menu_on_page_load":"off","menu_disable_scrolling":"off","menu_overlay":"off","menu_overlay_colour":"rgba(0,0,0,0.7)","desktop_menu_width":"","desktop_menu_width_unit":"%","desktop_menu_positioning":"absolute","desktop_menu_side":"left","desktop_menu_to_hide":"","use_current_theme_location":"off","mega_menu":{"225":"off","227":"off","229":"off","228":"off","226":"off"},"desktop_submenu_open_animation":"none","desktop_submenu_open_animation_speed":"100ms","desktop_submenu_open_on_click":"off","desktop_menu_hide_and_show":"off","menu_name":"Divezone Top Menu","menu_to_use":"sub-menu-destinations-dz-en","different_menu_for_mobile":"off","menu_to_use_in_mobile":"main-menu","use_mobile_menu":"on","use_tablet_menu":"on","use_desktop_menu":"off","menu_display_on":"all-pages","menu_to_hide":"#submenu","submenu_descriptions_on":"off","custom_walker":"","menu_background_colour":"","menu_depth":"5","smooth_scroll_on":"off","smooth_scroll_speed":"500","menu_font_icons":{"id":["225"],"icon":[""]},"menu_links_height":"40","menu_links_height_unit":"px","menu_links_line_height":"40","menu_links_line_height_unit":"px","menu_depth_0":"5","menu_depth_0_unit":"%","menu_font_size":"15","menu_font_size_unit":"px","menu_font":"","menu_font_weight":"normal","menu_text_alignment":"left","menu_text_letter_spacing":"","menu_word_wrap":"off","menu_link_colour":"#fff","menu_link_hover_colour":"#fff","menu_current_link_colour":"#fff","menu_current_link_hover_colour":"#fff","menu_item_background_colour":"","menu_item_background_hover_colour":"","menu_current_item_background_colour":"#6fda44","menu_current_item_background_hover_colour":"","menu_border_width":"","menu_border_width_unit":"px","menu_item_border_colour":"#1d4354","menu_item_border_colour_hover":"#1d4354","menu_current_item_border_colour":"#1d4354","menu_current_item_border_hover_colour":"#3f3f3f","submenu_links_height":"40","submenu_links_height_unit":"px","submenu_links_line_height":"40","submenu_links_line_height_unit":"px","menu_depth_side":"left","menu_depth_1":"10","menu_depth_1_unit":"%","menu_depth_2":"15","menu_depth_2_unit":"%","menu_depth_3":"20","menu_depth_3_unit":"%","menu_depth_4":"25","menu_depth_4_unit":"%","submenu_item_background_colour":"","submenu_item_background_hover_colour":"","submenu_current_item_background_colour":"","submenu_current_item_background_hover_colour":"","submenu_border_width":"","submenu_border_width_unit":"px","submenu_item_border_colour":"#1d4354","submenu_item_border_colour_hover":"#1d4354","submenu_current_item_border_colour":"#1d4354","submenu_current_item_border_hover_colour":"#3f3f3f","submenu_font_size":"13","submenu_font_size_unit":"px","submenu_font":"","submenu_font_weight":"normal","submenu_text_letter_spacing":"","submenu_text_alignment":"left","submenu_link_colour":"#fff","submenu_link_hover_colour":"#fff","submenu_current_link_colour":"#fff","submenu_current_link_hover_colour":"#fff","inactive_arrow_shape":"\u25bc","active_arrow_shape":"\u25b2","inactive_arrow_font_icon":"","active_arrow_font_icon":"","inactive_arrow_image":"","active_arrow_image":"","submenu_arrow_width":"40","submenu_arrow_width_unit":"px","submenu_arrow_height":"39","submenu_arrow_height_unit":"px","arrow_position":"right","menu_sub_arrow_shape_colour":"#fff","menu_sub_arrow_shape_hover_colour":"#fff","menu_sub_arrow_shape_colour_active":"#fff","menu_sub_arrow_shape_hover_colour_active":"#fff","menu_sub_arrow_border_width":"","menu_sub_arrow_border_width_unit":"px","menu_sub_arrow_border_colour":"#1d4354","menu_sub_arrow_border_hover_colour":"#3f3f3f","menu_sub_arrow_border_colour_active":"#1d4354","menu_sub_arrow_border_hover_colour_active":"#3f3f3f","menu_sub_arrow_background_colour":"","menu_sub_arrow_background_hover_colour":"","menu_sub_arrow_background_colour_active":"rgba(33,33,33,0.01)","menu_sub_arrow_background_hover_colour_active":"","fade_submenus":"off","fade_submenus_side":"left","fade_submenus_delay":"100","fade_submenus_speed":"500","use_slide_effect":"off","slide_effect_back_to_text":"Back","accordion_animation":"off","auto_expand_all_submenus":"off","auto_expand_current_submenus":"on","menu_item_click_to_trigger_submenu":"off","button_width":"55","button_width_unit":"px","button_height":"55","button_height_unit":"px","button_background_colour":"#1d4354","button_background_colour_hover":"#1d4354","button_background_colour_active":"#6fda44","toggle_button_border_radius":"5","button_transparent_background":"off","button_left_or_right":"right","button_position_type":"fixed","button_distance_from_side":"5","button_distance_from_side_unit":"%","button_top":"15","button_top_unit":"px","button_push_with_animation":"off","button_click_animation":"boring","button_line_margin":"5","button_line_margin_unit":"px","button_line_width":"25","button_line_width_unit":"px","button_line_height":"3","button_line_height_unit":"px","button_line_colour":"#fff","button_line_colour_hover":"#fff","button_line_colour_active":"#fff","button_font_icon":"","button_font_icon_when_clicked":"","button_image":"","button_image_when_clicked":"","button_title":"","button_title_open":"","button_title_position":"left","menu_container_columns":"","button_font":"","button_font_size":"14","button_font_size_unit":"px","button_title_line_height":"13","button_title_line_height_unit":"px","button_text_colour":"#fff","button_trigger_type_click":"on","button_trigger_type_hover":"off","button_click_trigger":"","items_order":{"title":"on","additional content":"on","menu":"on","search":"on"},"menu_title":"Divezone.net","menu_title_link":"","menu_title_link_location":"_self","menu_title_image":"","menu_title_font_icon":"","menu_title_section_padding":{"top":"10%","right":"5%","bottom":"0%","left":"5%"},"menu_title_background_colour":"","menu_title_background_hover_colour":"","menu_title_font_size":"25","menu_title_font_size_unit":"px","menu_title_alignment":"center","menu_title_font_weight":"400","menu_title_font_family":"","menu_title_colour":"#ffffff","menu_title_hover_colour":"#fff","menu_title_image_width":"","menu_title_image_width_unit":"%","menu_title_image_height":"","menu_title_image_height_unit":"px","menu_additional_content":"Choose your next Dive destination!","menu_additional_section_padding":{"top":"0%","right":"5%","bottom":"10%","left":"5%"},"menu_additional_content_font_size":"16","menu_additional_content_font_size_unit":"px","menu_additional_content_alignment":"center","menu_additional_content_colour":"#6fda44","menu_search_box_text":"Search","menu_search_box_code":"","menu_search_section_padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"},"menu_search_box_height":"45","menu_search_box_height_unit":"px","menu_search_box_border_radius":"30","menu_search_box_text_colour":"#1d4354","menu_search_box_background_colour":"#ffffff","menu_search_box_placeholder_colour":"#1d4354","menu_search_box_border_colour":"","menu_section_padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"menu_width":"75","menu_width_unit":"%","menu_maximum_width":"350","menu_maximum_width_unit":"px","menu_minimum_width":"320","menu_minimum_width_unit":"px","menu_auto_height":"off","menu_container_padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"},"menu_container_background_colour":"#1d4354","menu_background_image":"","animation_type":"slide","menu_appear_from":"left","animation_speed":"0.5","page_wrapper":"body","menu_close_on_body_click":"off","menu_close_on_scroll":"off","menu_close_on_link_click":"off","enable_touch_gestures":"off","hamburger_position_selector":"","menu_id":42369,"active_toggle_contents":"\u25b2","inactive_toggle_contents":"\u25bc"}]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/responsive-menu/v4.0.0/assets/js/rmp-menu.min.js?ver=4.6.0" id="rmp_menu_scripts-js"></script>
+<script type="text/javascript" id="wp-postratings-js-extra">
+/* <![CDATA[ */
+var ratingsL10n = {"plugin_url":"\/wp-content\/plugins\/wp-postratings","ajax_url":"https:\/\/divezone.net\/wp-admin\/admin-ajax.php","text_wait":"Please rate only 1 item at a time.","image":"stars_crystal","image_ext":"gif","max":"5","show_loading":"1","show_fading":"0","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src="/wp-content/plugins/wp-postratings/images/stars_crystal/rating_over.gif";;
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/wp-postratings/js/postratings-js.js?ver=1.91.2" id="wp-postratings-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.3" id="jquery-ui-slider-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2" id="jquery-touch-punch-js"></script>
+<script type="text/javascript" id="mediaelement-core-js-before">
+/* <![CDATA[ */
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17" id="mediaelement-core-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.8.2" id="mediaelement-migrate-js"></script>
+<script type="text/javascript" id="mediaelement-js-extra">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.8.2" id="wp-mediaelement-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/wp-util.min.js?ver=6.8.2" id="wp-util-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/backbone.min.js?ver=1.6.0" id="backbone-js"></script>
+<script type="text/javascript" src="https://divezone.net/wp-includes/js/mediaelement/wp-playlist.min.js?ver=6.8.2" id="wp-playlist-js"></script>
+<script type="text/javascript" id="views-blocks-frontend-js-extra">
+/* <![CDATA[ */
+var wpv_pagination_local = {"front_ajaxurl":"https:\/\/divezone.net\/wp-admin\/admin-ajax.php","calendar_image":"\/wp-content\/plugins\/wp-views\/embedded\/res\/img\/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null,"datepicker_min_year":"1582","datepicker_max_year":"3000","resize_debounce_tolerance":"100","datepicker_style_url":"\/wp-content\/plugins\/types\/vendor\/toolset\/toolset-common\/toolset-forms\/css\/wpt-jquery-ui\/jquery-ui-1.11.4.custom.css","wpmlLang":"en"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://divezone.net/wp-content/plugins/wp-views/public/js/views-frontend.js?ver=3.6.20" id="views-blocks-frontend-js"></script>
+</body>
+</html>

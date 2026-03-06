@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Registro Médico-Legal SSI | Academia BuceaConRafa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@300;400;700&family=Cormorant+Garamond:ital,wght@1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C29547",
+                        "background-dark": "#07101A",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Outfit", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .input-dark {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        .input-dark:focus {
+            outline: none;
+            border-color: #C29547;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .palette-gradient {
+            background: linear-gradient(to right, #C29547, #F5E6D3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        #sig-canvas {
+            touch-action: none;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark text-[#F3EBD4] font-body selection:bg-accent/30">
+    <!-- Navigation Global -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4 group">
+                <div
+                    class="w-32 sm:w-40 md:w-52 h-auto opacity-80 group-hover:opacity-100 transition-opacity duration-500 flex items-center">
+                    <img src="img/LOGO-BUCEACONRAFA.png" alt="BuceaConRafa Logo"
+                        class="w-24 h-auto object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+                </div>
+                <div class="flex flex-col justify-center -mt-1 hidden sm:flex">
+                    <span
+                        class="text-xl font-bold tracking-[0.15em] text-white uppercase group-hover:tracking-[0.2em] transition-all duration-300">BUCEACONRAFA</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-10 h-full">
+                <a class="text-sm font-medium text-white hover:text-accent transition-colors"
+                    href="index.html">Inicio</a>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-3xl mx-auto space-y-12">
+            <header class="text-center space-y-4">
+                <span class="text-primary text-[10px] font-body font-bold uppercase tracking-[0.12em]">Seguridad Ante
+                    Todo</span>
+                <h1 class="text-3xl md:text-5xl font-light font-display leading-tight text-white">Tu Salud es la <span
+                        class="font-black italic palette-gradient text-glow-gold">Prioridad.</span></h1>
+                <p class="text-[#A39485] font-light font-body max-w-xl mx-auto">Este formulario es obligatorio para
+                    realizar
+                    inmersiones. Tus datos se transmiten de forma cifrada y segura a Rafael Alcalde Molina.</p>
+            </header>
+
+            <form id="medicalForm" class="space-y-12">
+                <!-- SECCIÓN 1: Registro Completo de Alumno -->
+                <div class="glass-panel p-8 rounded-2xl space-y-8">
+                    <h2
+                        class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
+                        <span class="material-symbols-outlined text-primary">person_add</span> 1. Ficha de Registro del
+                        Alumno
+                    </h2>
+
+                    <!-- FOTOGRAFÍA SELFIE -->
+                    <div
+                        class="flex flex-col items-center justify-center p-6 bg-white/5 rounded-xl border border-white/10 space-y-4">
+                        <div id="selfie-container"
+                            class="w-32 h-40 bg-black/40 rounded-lg border-2 border-dashed border-white/20 flex items-center justify-center overflow-hidden relative">
+                            <span id="selfie-placeholder"
+                                class="material-symbols-outlined text-4xl text-white/20">add_a_photo</span>
+                            <video id="selfie-video" class="hidden w-full h-full object-cover" autoplay
+                                playsinline></video>
+                            <canvas id="selfie-canvas" class="hidden w-full h-full object-cover"></canvas>
+                            <img id="selfie-preview" class="hidden w-full h-full object-cover" src=""
+                                alt="Vista previa">
+                        </div>
+                        <div class="flex gap-4">
+                            <button type="button" id="start-camera"
+                                class="text-[10px] uppercase font-bold text-primary hover:text-white transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">videocam</span> Abrir Cámara
+                            </button>
+                            <button type="button" id="take-photo"
+                                class="hidden text-[10px] uppercase font-bold text-accent hover:text-white transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">photo_camera</span> Capturar
+                            </button>
+                            <input type="file" id="upload-photo" accept="image/*" class="hidden">
+                            <button type="button" id="trigger-upload"
+                                class="text-[10px] uppercase font-bold text-white/40 hover:text-white transition-colors flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">upload</span> Subir Foto
+                            </button>
+                        </div>
+                        <p class="text-[9px] text-white/30 uppercase tracking-widest">Fotografía tipo carnet o selfie
+                            clara</p>
+                        <input type="hidden" name="selfieData" id="selfieData">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Nombre y Apellidos -->
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Nombre
+                                (Sin Ñ ni tildes)</label>
+                            <input type="text" name="firstName" id="firstName" required
+                                class="input-dark font-body uppercase" placeholder="EJ: RAFAEL">
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Apellidos
+                                (Sin Ñ ni tildes)</label>
+                            <input type="text" name="lastName" id="lastName" required
+                                class="input-dark font-body uppercase" placeholder="EJ: ALCALDE MOLINA">
+                        </div>
+
+                        <!-- Email y Teléfono -->
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Correo
+                                Electrónico</label>
+                            <input type="email" name="email" required class="input-dark font-body"
+                                placeholder="tu@email.com">
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Teléfono
+                                (Con prefijo)</label>
+                            <input type="tel" name="phone" required class="input-dark font-body"
+                                placeholder="+34 600 000 000">
+                        </div>
+
+                        <!-- Fecha Nacimiento y Sexo -->
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Fecha
+                                de Nacimiento</label>
+                            <input type="date" name="birthDate" required class="input-dark font-body">
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Sexo</label>
+                            <select name="gender" required class="input-dark font-body appearance-none">
+                                <option value="" disabled selected>Seleccionar...</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otro">Otro / No binario</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Dirección -->
+                    <div class="space-y-6 pt-4 border-t border-white/5">
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Dirección
+                                Línea 1</label>
+                            <input type="text" name="address1" required class="input-dark font-body"
+                                placeholder="Calle, número, piso...">
+                        </div>
+                        <div class="space-y-2">
+                            <label
+                                class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Dirección
+                                Línea 2 (Opcional)</label>
+                            <input type="text" name="address2" class="input-dark font-body"
+                                placeholder="Bloque, puerta, urbanización...">
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">CP</label>
+                                <input type="text" name="zipCode" required class="input-dark font-body"
+                                    placeholder="30868">
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Población</label>
+                                <input type="text" name="city" required class="input-dark font-body"
+                                    placeholder="Isla Plana">
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">Provincia</label>
+                                <input type="text" name="province" required class="input-dark font-body"
+                                    placeholder="Murcia">
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] uppercase font-body font-bold tracking-[0.12em] text-white/40">País</label>
+                                <input type="text" name="country" required class="input-dark font-body"
+                                    placeholder="España">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cláusula de Consentimiento SSI -->
+                    <div class="p-4 bg-primary/5 rounded-xl border border-primary/20">
+                        <label class="flex items-start gap-4 cursor-pointer group">
+                            <div class="pt-1">
+                                <input type="checkbox" name="ssiRegistrationConsent" required
+                                    class="accent-primary w-4 h-4">
+                            </div>
+                            <span
+                                class="text-[10px] leading-relaxed text-white/60 group-hover:text-white transition-colors font-body">
+                                <strong>AUTORIZACIÓN DE TRAMITACIÓN SSI:</strong> Autorizo expresamente a Rafael Alcalde
+                                Molina a utilizar estos datos para gestionar mi alta oficial en la plataforma **MySSI**
+                                y tramitar toda mi documentación académica y certificaciones de buceo.
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Campos Internos (Readonly) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 opacity-40">
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em]">Instructor
+                                Académico</label>
+                            <input type="text" value="Rafael Alcalde Molina (SSI #117596)" readonly
+                                class="input-dark font-body text-[10px] bg-white/5 cursor-not-allowed">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase font-body font-bold tracking-[0.12em]">Centro de
+                                Formación</label>
+                            <input type="text" value="Training Center Rivemar (#711021)" readonly
+                                class="input-dark font-body text-[10px] bg-white/5 cursor-not-allowed">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN 2: Cuestionario del Participante (Pág. 1) -->
+                <div class="glass-panel p-8 rounded-2xl space-y-8">
+                    <div class="space-y-4">
+                        <h2
+                            class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
+                            <span class="material-symbols-outlined text-primary">fact_check</span> 2. Cuestionario de
+                            Salud (Confidencial)
+                        </h2>
+                        <div class="bg-primary/5 border border-primary/20 p-4 rounded-lg">
+                            <p class="text-[11px] leading-relaxed text-[#F3EBD4]/80 italic font-body">
+                                <strong>Instrucciones:</strong> Complete este cuestionario como requisito previo para el
+                                entrenamiento.
+                                Para las mujeres: Si usted está embarazada, o intenta quedar embarazada, no bucee.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="divide-y divide-white/5 space-y-4">
+                        <!-- P1 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">1. He tenido problemas con mis
+                                pulmones/respiración, corazón o sangre o he sido diagnosticado con el COVID-19</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p1" value="si" onclick="toggleBox('box-a', true)"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
+                                        (Ir Cuadro A)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p1" value="no" onclick="toggleBox('box-a', false)"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P2 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">2. Tengo más de 45 años.</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p2" value="si" onclick="toggleBox('box-b', true)"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
+                                        (Ir Cuadro B)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p2" value="no" onclick="toggleBox('box-b', false)"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P3* -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">3. Me cuesta realizar ejercicio
+                                moderado (por ejemplo, caminar 1,6 km en 12 min), O no he podido participar en actividad
+                                física normal en los últimos 12 meses.*</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p3" value="si" onchange="checkMedical()"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
+                                        *</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p3" value="no" onchange="checkMedical()"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P4 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">4. He tenido problemas con mis ojos,
+                                oídos, o fosas nasales / senos paranasales.</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p4" value="si" onclick="toggleBox('box-c', true)"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
+                                        (Ir Cuadro C)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p4" value="no" onclick="toggleBox('box-c', false)"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P5* -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">5. He tenido una cirugía en los
+                                últimos 12 meses, O tengo problemas continuos relacionados con una cirugía
+                                anterior.*</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p5" value="si" onchange="checkMedical()"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
+                                        *</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p5" value="no" onchange="checkMedical()"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P6 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">6. He perdido el conocimiento,
+                                migrañas, convulsiones, ACV, lesión en la cabeza o enfermedad neurológica.</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p6" value="si" onclick="toggleBox('box-d', true)"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
+                                        (Ir Cuadro D)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p6" value="no" onclick="toggleBox('box-d', false)"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P7 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">7. He tenido problemas psicológicos,
+                                ataques de pánico o adicciones en los últimos 5 años.</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p7" value="si" onclick="toggleBox('box-e', true)"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
+                                        (Ir Cuadro E)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p7" value="no" onclick="toggleBox('box-e', false)"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P8 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">8. He tenido problemas de espalda,
+                                hernia, úlceras o diabetes.</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p8" value="si" onclick="toggleBox('box-f', true)"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
+                                        (Ir Cuadro F)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p8" value="no" onclick="toggleBox('box-f', false)"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P9 -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">9. He tenido problemas estomacales o
+                                intestinales, incluyendo diarrea reciente.</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p9" value="si" onclick="toggleBox('box-g', true)"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span class="text-[10px] font-bold group-hover:text-primary transition-colors">SÍ
+                                        (Ir Cuadro G)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p9" value="no" onclick="toggleBox('box-g', false)"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- P10* -->
+                        <div class="flex flex-col md:flex-row md:items-center justify-between py-4 gap-4">
+                            <span class="text-sm font-body leading-tight max-w-xl">10. Estoy tomando medicamentos
+                                recetados (excluida anticoncepción o antipalúdicos Lariam).*</span>
+                            <div class="flex items-center gap-6">
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p10" value="si" onchange="checkMedical()"
+                                        class="accent-primary w-4 h-4" required>
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors text-red-400">SÍ
+                                        *</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer group">
+                                    <input type="radio" name="p10" value="no" onchange="checkMedical()"
+                                        class="accent-primary w-4 h-4">
+                                    <span
+                                        class="text-[10px] font-bold group-hover:text-primary transition-colors">NO</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN 3: Cuadros de Detalle (Dinamismo JS) -->
+                <div id="detail-boxes" class="space-y-8">
+                    <!-- Cuadro A -->
+                    <div id="box-a" class="hidden glass-panel p-8 rounded-2xl border-primary/20 bg-primary/5 space-y-6">
+                        <h3 class="text-primary text-xs font-bold uppercase tracking-widest font-display">CUADRO A –
+                            TENGO/HE TENIDO:</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="a1" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Cirugía torácica, cardíaca, de válvula,
+                                    stent o neumotórax.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="a2" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Asma, sibilancias o alergias graves en los
+                                    últimos 12 meses que limiten actividad.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="a3" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Problema de corazón (angina, dolor pecho,
+                                    insuficiencia, ACV).</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="a4" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Bronquitis recurrente, tos persistente (12
+                                    meses) o enfisema.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="a5" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Un diagnóstico de COVID-19.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cuadro B: Edad -->
+                    <div id="box-b" class="hidden glass-panel p-8 rounded-2xl border-primary/20 bg-primary/5 space-y-6">
+                        <h3 class="text-primary text-xs font-bold uppercase tracking-widest font-display">CUADRO B –
+                            TENGO MÁS DE 45 AÑOS Y:</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="b1" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Fumo o inhalo nicotina actualmente.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="b2" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Tengo colesterol alto o presión arterial
+                                    alta.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="b3" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Antecedentes familiares de muerte súbita o
+                                    enfermedad cardíaca antes de los 50.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cuadro C -->
+                    <div id="box-c" class="hidden glass-panel p-8 rounded-2xl border-primary/20 bg-primary/5 space-y-6">
+                        <h3 class="text-primary text-xs font-bold uppercase tracking-widest font-display">CUADRO C –
+                            TENGO/HE TENIDO:</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="c1" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Cirugía sinusal en los últimos 6
+                                    meses.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="c2" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Enfermedades del oído, cirugía, pérdida de
+                                    audición o equilibrio.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="c3" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Sinusitis recurrente (12 meses) o cirugía
+                                    ocular (3 meses).</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cuadro D -->
+                    <div id="box-d" class="hidden glass-panel p-8 rounded-2xl border-primary/20 bg-primary/5 space-y-6">
+                        <h3 class="text-primary text-xs font-bold uppercase tracking-widest font-display">CUADRO D –
+                            TENGO/HE TENIDO:</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="d1" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Lesión cabeza con pérdida conciencia (5
+                                    años).</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="d2" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Lesiones o enfermedades neurológicas
+                                    persistentes.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="d3" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Migrañas recurrentes (12 meses) o
+                                    desvanecimientos/desmayos (5 años).</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="d4" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Epilepsia, ataques o convulsiones.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cuadro E -->
+                    <div id="box-e" class="hidden glass-panel p-8 rounded-2xl border-primary/20 bg-primary/5 space-y-6">
+                        <h3 class="text-primary text-xs font-bold uppercase tracking-widest font-display">CUADRO E –
+                            TENGO/HE TENIDO:</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="e1" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Problemas mentales o psicológicos
+                                    (tratamiento médico/psiquiátrico).</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="e2" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Depresión mayor, tendencia suicida, pánico
+                                    o trastorno bipolar.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="e3" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Trastorno de aprendizaje/desarrollo que
+                                    requiera atención continua.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="e4" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Adicción a drogas o alcohol en los últimos
+                                    5 años.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cuadro F -->
+                    <div id="box-f" class="hidden glass-panel p-8 rounded-2xl border-primary/20 bg-primary/5 space-y-6">
+                        <h3 class="text-primary text-xs font-bold uppercase tracking-widest font-display">CUADRO F –
+                            TENGO/HE TENIDO:</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="f1" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Problemas recurrentes espalda (6 meses)
+                                    que limitan actividad.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="f2" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Cirugía de espalda o columna vertebral (12
+                                    meses).</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="f3" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Diabetes o hernia no corregida.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cuadro G -->
+                    <div id="box-g" class="hidden glass-panel p-8 rounded-2xl border-primary/20 bg-primary/5 space-y-6">
+                        <h3 class="text-primary text-xs font-bold uppercase tracking-widest font-display">CUADRO G –
+                            TENGO:</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="g1" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Ostomía sin autorización médica para
+                                    nadar.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="g2" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Deshidratación que requirió intervención
+                                    médica (7 días).</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="g3" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Úlceras estomacales, ardor frecuente
+                                    (ERGE) o Colitis/Crohn.</span>
+                            </label>
+                            <label class="flex items-start gap-3 p-3 bg-white/5 rounded-lg cursor-pointer">
+                                <input type="checkbox" name="g4" onchange="checkMedical()"
+                                    class="accent-primary w-4 h-4 mt-1">
+                                <span class="text-xs font-body leading-tight">Cirugía bariátrica en los últimos 12
+                                    meses.</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN 4: Documentación Legal y Consentimiento (SSI) -->
+                <div class="glass-panel p-8 rounded-2xl space-y-6">
+                    <h2 class="text-white text-sm font-bold uppercase tracking-[0.3em] mb-4">4. Documentación Legal SSI
+                    </h2>
+
+                    <div class="space-y-4">
+                        <!-- Política de Privacidad -->
+                        <details
+                            class="bg-white/5 rounded-xl group overflow-hidden transition-all duration-300 border border-white/5">
+                            <summary
+                                class="p-4 cursor-pointer flex items-center justify-between hover:bg-white/5 transition-colors list-none">
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-widest text-white/60 group-open:text-primary">I.
+                                    Política de Privacidad de SSI</span>
+                                <span
+                                    class="material-symbols-outlined text-white/20 group-open:rotate-180 transition-transform text-sm">expand_more</span>
+                            </summary>
+                            <div
+                                class="p-6 pt-0 space-y-4 text-[10px] leading-relaxed text-white/40 font-body border-t border-white/5">
+                                <p>Esta Política de privacidad explica por qué los centros de formación SSI obtienen tus
+                                    datos personales con el fin de impartir la formación, emitir certificaciones y
+                                    gestionar
+                                    tus datos privados.</p>
+                                <p><strong>1. Centro de formación SSI:</strong> Training Center Rivemar (#711021).</p>
+                                <p><strong>2. Procesamiento:</strong> Necesitamos recopilar datos para la certificación,
+                                    incluyendo nombre, fecha de nacimiento, sexo, foto e información médica.</p>
+                                <p><strong>3. Derechos:</strong> Tienes derecho a acceder, rectificar, eliminar y
+                                    oponerte al procesamiento de tus datos.</p>
+                            </div>
+                        </details>
+
+                        <!-- Código del Buceador Responsable -->
+                        <details
+                            class="bg-white/5 rounded-xl group overflow-hidden transition-all duration-300 border border-white/5">
+                            <summary
+                                class="p-4 cursor-pointer flex items-center justify-between hover:bg-white/5 transition-colors list-none">
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-widest text-white/60 group-open:text-primary">II.
+                                    Código del Buceador Responsable SSI</span>
+                                <span
+                                    class="material-symbols-outlined text-white/20 group-open:rotate-180 transition-transform text-sm">expand_more</span>
+                            </summary>
+                            <div
+                                class="p-6 pt-0 space-y-4 text-[10px] leading-relaxed text-white/40 font-body border-t border-white/5">
+                                <p>Como buceador responsable, me comprometo a:</p>
+                                <ul class="list-decimal pl-4 space-y-2">
+                                    <li>Bucear de forma competente y dentro de mis límites.</li>
+                                    <li>Mantener una salud adecuada para el buceo.</li>
+                                    <li>Utilizar un plan de inmersión y seguir los briefings.</li>
+                                    <li>Ser un compañero de buceo responsable.</li>
+                                    <li>Inspeccionar mi equipo antes de cada inmersión.</li>
+                                    <li>Respetar el entorno marino y sus habitantes.</li>
+                                    <li>Aceptar la responsabilidad total de mi propia seguridad.</li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Checkbox de Aceptación -->
+                    <div class="pt-4 border-t border-white/5">
+                        <label class="flex items-start gap-4 cursor-pointer group">
+                            <div class="pt-1">
+                                <input type="checkbox" id="legal-check" name="legalConsent" required
+                                    class="w-4 h-4 rounded border-white/10 bg-white/5 text-primary focus:ring-primary focus:ring-offset-0 transition-all">
+                            </div>
+                            <div class="space-y-1">
+                                <p
+                                    class="text-[10px] uppercase font-bold tracking-widest text-white/80 group-hover:text-primary transition-colors">
+                                    Acepto los términos y condiciones de SSI</p>
+                                <p class="text-[9px] leading-relaxed text-white/40 font-body">
+                                    Confirmo que he leído y acepto la Política de Privacidad y el Código del Buceador
+                                    Responsable arriba indicados. Entiendo que esta aceptación es obligatoria para
+                                    mi formación.
+                                </p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN 5: Firma Digital -->
+                <div class="glass-panel p-8 rounded-2xl space-y-6">
+                    <h2
+                        class="text-white text-sm font-bold uppercase tracking-widest border-b border-white/10 pb-4 flex items-center gap-3 font-display">
+                        <span class="material-symbols-outlined text-primary">draw</span> 3. Firma del Participante
+                    </h2>
+                    <p class="text-[10px] text-white/50 leading-relaxed font-body">
+                        Entiendo que he respondido honestamente y acepto la responsabilidad por cualquier consecuencia
+                        resultante de preguntas respondidas inexactamente.
+                    </p>
+                    <div class="bg-black/40 rounded-xl border border-white/10 p-2 overflow-hidden">
+                        <canvas id="sig-canvas" class="w-full h-40 cursor-crosshair touch-none"></canvas>
+                    </div>
+
+                    <!-- Honeypot field (invisible to users) -->
+                    <div style="display:none !important">
+                        <label>Si eres humano, deja este campo vacío</label>
+                        <input type="text" name="hp_field" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="flex justify-center pt-8">
+                        <button type="button" id="sig-clearBtn"
+                            class="text-[10px] uppercase font-bold text-primary/60 hover:text-primary transition-colors flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">ink_eraser</span> Limpiar Firma
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN 6: Resultado Médico y Envío -->
+                <div class="glass-panel p-8 rounded-2xl space-y-8 bg-black/20">
+                    <div id="medical-status"
+                        class="flex items-start gap-4 p-6 rounded-xl border transition-all duration-500 bg-white/5 border-white/10 translate-y-0 opacity-100">
+                        <div id="status-icon"
+                            class="w-12 h-12 rounded-full flex items-center justify-center bg-white/5">
+                            <span class="material-symbols-outlined text-white/30">info</span>
+                        </div>
+                        <div class="space-y-1">
+                            <h4 id="status-title" class="text-sm font-bold uppercase tracking-wider text-white">
+                                Pendiente de completar</h4>
+                            <p id="status-desc" class="text-xs text-white/50 font-body leading-relaxed">Responda a las
+                                preguntas anteriores para calcular el estado.</p>
+                        </div>
+                    </div>
+
+
+                    <button type="submit" id="submitBtn"
+                        class="w-full bg-primary hover:bg-primary/90 text-black py-5 rounded-xl font-black uppercase tracking-[0.2em] transform transition hover:scale-[1.02] shadow-2xl flex items-center justify-center gap-3">
+                        <span class="material-symbols-outlined">verified</span>
+                        Finalizar y Enviar Informe
+                    </button>
+                </div>
+            </form>
+
+            <div id="successOverlay"
+                class="fixed inset-0 z-[300] bg-black flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-700">
+                <div class="text-center space-y-6 p-8">
+                    <div
+                        class="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary/30">
+                        <span class="material-symbols-outlined text-5xl text-primary">verified</span>
+                    </div>
+                    <h2 class="text-3xl font-light">Informe Enviado.</h2>
+                    <p class="text-[#A39485] font-light">Rafael ha recibido tus datos. Nos vemos pronto bajo el azul.
+                    </p>
+                    <a href="index.html"
+                        class="inline-block glass-button px-8 py-3 rounded-full text-xs font-bold uppercase tracking-widest text-primary border-primary/20 hover:bg-primary/10 mt-8">Volver
+                        a la Academia</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // --- 1. Lógica de Visibilidad de Cuadros ---
+        function toggleBox(id, show) {
+            const box = document.getElementById(id);
+            if (show) {
+                box.classList.remove('hidden');
+                box.classList.add('animate-fade-in');
+            } else {
+                box.classList.add('hidden');
+                // Resetear checkboxes del cuadro al ocultar
+                const checks = box.querySelectorAll('input[type="checkbox"]');
+                checks.forEach(c => c.checked = false);
+            }
+            checkMedical();
+        }
+
+        // --- 2. Validación de Caracteres (Anti-Ñ / Anti-Tildes) ---
+        const normalizeText = (text) => {
+            return text.normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "") // Elimina tildes
+                .replace(/[ñÑ]/g, "N")           // Reemplaza Ñ por N
+                .replace(/[^a-zA-Z\s]/g, "")     // Elimina caracteres especiales
+                .toUpperCase();
+        };
+
+        ['firstName', 'lastName'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('input', (e) => {
+                    const cursorPosition = e.target.selectionStart;
+                    e.target.value = normalizeText(e.target.value);
+                    e.target.setSelectionRange(cursorPosition, cursorPosition);
+                });
+            }
+        });
+
+        // --- 3. Módulo de Fotografía Selfie ---
+        const video = document.getElementById('selfie-video');
+        const canvasSelfie = document.getElementById('selfie-canvas');
+        const preview = document.getElementById('selfie-preview');
+        const placeholder = document.getElementById('selfie-placeholder');
+        const startBtn = document.getElementById('start-camera');
+        const takeBtn = document.getElementById('take-photo');
+        const uploadInput = document.getElementById('upload-photo');
+        const triggerUpload = document.getElementById('trigger-upload');
+        const selfieData = document.getElementById('selfieData');
+
+        startBtn.addEventListener('click', async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" }, audio: false });
+                video.srcObject = stream;
+                video.classList.remove('hidden');
+                placeholder.classList.add('hidden');
+                preview.classList.add('hidden');
+                startBtn.classList.add('hidden');
+                takeBtn.classList.remove('hidden');
+            } catch (err) {
+                alert("No se pudo acceder a la cámara. Por favor, suba una foto manualmente.");
+                console.error(err);
+            }
+        });
+
+        takeBtn.addEventListener('click', () => {
+            canvasSelfie.width = video.videoWidth;
+            canvasSelfie.height = video.videoHeight;
+            canvasSelfie.getContext('2d').drawImage(video, 0, 0);
+
+            const data = canvasSelfie.toDataURL('image/jpeg', 0.8);
+            preview.src = data;
+            selfieData.value = data;
+
+            preview.classList.remove('hidden');
+            video.classList.add('hidden');
+            takeBtn.classList.add('hidden');
+            startBtn.classList.remove('hidden');
+            startBtn.innerHTML = '<span class="material-symbols-outlined text-sm">cached</span> Repetir Foto';
+
+            // Detener cámara
+            const stream = video.srcObject;
+            const tracks = stream.getTracks();
+            tracks.forEach(track => track.stop());
+        });
+
+        triggerUpload.addEventListener('click', () => uploadInput.click());
+        uploadInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    preview.src = event.target.result;
+                    selfieData.value = event.target.result;
+                    preview.classList.remove('hidden');
+                    placeholder.classList.add('hidden');
+                    video.classList.add('hidden');
+                    startBtn.innerHTML = '<span class="material-symbols-outlined text-sm">cached</span> Cambiar Foto';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // --- 2. Motor de Reglas Médicas (Aviso Proactivo) ---
+        function checkMedical() {
+            let medicalRequired = false;
+
+            // Regla A: Preguntas base con asterisco (3, 5, 10)
+            const p3 = document.querySelector('input[name="p3"]:checked')?.value === 'si';
+            const p5 = document.querySelector('input[name="p5"]:checked')?.value === 'si';
+            const p10 = document.querySelector('input[name="p10"]:checked')?.value === 'si';
+            if (p3 || p5 || p10) medicalRequired = true;
+
+            // Regla B: Cualquier checkbox en cuadros A-G marcado
+            const detailChecks = document.querySelectorAll('#detail-boxes input[type="checkbox"]:checked');
+            if (detailChecks.length > 0) medicalRequired = true;
+
+            updateStatusUI(medicalRequired);
+        }
+
+        function updateStatusUI(required) {
+            const statusBox = document.getElementById('medical-status');
+            const icon = document.getElementById('status-icon');
+            const title = document.getElementById('status-title');
+            const desc = document.getElementById('status-desc');
+
+            if (required) {
+                statusBox.classList.remove('bg-white/5', 'border-white/10', 'bg-green-500/10', 'border-green-500/20');
+                statusBox.classList.add('bg-red-500/10', 'border-red-500/20');
+                icon.innerHTML = '<span class="material-symbols-outlined text-red-500">warning</span>';
+                title.innerText = "SE REQUIERE EVALUACIÓN MÉDICA";
+                title.classList.add('text-red-400');
+                desc.innerText = "Sus respuestas indican que DEBE ser evaluado por un médico antes de realizar actividades de buceo. Descargue el PDF oficial y llévelo a su consulta.";
+            } else {
+                // Verificar si al menos las 10 preguntas están respondidas
+                const answeredCount = document.querySelectorAll('input[type="radio"]:checked').length;
+                if (answeredCount >= 10) {
+                    statusBox.classList.remove('bg-white/5', 'border-white/10', 'bg-red-500/10', 'border-red-500/20');
+                    statusBox.classList.add('bg-green-500/10', 'border-green-500/20');
+                    icon.innerHTML = '<span class="material-symbols-outlined text-green-500">check_circle</span>';
+                    title.innerText = "NO SE REQUIERE EVALUACIÓN ADICIONAL";
+                    title.classList.remove('text-red-400');
+                    title.classList.add('text-green-400');
+                    desc.innerText = "Según sus respuestas, no presenta condiciones que requieran una evaluación médica obligatoria en este momento.";
+                } else {
+                    title.innerText = "Pendiente de completar";
+                    title.classList.remove('text-red-400', 'text-green-400');
+                    desc.innerText = "Por favor, responda a las 10 preguntas básicas para determinar su estado.";
+                }
+            }
+        }
+
+        // --- 3. Lógica de Firma Digital (Canvas) ---
+        const canvas = document.getElementById('sig-canvas');
+        const ctx = canvas.getContext('2d');
+        let drawing = false;
+
+        // Ajustar resolución del canvas
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+            ctx.strokeStyle = "#C29547";
+            ctx.lineWidth = 2;
+            ctx.lineJoin = "round";
+            ctx.lineCap = "round";
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function getMousePos(e) {
+            const rect = canvas.getBoundingClientRect();
+            return {
+                x: (e.clientX || e.touches[0].clientX) - rect.left,
+                y: (e.clientY || e.touches[0].clientY) - rect.top
+            };
+        }
+
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('touchstart', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('touchmove', draw);
+        window.addEventListener('mouseup', stopDrawing);
+        window.addEventListener('touchend', stopDrawing);
+
+        function startDrawing(e) {
+            drawing = true;
+            const pos = getMousePos(e);
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+            e.preventDefault();
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+            const pos = getMousePos(e);
+            ctx.lineTo(pos.x, pos.y);
+            ctx.stroke();
+            e.preventDefault();
+        }
+
+        function stopDrawing() { drawing = false; }
+
+        document.getElementById('sig-clearBtn').addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        // --- 4. Generación de PDF Fiel y Ficha de Registro ---
+        async function generatePDF(data) {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF({
+                orientation: 'p',
+                unit: 'mm',
+                format: 'a4'
+            });
+
+            // === PÁGINA 1: FICHA DE REGISTRO DEL ALUMNO ===
+            doc.setFillColor(13, 11, 10); // Fondo oscuro elegante
+            doc.rect(0, 0, 210, 297, 'F');
+
+            // Decoración Dorada
+            doc.setDrawColor(194, 149, 71);
+            doc.setLineWidth(0.5);
+            doc.line(10, 25, 200, 25);
+
+            doc.setTextColor(194, 149, 71);
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(22);
+            doc.text("FICHA DE REGISTRO", 105, 18, { align: "center" });
+
+            // FOTO SELFIE (Posición Arriba-Derecha)
+            if (data.selfie) {
+                try {
+                    doc.addImage(data.selfie, 'JPEG', 154, 35, 40, 50);
+                    doc.rect(154, 35, 40, 50); // Marco para la foto
+                } catch (e) {
+                    console.error("Error al añadir selfie al PDF:", e);
+                }
+            } else {
+                doc.setDrawColor(50);
+                doc.rect(154, 35, 40, 50);
+                doc.setFontSize(8);
+                doc.text("SIN FOTO", 174, 60, { align: "center" });
+            }
+
+            // DATOS PERSONALES
+            doc.setTextColor(255, 255, 255);
+            doc.setFontSize(10);
+            let y = 40;
+            const drawDataField = (label, value) => {
+                doc.setFont("helvetica", "bold");
+                doc.setTextColor(194, 149, 71);
+                doc.text(label.toUpperCase() + ":", 15, y);
+                doc.setFont("helvetica", "normal");
+                doc.setTextColor(255, 255, 255);
+                doc.text(String(value || '---'), 60, y);
+                y += 8;
+            };
+
+            drawDataField("Nombre", data.firstName);
+            drawDataField("Apellidos", data.lastName);
+            drawDataField("Fecha Nacimiento", data.birthDate);
+            drawDataField("Sexo", data.gender);
+            drawDataField("Email", data.email);
+            drawDataField("Teléfono", data.phone);
+
+            y += 5;
+            doc.setDrawColor(50);
+            doc.line(15, y - 4, 140, y - 4);
+
+            drawDataField("Dirección 1", data.address1);
+            if (data.address2) drawDataField("Dirección 2", data.address2);
+            drawDataField("C.P. / Ciudad", `${data.zipCode} - ${data.city}`);
+            drawDataField("Provincia", data.province);
+            drawDataField("País", data.country);
+
+            // Bloque de Autorización SSI
+            y += 10;
+            doc.setFillColor(30, 30, 30);
+            doc.rect(10, y, 190, 20, 'F');
+            doc.setFontSize(8);
+            doc.setTextColor(194, 149, 71);
+            doc.setFont("helvetica", "bold");
+            doc.text("AUTORIZACIÓN TRAMITACIÓN SSI:", 15, y + 8);
+            doc.setFont("helvetica", "normal");
+            doc.setTextColor(200, 200, 200);
+            const authText = "El alumno autoriza expresamente a Rafael Alcalde Molina a utilizar estos datos para gestionar su alta oficial en la plataforma MySSI y tramitar su documentación académica.";
+            doc.text(doc.splitTextToSize(authText, 180), 15, y + 13);
+
+            // Footer Pág 1
+            doc.setFontSize(7);
+            doc.setTextColor(100);
+            doc.text("Documento generado digitalmente por Academia BuceaConRafa", 105, 285, { align: "center" });
+
+            // === PÁGINA 2: INFORME MÉDICO SSI ===
+            doc.addPage();
+            doc.setTextColor(0, 0, 0); // Volver a negro para el informe médico estándar
+
+            // Estilos de cabecera
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(16);
+            doc.text("Informe Médico del Buceador | Cuestionario SSI", 105, 15, { align: "center" });
+
+            doc.setFontSize(9);
+            doc.setFont("helvetica", "normal");
+            doc.text("Este documento es una copia fiel de las respuestas enviadas digitalmente.", 105, 21, { align: "center" });
+
+            // Bloque 1: Identificación (Simplificado para el informe médico)
+            doc.setDrawColor(194, 149, 71);
+            doc.rect(10, 30, 190, 20);
+            doc.setFont("helvetica", "bold");
+            doc.text("1. IDENTIFICACIÓN", 12, 35);
+            doc.setFont("helvetica", "normal");
+            doc.setFontSize(9);
+            doc.text(`Participante: ${data.firstName} ${data.lastName}`, 15, 42);
+            doc.text(`Instructor: Rafael Alcalde Molina (SSI #117596)`, 110, 42);
+            doc.text(`Fecha Nac: ${data.birthDate}`, 15, 47);
+            doc.text(`Centro: Training Center Rivemar (#711021)`, 110, 47);
+
+            // Bloque 2: Cuestionario
+            doc.setFont("helvetica", "bold");
+            doc.text("2. CUESTIONARIO DE SALUD", 12, 60);
+            doc.setFont("helvetica", "normal");
+
+            let currentY = 67;
+            const qTexts = [
+                "1. Problemas pulmones/respiración, corazón o COVID-19",
+                "2. Más de 45 años",
+                "3. Dificultad ejercicio moderado o falta actividad 12m*",
+                "4. Problemas ojos, oídos, fosas nasales o senos",
+                "5. Cirugía 12m o problemas cirugía anterior*",
+                "6. Pérdida conocimiento, migraña, ACV o neuro",
+                "7. Problemas psicológicos o adicciones 5 años",
+                "8. Problemas espalda, hernia, úlceras o diabetes",
+                "9. Problemas estomacales o intestinales",
+                "10. Medicamentos recetados (excepto anticoncep.)*"
+            ];
+
+            qTexts.forEach((q, i) => {
+                const val = data[`p${i + 1}`];
+                doc.text(q, 15, currentY);
+                doc.setFont("helvetica", "bold");
+                doc.text(`[ ${val?.toUpperCase() || ' - '} ]`, 185, currentY, { align: "right" });
+                doc.setFont("helvetica", "normal");
+                currentY += 7;
+            });
+
+            // Bloque 3: Estado Médico
+            currentY += 5;
+            doc.setFillColor(data.medicalRequired ? 255 : 240, data.medicalRequired ? 240 : 255, 240);
+            doc.rect(10, currentY, 190, 15, 'F');
+            doc.setFont("helvetica", "bold");
+            doc.text("RESULTADO DE EVALUACIÓN:", 15, currentY + 9);
+            doc.setTextColor(data.medicalRequired ? 200 : 0, data.medicalRequired ? 0 : 150, 0);
+            doc.text(data.medicalRequired ? "REQUIERE EVALUACIÓN MÉDICA" : "APTO (NO REQUIERE EVALUACIÓN ADICIONAL)", 70, currentY + 9);
+            doc.setTextColor(0, 0, 0);
+
+            // Bloque 4: Consentimientos Legales
+            currentY += 25;
+            doc.setFont("helvetica", "bold");
+            doc.text("3. CONSENTIMIENTOS Y PRIVACIDAD", 12, currentY);
+            doc.rect(10, currentY + 2, 190, 10);
+            doc.setFont("helvetica", "normal");
+            doc.text("Aceptación de la Política de Privacidad y Código del Buceador SSI:", 15, currentY + 8);
+            doc.setFont("helvetica", "bold");
+            doc.text(data.legalConsent ? "SÍ (ACEPTADO)" : "NO", 185, currentY + 8, { align: "right" });
+
+            // Bloque 5: Firma
+            currentY += 20;
+            doc.text("4. FIRMA DEL PARTICIPANTE", 12, currentY);
+            doc.rect(10, currentY + 2, 190, 40);
+            if (data.signature) {
+                doc.addImage(data.signature, 'PNG', 40, currentY + 5, 130, 30);
+            }
+            doc.setFontSize(8);
+            doc.text(`Fecha y Hora de Firma Digital: ${new Date(data.timestamp).toLocaleString()}`, 15, currentY + 46);
+
+            // Guardar
+            doc.save(`Registro_Alumno_${data.firstName}_${data.lastName}.pdf`);
+        }
+
+        // --- 5. Envío del Formulario (JSON + PDF) ---
+        document.getElementById('medicalForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            // Validar firma
+            const blank = document.createElement('canvas');
+            blank.width = canvas.width;
+            blank.height = canvas.height;
+            if (canvas.toDataURL() === blank.toDataURL()) {
+                alert("Por favor, firme el documento antes de enviar.");
+                return;
+            }
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            // Bot protection: check honeypot
+            if (data.hp_field) {
+                console.warn("Bot detected (Medical Form)");
+                return;
+            }
+            delete data.hp_field;
+
+            // Añadir firma y metadata
+            data.signature = canvas.toDataURL();
+            data.medicalRequired = document.getElementById('status-title').innerText.includes("SE REQUIERE");
+            data.legalConsent = !!data.legalConsent; // Normalizar a boolean
+            data.timestamp = new Date().toISOString();
+            data.instructor = "Rafael Alcalde Molina";
+            data.center = "Rivemar";
+
+            // 1. Generar y Descargar PDF
+            try {
+                await generatePDF(data);
+            } catch (err) {
+                console.error("Error al generar el PDF:", err);
+            }
+
+            // 2. Registro de Envío (Simulación DB)
+            console.log("--- REGISTRO MÉDICO GENERADO (JSON + PDF) ---");
+            console.log("Data:", data);
+
+            // 3. Simulación de éxito
+            const overlay = document.getElementById('successOverlay');
+            const successTitle = overlay.querySelector('h2');
+            const successText = overlay.querySelector('p');
+
+            if (successTitle) successTitle.innerText = "¡REGISTRO COMPLETADO!";
+            if (successText) {
+                successText.innerHTML = `
+                    En breve recibirás un email de bienvenida de **BUCEACONRAFA**. <br><br>
+                    Antes de 48 horas recibirás otro aviso de **SSI** confirmando tu alta, donde tendrás acceso al manual oficial de tu curso. <br><br>
+                    ¡Nos vemos bajo el azul!
+                `;
+            }
+
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+            overlay.classList.add('opacity-100');
+        });
+    </script>
+    <!-- Footer Global -->
+    <footer class="bg-[#0D0B0A] border-t border-white/5 pt-16 pb-12 px-6 relative z-10">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+            <div class="flex flex-col items-center space-y-4 mb-8 pointer-events-none">
+                <img src="img/LOGO-BUCEACONRAFA.png" alt="Logo" class="w-64 md:w-[400px] h-auto">
+                <div class="space-y-2">
+                    <h2 class="text-white/90 text-lg md:text-xl font-bold tracking-[0.4em] uppercase">BUCEACONRAFA</h2>
+                    <p class="text-[#C29547] text-[8px] md:text-[9px] uppercase tracking-[0.4em] font-medium">Formacion
+                        en buceo recreativo con alma DIR</p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-12 text-white/50 text-[9px] md:text-[10px] uppercase tracking-[0.2em]">
+                <span class="text-[#C29547] font-bold">La Azohía, Murcia</span>
+                <span class="hidden md:block opacity-30">|</span>
+                <div class="flex gap-4 uppercase">
+                    <a href="politica-privacidad.html" class="hover:text-accent transition-colors">Privacidad</a>
+                    <span class="opacity-30">·</span>
+                    <a href="aviso-legal.html" class="hover:text-accent transition-colors">Aviso Legal</a>
+                </div>
+            </div>
+            <div class="text-slate-600 text-[8px] md:text-[9px] uppercase tracking-[0.2em] text-center">
+                &copy; 2024 BuceaConRafa Academia. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+# Backup files
+*.bak
+
+# Temporary files
+.DS_Store
+Thumbs.db
+
+# Scripts and development tools
+*.py
+*.ps1
+fix_encoding.js
+REVISION_BLOG_ORIGINAL.md
+GENERAL_BuceaConRafa-Auditoria-SEO-2026.docx.md
+buceaconrafa-copy-v2*.md
+estandares-ssi.md
+notebooklm-report*.md
+
+# IDE
+.vscode/
+.idea/
+.gemini/
+.agents/
