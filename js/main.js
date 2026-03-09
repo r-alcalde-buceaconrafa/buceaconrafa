@@ -159,13 +159,13 @@ if (guideForm) {
     btn.disabled = true;
 
     try {
-      // Reemplazar con la URL real de n8n cuando esté definida
-      // const response = await fetch('YOUR_N8N_WEBHOOK_URL', { ... }); 
+      const response = await fetch('https://formspree.io/f/xlgpgbaz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
 
-      console.log('Sending to n8n:', data);
-
-      // Simulación de éxito
-      setTimeout(() => {
+      if (response.ok) {
         btn.innerText = '¡Guía enviada!';
         btn.style.background = '#28a745';
 
@@ -175,9 +175,10 @@ if (guideForm) {
           btn.innerText = originalText;
           btn.style.background = '';
           btn.disabled = false;
-        }, 2000);
-      }, 1000);
-
+        }, 3000);
+      } else {
+        throw new Error('Formspree returned ' + response.status);
+      }
     } catch (err) {
       console.error(err);
       btn.innerText = 'Error al enviar';
@@ -213,9 +214,13 @@ if (contactForm) {
     btn.disabled = true;
 
     try {
-      console.log('Sending contact to n8n:', data);
-      // Simulación de éxito
-      setTimeout(() => {
+      const response = await fetch('https://formspree.io/f/mreyeqrq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
         btn.innerText = '¡Mensaje enviado!';
         btn.style.background = '#28a745';
         setTimeout(() => {
@@ -223,8 +228,10 @@ if (contactForm) {
           btn.innerText = originalText;
           btn.style.background = '';
           btn.disabled = false;
-        }, 2000);
-      }, 1000);
+        }, 3000);
+      } else {
+        throw new Error('Formspree returned ' + response.status);
+      }
     } catch (err) {
       console.error(err);
       btn.innerText = 'Error al enviar';
