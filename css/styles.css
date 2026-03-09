@@ -116,6 +116,141 @@
       background: linear-gradient(to bottom, var(--gold), var(--teal2), var(--gold2))
     }
 
+    /* ─── ANIMACIONES DE SCROLL ─── */
+    .fi {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      will-change: opacity, transform;
+    }
+
+    .v {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── REVIEWS INDEX (reviews-slider / review-card) ─── */
+    .reviews-section {
+      background: var(--g-rev);
+      padding: var(--sp-lg) 0;
+    }
+
+    .reviews-title {
+      font-family: var(--fd);
+      font-weight: 800;
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 48px;
+      line-height: 1.2;
+    }
+
+    .reviews-slider {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 16px;
+      scrollbar-width: none;
+    }
+
+    .reviews-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .review-card {
+      flex: 0 0 clamp(280px, 35vw, 360px);
+      background: var(--glass-d);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border-d);
+      border-radius: var(--r);
+      padding: 32px;
+      scroll-snap-align: start;
+      transition: transform 0.3s ease, border-color 0.3s;
+    }
+
+    .review-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(201, 168, 76, 0.3);
+    }
+
+    .review-stars {
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .review-text {
+      font-family: var(--fs);
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 24px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .review-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.2), rgba(47, 191, 191, 0.2));
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--fd);
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--gold2);
+      flex-shrink: 0;
+    }
+
+    .review-author strong {
+      display: block;
+      font-family: var(--fb);
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--white);
+    }
+
+    .review-author span {
+      font-family: var(--fb);
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .reviews-cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .reviews-link {
+      font-family: var(--fb);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold2);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+      padding-bottom: 2px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .reviews-link:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
     nav {
       position: fixed;
       top: 0;
@@ -2465,34 +2600,7 @@
       display: block;
     }
 
-    .ins-quote {
-      position: absolute;
-      bottom: -30px;
-      left: 40px;
-      right: 40px;
-      background: white;
-      padding: 32px;
-      border-radius: 12px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-      border-right: 4px solid var(--gold);
-    }
 
-    .ins-quote p {
-      font-family: var(--fs);
-      font-style: italic;
-      font-size: 1.25rem;
-      color: var(--navy);
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-
-    .ins-quote strong {
-      font-family: var(--fb);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--gold);
-    }
 
     /* LA AZOHÍA VIDEO VERSION */
     .az-video-section {
@@ -2604,10 +2712,7 @@
         gap: 60px;
       }
 
-      .ins-quote {
-        position: static;
-        margin-top: 20px;
-      }
+
     }
 
     @media (max-width: 900px) {
@@ -3226,11 +3331,19 @@
       font-style: italic;
       font-size: clamp(1.2rem, 2vw, 1.6rem);
       color: var(--gold2);
-      margin-bottom: 32px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 24px;
+      max-width: 800px;
       line-height: 1.5;
+    }
+
+    .ins-author {
+      font-family: var(--fb);
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 48px;
     }
 
     /* Secciones Divididas */
@@ -3419,7 +3532,7 @@
       background: rgba(14, 32, 48, 0.98);
       backdrop-filter: blur(16px);
       border-top: 1px solid var(--gold);
-      box-shadow: 0 -10px 40px rgba(0,0,0,0.3);
+      box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
       z-index: 9999;
       padding: 24px var(--sp-sm);
       display: flex;
@@ -3427,7 +3540,7 @@
       gap: 16px;
       transition: bottom 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    
+
     #cookie-banner.show {
       bottom: 0;
     }
@@ -3503,11 +3616,11 @@
 
     .cb-reject {
       background: transparent;
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       color: var(--sand);
     }
 
     .cb-reject:hover {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       border-color: var(--sand);
     }

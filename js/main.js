@@ -37,7 +37,7 @@ const REVIEWS = [
   { n: 'Pedro Muñoz', i: 'P', t: 'Hace 7 meses', q: 'Una experiencia inolvidable. Rafa es un instructor de categoría. Seguiremos evolucionando con él muy pronto.' },
 ];
 
-const slide = document.getElementById('rslide');
+const slide = document.getElementById('rslide') || document.getElementById('reviewsSlider');
 const dots = document.getElementById('rdots');
 
 function card(r) {
