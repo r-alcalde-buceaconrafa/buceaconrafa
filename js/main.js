@@ -339,3 +339,61 @@ document.addEventListener('DOMContentLoaded', () => {
     btnReject.addEventListener('click', () => closeBanner('rejected'));
   }
 });
+
+// ─── INTRO OVERLAY REVEAL ───
+document.addEventListener('DOMContentLoaded', () => {
+  // Asegurar que la página siempre cargue arriba
+  window.scrollTo(0, 0);
+
+  const overlay = document.getElementById('intro-overlay');
+  if (!overlay) return;
+
+  const logo = overlay.querySelector('.intro-logo');
+  const brand = overlay.querySelector('.intro-brand');
+  const tag = overlay.querySelector('.intro-tag');
+  const heroVideo = document.querySelector('#hero video'); // Referencia al primer video del hero
+
+  // T=0ms: Logo In (2.5s)
+  setTimeout(() => {
+    if (logo) logo.classList.add('v');
+  }, 0);
+
+  // T=1500ms: Marca In (3.0s)
+  setTimeout(() => {
+    if (brand) brand.classList.add('v');
+  }, 1500);
+
+  // T=2600ms: Intro-Tag In (3.0s) -> Formación individualizada
+  setTimeout(() => {
+    if (tag) tag.classList.add('v');
+  }, 2600);
+
+  // T=4200ms: Arrancar videos PRE-NITIDEZ (Ajuste V13)
+  setTimeout(() => {
+    const videos = document.querySelectorAll('#hero video');
+    videos.forEach(v => {
+      v.play().catch(e => console.log("Video playback waiting for user context"));
+    });
+  }, 4200);
+
+  // T=4400ms: GRAN FINAL -> FOCUS + FADE OUT (Texto ya visible)
+  setTimeout(() => {
+    revealSite();
+  }, 4400);
+
+  function revealSite() {
+    if (!document.body.classList.contains('locked')) return;
+
+    // Nitidez orgánica (80px -> 0) + Aparición del contenedor Hero
+    const heroSection = document.getElementById('hero');
+    if (heroSection) heroSection.classList.add('focused');
+
+    // Fade out overlay textos intro
+    overlay.classList.add('fade-out');
+
+    // Desbloqueo de scroll tras la nitidez (T=4.4s + 2.4s = 6.8s)
+    setTimeout(() => {
+      document.body.classList.remove('locked');
+    }, 2400);
+  }
+});
