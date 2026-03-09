@@ -881,7 +881,10 @@
                                     procesamiento, la emisión y la entrega de las certificaciones y la gestión de tus
                                     datos personales almacenados en el sistema MySSI en SSI International GmbH,
                                     Johann-Hoellfritsch-Straße 6, 90530 Wendelstein, Alemania. Correo electrónico:
-                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="afc6c1c9c0efcbc6d9cafcfce681ccc0c2">[email&#160;protected]</a>, Tel.: + 49-9129-9099380.</p>
+                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                        data-cfemail="afc6c1c9c0efcbc6d9cafcfce681ccc0c2">[email&#160;protected]</a>,
+                                    Tel.: + 49-9129-9099380.
+                                </p>
                                 <p class="mb-4"><strong>1. Centro de formación SSI autorizado "Controlador de
                                         datos"</strong><br>
                                     Nombre del centro: BuceaConRafa (Training Center Rivemar id:#711021).</p>
@@ -1119,7 +1122,8 @@
         </div>
     </main>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
         // --- 1. Lógica de Visibilidad de Cuadros ---
         function toggleBox(id, show) {
             const box = document.getElementById(id);
@@ -1521,8 +1525,8 @@
             // 3. Guardar en Supabase — 2 tablas relacionadas
             submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin">cloud_upload</span> Guardando ficha de alumno...';
 
-            const SUPA_URL  = 'https://iqbjrdclvdwjyokjzbyy.supabase.co';
-            const SUPA_KEY  = 'sb_publishable_Whd3r88N7ZmA_OqYetoO_A_jOSR5bSK';
+            const SUPA_URL = 'https://iqbjrdclvdwjyokjzbyy.supabase.co';
+            const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlxYmpyZGNsdmR3anlva2p6Ynl5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwNTY0NDcsImV4cCI6MjA4ODYzMjQ0N30._4ev0GwN4VJBqBnVyoiMojnoPYDf_kgL3Sqa5gBd_AQ';
             const SUPA_HDRS = {
                 'Content-Type': 'application/json',
                 'apikey': SUPA_KEY,
@@ -1537,17 +1541,17 @@
                     method: 'POST',
                     headers: { ...SUPA_HDRS, 'Prefer': 'return=representation' },
                     body: JSON.stringify({
-                        first_name:    data.firstName,
-                        last_name:     data.lastName,
-                        birth_date:    data.birthDate,
-                        dni:           data.dni           || null,
-                        email:         data.email,
-                        phone:         data.phone,
-                        address:       data.address1      || null,
-                        zip_code:      data.zipCode       || null,
-                        city:          data.city          || null,
-                        tutor_name:    data.tutorName     || null,
-                        tutor_dni:     data.tutorDni      || null
+                        first_name: data.firstName,
+                        last_name: data.lastName,
+                        birth_date: data.birthDate,
+                        dni: data.dni || null,
+                        email: data.email,
+                        phone: data.phone,
+                        address: data.address1 || null,
+                        zip_code: data.zipCode || null,
+                        city: data.city || null,
+                        tutor_name: data.tutorName || null,
+                        tutor_dni: data.tutorDni || null
                     })
                 });
 
@@ -1593,23 +1597,23 @@
                     method: 'POST',
                     headers: { ...SUPA_HDRS, 'Prefer': 'return=minimal' },
                     body: JSON.stringify({
-                        alumno_id:        alumnoId,
-                        instructor:       data.instructor,
-                        timestamp:        data.timestamp,
-                        session_token:    data.session_token,
+                        alumno_id: alumnoId,
+                        instructor: data.instructor,
+                        timestamp: data.timestamp,
+                        session_token: data.session_token,
                         medical_required: data.medicalRequired,
                         p1: data.p1, p2: data.p2, p3: data.p3, p4: data.p4, p5: data.p5,
                         p6: data.p6, p7: data.p7, p8: data.p8, p9: data.p9, p10: data.p10,
-                        box_a: getChecked(['a1','a2','a3','a4','a5']),
-                        box_b: getChecked(['b1','b2','b3','b4']),
-                        box_c: getChecked(['c1','c2','c3','c4']),
-                        box_d: getChecked(['d1','d2','d3','d4','d5']),
-                        box_e: getChecked(['e1','e2','e3','e4']),
-                        box_f: getChecked(['f1','f2','f3','f4','f5']),
-                        box_g: getChecked(['g1','g2']),
+                        box_a: getChecked(['a1', 'a2', 'a3', 'a4', 'a5']),
+                        box_b: getChecked(['b1', 'b2', 'b3', 'b4']),
+                        box_c: getChecked(['c1', 'c2', 'c3', 'c4']),
+                        box_d: getChecked(['d1', 'd2', 'd3', 'd4', 'd5']),
+                        box_e: getChecked(['e1', 'e2', 'e3', 'e4']),
+                        box_f: getChecked(['f1', 'f2', 'f3', 'f4', 'f5']),
+                        box_g: getChecked(['g1', 'g2']),
                         legal_consent: data.legalConsent,
                         image_consent: data.imageConsent,
-                        firma_base64:  data.signature
+                        firma_base64: data.signature
                     })
                 });
 
