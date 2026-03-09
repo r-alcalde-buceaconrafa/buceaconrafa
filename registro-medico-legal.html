@@ -1302,18 +1302,18 @@
             const fontBold = await finalDoc.embedFont(StandardFonts.HelveticaBold);
 
             // 3. Insertar Ficha de Registro personalizada como PÁGINA 1 (Índice 0)
-            const page0 = finalDoc.insertPage(0, [595.28, 841.89]); // A4
+            const page0 = finalDoc.insertPage(0, [595.28, 841.89]);
 
-            // Dibujar Estilos Ficha (Fondo Navy/Oscuro)
-            page0.drawRectangle({ x: 0, y: 0, width: 595.28, height: 841.89, color: rgb(13 / 255, 11 / 255, 10 / 255) });
-            page0.drawLine({ start: { x: 30, y: 800 }, end: { x: 565, y: 800 }, thickness: 1, color: rgb(194 / 255, 149 / 255, 71 / 255) });
-            page0.drawText('FICHA DE REGISTRO ALUMNO', { x: 120, y: 810, size: 22, font: fontBold, color: rgb(194 / 255, 149 / 255, 71 / 255) });
+            // Dibujar Estilos Ficha (Fondo Blanco / Letras Negras - Pedido de Rafa)
+            page0.drawRectangle({ x: 0, y: 0, width: 595.28, height: 841.89, color: rgb(1, 1, 1) });
+            page0.drawLine({ start: { x: 30, y: 800 }, end: { x: 565, y: 800 }, thickness: 1, color: rgb(0, 0, 0) });
+            page0.drawText('FICHA DE REGISTRO ALUMNO', { x: 120, y: 810, size: 22, font: fontBold, color: rgb(0, 0, 0) });
 
             // Datos del Usuario
             let y = 740;
             const drawField = (label, val) => {
-                page0.drawText(label.toUpperCase() + ":", { x: 40, y: y, size: 10, font: fontBold, color: rgb(194 / 255, 149 / 255, 71 / 255) });
-                page0.drawText(String(val || '---'), { x: 160, y: y, size: 10, font: font, color: rgb(1, 1, 1) });
+                page0.drawText(label.toUpperCase() + ":", { x: 40, y: y, size: 10, font: fontBold, color: rgb(0.1, 0.1, 0.1) });
+                page0.drawText(String(val || '---'), { x: 160, y: y, size: 10, font: font, color: rgb(0, 0, 0) });
                 y -= 25;
             };
 
@@ -1324,23 +1324,29 @@
             drawField("Email", data.email);
             drawField("Teléfono", data.phone);
             y -= 15;
-            page0.drawLine({ start: { x: 40, y: y + 10 }, end: { x: 400, y: y + 10 }, thickness: 0.5, color: rgb(0.3, 0.3, 0.3) });
+            page0.drawLine({ start: { x: 40, y: y + 10 }, end: { x: 400, y: y + 10 }, thickness: 0.5, color: rgb(0.8, 0.8, 0.8) });
             drawField("Dirección", data.address1);
             drawField("Localidad", `${data.zipCode} - ${data.city}`);
 
             // Cláusula MySSI
             y -= 20;
-            page0.drawRectangle({ x: 30, y: y - 40, width: 535, height: 50, color: rgb(30 / 255, 30 / 255, 30 / 255) });
-            page0.drawText("AUTORIZACIÓN SSI:", { x: 45, y: y - 5, size: 9, font: fontBold, color: rgb(194 / 255, 149 / 255, 71 / 255) });
-            page0.drawText("El alumno autoriza la gestión de sus datos en MySSI bajo la supervisión de Rafael Alcalde.", { x: 45, y: y - 20, size: 9, font: font, color: rgb(0.7, 0.7, 0.7) });
+            page0.drawRectangle({ x: 30, y: y - 40, width: 535, height: 50, color: rgb(245 / 255, 245 / 255, 245 / 255) });
+            page0.drawText("AUTORIZACIÓN SSI:", { x: 45, y: y - 5, size: 9, font: fontBold, color: rgb(0, 0, 0) });
+            page0.drawText("El alumno autoriza la gestión de sus datos en MySSI bajo la supervisión de Rafael Alcalde.", { x: 45, y: y - 20, size: 9, font: font, color: rgb(0.3, 0.3, 0.3) });
+
+            // Mensaje de Estado Médico (Petición de Rafa)
+            const statusMsg = data.medicalRequired
+                ? "ESTADO: SE REQUIERE RECONOCIMIENTO MÉDICO ANTES DE BUCEAR"
+                : "ESTADO: NO SE REQUIERE RECONOCIMIENTO MÉDICO ADICIONAL";
+            const statusColor = data.medicalRequired ? rgb(0.8, 0, 0) : rgb(0, 0.5, 0);
+            page0.drawText(statusMsg, { x: 45, y: y - 75, size: 14, font: fontBold, color: statusColor });
 
             // 4. Mapear Formulario Médico (Si se cargó el PDF base)
             if (finalDoc.getForm && ssiIndices.length > 0) {
                 const form = finalDoc.getForm();
-                const setTxt = (n, v) => { try { form.getTextField(n).setText(v); } catch (e) { } };
-                const setChk = (n, v) => { try { if (v) form.getCheckBox(n).check(); else form.getCheckBox(n + " No").check(); } catch (e) { } };
 
                 // Datos básicos en el formulario oficial
+                const setTxt = (n, v) => { try { form.getTextField(n).setText(v); } catch (e) { } };
                 setTxt('Participant', fullName);
                 setTxt('Participant Name Print', fullName);
                 setTxt('Birthdate ddmmyyyy', data.birthDate);
@@ -1349,7 +1355,19 @@
                 setTxt('Facility Name Print', 'Training Center Rivemar (#711021)');
 
                 // Preguntas Médicas (Mapeo a campos del PDF)
-                const checkMed = (val, si, no) => { try { if (val === 'si') form.getCheckBox(si).check(); else form.getCheckBox(no).check(); } catch (e) { } };
+                const checkMed = (val, si, no) => {
+                    try {
+                        if (val === 'si') {
+                            form.getCheckBox(si).check();
+                        } else {
+                            form.getCheckBox(no).check();
+                        }
+                    } catch (e) {
+                        // Intento alternativo para Si_7 que a veces es Si7
+                        if (si === 'Si_7') try { form.getCheckBox('Si7').check(); } catch (e2) { }
+                    }
+                };
+
                 checkMed(data.p1, 'Si', 'No');
                 checkMed(data.p2, 'Si_2', 'No_2');
                 checkMed(data.p3, 'Si_3', 'No_3');
@@ -1360,6 +1378,23 @@
                 checkMed(data.p8, 'Si_8', 'No_8');
                 checkMed(data.p9, 'Si_9', 'No_9');
                 checkMed(data.p10, 'Si_10', 'No_10');
+
+                // Mapeo Cuadros A-G (Página 3)
+                const checkDetail = (name, field) => { try { if (data[name]) form.getCheckBox(field).check(); } catch (e) { } };
+                // Cuadro A
+                checkDetail('a1', 'BoxA_1'); checkDetail('a2', 'BoxA_2'); checkDetail('a3', 'BoxA_3'); checkDetail('a4', 'BoxA_4'); checkDetail('a5', 'BoxA_5');
+                // Cuadro B
+                checkDetail('b1', 'BoxB_1'); checkDetail('b2', 'BoxB_2'); checkDetail('b3', 'BoxB_3'); checkDetail('b4', 'BoxB_4');
+                // Cuadro C
+                checkDetail('c1', 'BoxC_1'); checkDetail('c2', 'BoxC_2'); checkDetail('c3', 'BoxC_3'); checkDetail('c4', 'BoxC_4');
+                // Cuadro D
+                checkDetail('d1', 'BoxD_1'); checkDetail('d2', 'BoxD_2'); checkDetail('d3', 'BoxD_3'); checkDetail('d4', 'BoxD_4'); checkDetail('d5', 'BoxD_5');
+                // Cuadro E
+                checkDetail('e1', 'BoxE_1'); checkDetail('e2', 'BoxE_2'); checkDetail('e3', 'BoxE_3'); checkDetail('e4', 'BoxE_4');
+                // Cuadro F
+                checkDetail('f1', 'BoxF_1'); checkDetail('f2', 'BoxF_2'); checkDetail('f3', 'BoxF_3'); checkDetail('f4', 'BoxF_4'); checkDetail('f5', 'BoxF_5');
+                // Cuadro G
+                checkDetail('g1', 'BoxG_1'); checkDetail('g2', 'BoxG_2'); checkDetail('g3', 'BoxG_3'); checkDetail('g4', 'BoxG_4'); checkDetail('g5', 'BoxG_5'); checkDetail('g6', 'BoxG_6');
 
                 form.flatten();
             }
@@ -1373,8 +1408,8 @@
                     const sigImg = await finalDoc.embedPng(sigBuf);
                     // Firma en Cuestionario Médico (Índice 1 tras inserción)
                     if (pages[1]) pages[1].drawImage(sigImg, { x: 50, y: 140, width: 160, height: 40 });
-                    // Firma en Exención (Última página)
-                    pages[pages.length - 1].drawImage(sigImg, { x: 50, y: 140, width: 160, height: 40 });
+                    // Firma en Exención (Página 4 original, ahora índice 3)
+                    if (pages[3]) pages[3].drawImage(sigImg, { x: 50, y: 140, width: 160, height: 40 });
                 } catch (e) { console.error("Firma no estampada:", e); }
             }
 
@@ -1390,12 +1425,19 @@
 
             // Tutor Legal
             if (data.tutorName) {
-                pages[pages.length - 1].drawText(`TUTOR: ${data.tutorName} (DNI: ${data.tutorDni})`, {
-                    x: 60, y: 190, size: 9, font: fontBold, color: rgb(0, 0, 0)
-                });
+                if (pages[3]) {
+                    pages[3].drawText(`TUTOR: ${data.tutorName} (DNI: ${data.tutorDni})`, {
+                        x: 60, y: 190, size: 9, font: fontBold, color: rgb(0, 0, 0)
+                    });
+                }
             }
 
-            // 6. Guardar y Descargar
+            // 6. Recortar páginas sobrantes (Rafa pide solo las 4 primeras: Ficha + 3 SSI)
+            while (finalDoc.getPageCount() > 4) {
+                finalDoc.removePage(4);
+            }
+
+            // 7. Guardar y Descargar
             const pdfBytes = await finalDoc.save();
             const blob = new Blob([pdfBytes], { type: "application/pdf" });
             const link = document.createElement('a');
