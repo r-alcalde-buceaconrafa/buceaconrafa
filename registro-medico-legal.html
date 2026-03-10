@@ -1735,4 +1735,12 @@
         const ham = document.getElementById('ham');
         const nmob = document.getElementById('nmob');
         if (ham && nmob) {
-            ham.addEvent
+            ham.addEventListener('click', () => {
+                ham.classList.toggle('open');
+                nmob.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+
+</html>
