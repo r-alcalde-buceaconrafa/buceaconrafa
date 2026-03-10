@@ -2259,7 +2259,8 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 0;
-      align-items: start
+      align-items: start;
+      order: 2;
     }
 
     .fitem {
@@ -2337,7 +2338,8 @@
       border-radius: var(--r);
       box-shadow: 0 10px 24px rgba(14, 32, 48, 0.05);
       overflow: hidden;
-      position: relative
+      position: relative;
+      order: 1
     }
 
     .authority-card::before {
@@ -3490,6 +3492,24 @@
   <section class="sec sec-faq">
     <div class="sec-inner fi">
       <div class="faq-rafa-grid">
+        <aside class="authority-card">
+          <img src="https://www.buceaconrafa.com/img/instructor-buceo-buceaconrafa.jpg"
+            alt="Instructor de buceo en Murcia recomendando seguro de buceo obligatorio en España" loading="lazy" />
+          <div class="authority-copy">
+            <div class="ey l"><span>Rafa recomienda ScubaMedic</span></div>
+            <blockquote>"Cuando recomiendo un seguro, no pienso en trámites. Pienso en si pagará el hospital, en si la
+              cámara hiperbárica está bien resuelta y en si el buceador tendrá asistencia clara cuando más lo necesite.
+              Por eso prefiero una póliza que cubra bien lo importante y emita el certificado al momento."</blockquote>
+            <div class="rpills">
+              <span class="rpill">+12 años buceando</span>
+              <span class="rpill">SSI Instructor</span>
+              <span class="rpill">Full Cave Diver</span>
+              <span class="rpill">+120 alumnos</span>
+              <span class="rpill">La Azohía · Murcia</span>
+            </div>
+          </div>
+        </aside>
+
         <div class="faq-grid" style="max-width:560px;">
           <div class="ey l" style="justify-content:flex-start;"><span>FAQ</span></div>
           <h2 class="sh l" style="text-align:left;">Las dudas de siempre.<br><em>Resueltas.</em></h2>
@@ -3574,23 +3594,6 @@
             </div>
           </div>
         </div>
-        <aside class="authority-card">
-          <img src="https://www.buceaconrafa.com/img/instructor-buceo-buceaconrafa.jpg"
-            alt="Instructor de buceo en Murcia recomendando seguro de buceo obligatorio en España" loading="lazy" />
-          <div class="authority-copy">
-            <div class="ey l"><span>Rafa recomienda ScubaMedic</span></div>
-            <blockquote>"Cuando recomiendo un seguro, no pienso en trámites. Pienso en si pagará el hospital, en si la
-              cámara hiperbárica está bien resuelta y en si el buceador tendrá asistencia clara cuando más lo necesite.
-              Por eso prefiero una póliza que cubra bien lo importante y emita el certificado al momento."</blockquote>
-            <div class="rpills">
-              <span class="rpill">+12 años buceando</span>
-              <span class="rpill">SSI Instructor</span>
-              <span class="rpill">Full Cave Diver</span>
-              <span class="rpill">+120 alumnos</span>
-              <span class="rpill">La Azohía · Murcia</span>
-            </div>
-          </div>
-        </aside>
       </div>
     </div>
   </section>
