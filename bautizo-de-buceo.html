@@ -28,7 +28,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&amp;family=Cormorant+Garamond:ital,wght@1,300;1,400&amp;family=Outfit:wght@300;400;700&amp;display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Course","name":"Bautizo de Buceo en La Azohía, Murcia","description":"Tu primera inmersión guiada en La Azohía, Murcia. Ratio 1:1, entrada desde playa, sin experiencia previa.","provider":{"@type":"Organization","name":"BuceaConRafa","url":"https://buceaconrafa.com"},"instructor":{"@type":"Person","name":"Rafael Alcalde Molina"},"courseLanguage":"es","educationalCredentialAwarded":"Bautizo de Buceo SSI","url":"https://buceaconrafa.com/bautizo-de-buceo"}
@@ -176,11 +176,11 @@
   <!-- HERO -->
   <section id="hero" class="focused">
     <!-- Desktop Video -->
-    <video autoplay muted loop playsinline preload="auto" class="h-video-desk">
+    <video autoplay muted loop playsinline preload="auto" class="h-video-desk" preload="none">
       <source src="img/video-hero-buceaconrafa.mp4" type="video/mp4">
     </video>
     <!-- Mobile Video -->
-    <video autoplay muted loop playsinline preload="auto" class="h-video-mob">
+    <video autoplay muted loop playsinline preload="auto" class="h-video-mob" preload="none">
       <source src="img/buceaconrafa-buceo-advanced-openwater-movil.mp4" type="video/mp4">
     </video>
     <div class="hmesh"></div>
@@ -322,7 +322,7 @@
       <h2 class="sh l fi d1">Tus primeros pasos <br><em>explorando el mar.</em></h2>
       <div class="hgrid">
         <div class="hk fi">
-          <img src="img/imagenes cajas especialidades/bautizo/alumno-buceo-la-azohia-cartagena-1.jpeg" class="hk-bg"
+          <img loading="lazy" src="img/imagenes cajas especialidades/bautizo/alumno-buceo-la-azohia-cartagena-1.jpeg" class="hk-bg"
             alt="Alumno de buceo en La Azohía - Experiencia con Bucea con Rafa">
           <div class="hkl"></div>
           <h3>Adaptación al medio</h3>
@@ -330,7 +330,7 @@
             silencio lo llena todo.</p>
         </div>
         <div class="hk fi d1">
-          <img src="img/imagenes cajas especialidades/bautizo/alumno-buceo-la-azohia-cartagena-2.jpeg" class="hk-bg"
+          <img loading="lazy" src="img/imagenes cajas especialidades/bautizo/alumno-buceo-la-azohia-cartagena-2.jpeg" class="hk-bg"
             alt="Respiración consciente bajo el agua en La Azohía - Bucea con Rafa">
           <div class="hkl"></div>
           <h3>Respiración Consciente</h3>
@@ -338,7 +338,7 @@
             buceador.</p>
         </div>
         <div class="hk fi d2">
-          <img src="img/imagenes cajas especialidades/bautizo/alumno-buceo-la-azohia-cartagena-3.png" class="hk-bg"
+          <img loading="lazy" src="img/imagenes cajas especialidades/bautizo/alumno-buceo-la-azohia-cartagena-3.png" class="hk-bg"
             alt="Comunicación gestual instructor-alumno - Bucea con Rafa">
           <div class="hkl"></div>
           <h3>Comunicación Gestual</h3>
@@ -500,7 +500,7 @@
 
       <!-- Logo -->
       <div style="margin-bottom: 32px;">
-        <img src="img/LOGO-BUCEACONRAFA.png" alt="BuceaConRafa Logo"
+        <img loading="lazy" src="img/LOGO-BUCEACONRAFA.webp" alt="BuceaConRafa Logo"
           style="max-width: 250px; height: auto; display: block; margin: 0 auto;">
       </div>
 
@@ -618,7 +618,9 @@
   }
   </script>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
+
+

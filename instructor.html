@@ -26,7 +26,7 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&amp;family=Cormorant+Garamond:ital,wght@1,300;1,400&amp;family=Outfit:wght@300;400;700&amp;display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 
 
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -92,7 +92,7 @@
 
     <!-- SECCIÓN 1 — HERO -->
     <section class="ins-hero">
-        <video autoplay="" muted="" loop="" playsinline="" class="ins-hero-video">
+        <video autoplay="" muted="" loop="" playsinline="" class="ins-hero-video" preload="none">
             <source src="img/alumnos-buceaconrafa-dominando-flotabilidad-y-trim.mp4" type="video/mp4">
         </video>
         <div class="ins-hero-overlay"></div>
@@ -240,7 +240,7 @@
                             vida.</p>
                     </div>
                     <div class="timeline-img">
-                        <img src="img/instructor-buceo-buceaconrafa.jpg" alt="Inicios en el buceo">
+                        <img loading="lazy" src="img/instructor-buceo-buceaconrafa.jpg" alt="Inicios en el buceo">
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@
                             certificaciones oficiales.</p>
                     </div>
                     <div class="timeline-img">
-                        <img src="img/instructor-buceo-buceaconrafa-curso-open-water-diver-ssi-iniciacion-la-azohia-cartagena-murcia.png"
+                        <img loading="lazy" src="img/instructor-buceo-buceaconrafa-curso-open-water-diver-ssi-iniciacion-la-azohia-cartagena-murcia.png"
                             alt="Formación inicial">
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                             de gestionar problemas en el agua.</p>
                     </div>
                     <div class="timeline-img">
-                        <img src="img/instructor rafael alcalde molina conuna botella nitrox.png"
+                        <img loading="lazy" src="img/instructor rafael alcalde molina conuna botella nitrox.png"
                             alt="Rafa con botella de Nitrox">
                     </div>
                 </div>
@@ -284,7 +284,7 @@
                             extremos. Formación avanzada en Twin Set y Cave Diving.</p>
                     </div>
                     <div class="timeline-img">
-                        <img src="img/IMG_20240910_001358 (1).webp" alt="Rafa buceando en cueva">
+                        <img loading="lazy" src="img/IMG_20240910_001358 (1).webp" alt="Rafa buceando en cueva">
                     </div>
                 </div>
 
@@ -298,7 +298,7 @@
                             vacía que yo recibí. +120 certificaciones en 2025.</p>
                     </div>
                     <div class="timeline-img">
-                        <img src="img/instructor de buceo rafael alcalde molina buceando en cueva del agua en isla plana, cartagena murcia españa.JPG"
+                        <img loading="lazy" src="img/instructor de buceo rafael alcalde molina buceando en cueva del agua en isla plana, cartagena murcia españa.JPG"
                             alt="Rafa buceando en la Cueva del Agua, Isla Plana">
                     </div>
                 </div>
@@ -346,7 +346,7 @@
                     <p class="sobre-p">Cuéntame dónde estás y qué quieres conseguir bajo el agua. Te acompaño en tu
                         viaje hacia un buceo más consciente y seguro.</p>
                     <div style="margin-top: 40px; display: flex; align-items: center; gap: 20px;">
-                        <img src="img/instructor-buceo-buceaconrafa.jpg" alt="Rafa"
+                        <img loading="lazy" src="img/instructor-buceo-buceaconrafa.jpg" alt="Rafa"
                             style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold);">
                         <div>
                             <p style="margin: 0; font-weight: 700; color: var(--white);">"Nos vemos en el agua."</p>
@@ -403,7 +403,7 @@
     <footer
         style="padding: 60px 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; background: #0a0a0a;">
         <div class="si">
-            <img src="img/LOGO-BUCEACONRAFA.png" alt="BuceaConRafa Logo"
+            <img loading="lazy" src="img/LOGO-BUCEACONRAFA.webp" alt="BuceaConRafa Logo"
                 style="max-width: 160px; height: auto; display: block; margin: 0 auto 24px; opacity: 0.7;">
             <div
                 style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 28px;">
@@ -505,7 +505,9 @@
     </script>
 
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
+
+
