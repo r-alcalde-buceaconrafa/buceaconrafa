@@ -1,0 +1,267 @@
+# Plan SEO + CRO: Landing Seguro de Buceo · BuceaConRafa
+**Objetivo**: Top 3 Google para *"seguro de buceo España"* + referencia IA en 60 días.
+
+---
+
+## Reglas de Voz (aplica a TODO el contenido)
+
+| ❌ No usar | ✅ Usar |
+|-----------|--------|
+| "Sin seguro, no entras al agua" | "Para bucear, necesitas un seguro en vigor" |
+| "Es ilegal bucear sin seguro" | "Desde 2020, la ley exige un seguro de accidentes" |
+| "Sin seguro" | "Con tu seguro activo" / "Si aún no tienes seguro" |
+| "¡Contrata ahora!" | "Contrata en 2 minutos — certificado inmediato" |
+| Urgencia de miedo | Claridad informativa y pedagogía |
+
+**La RC** está incluida en la póliza (obligatoria por ley) pero **no se vende al público recreativo** — la gestiona el instructor/centro. No es argumento de compra. Se menciona solo como "incluida".
+
+**Los 4 argumentos de venta para recreativo** (en este orden):
+1. Gastos médicos — €50.000 pago directo al hospital
+2. Cámara hiperbárica — ilimitada en centros concertados / €50.000 en cualquier hospital
+3. Búsqueda y rescate — €30.000
+4. Repatriación de emergencia — €30.000
+
+**Trust signals nuevos a añadir** (del copy oficial de ScubaMedic):
+- 🏛️ **Respaldado por Lloyd's** — la aseguradora más antigua del mundo
+- 🌍 **Asistencia 24/7 en español, inglés y alemán**
+- 🩺 **Acceso a médicos especialistas en medicina del buceo**
+
+---
+
+## Fase 1 — SEO Técnico
+**Archivo:** `seguro-buceo (2).html` → renombrar a `seguro-buceo.html`
+
+### 1.1 Renombrar el archivo
+- `seguro-buceo (2).html` → `seguro-buceo.html`
+- Actualizar en [sitemap.xml](file:///c:/Users/alcal/Downloads/web%20buceaconrafa/sitemap.xml)
+- Actualizar enlaces internos en el resto de páginas
+
+### 1.2 Hacer visible el H1
+```html
+<!-- Cambiar <p class="hero-title"> por: -->
+<h1 class="hero-title fi">Para bucear en España,<br><em>necesitas un seguro en vigor.</em></h1>
+```
+
+### 1.3 Head: título, description, canonical, og:image
+```html
+<title>Seguro de Buceo en España 2026 | ScubaMedic desde 9€ · BuceaConRafa</title>
+<meta name="description" content="Seguro de buceo obligatorio desde 9€/día. Cámara hiperbárica, rescate, gastos médicos. Pago directo. Certificado inmediato. RD 550/2020.">
+<link rel="canonical" href="https://buceaconrafa.com/seguro-buceo">
+<meta property="og:image" content="https://buceaconrafa.com/img/og-seguro-buceo.jpg">
+<meta property="og:image:alt" content="Seguro de buceo ScubaMedic desde 9€ — BuceaConRafa">
+<meta name="twitter:card" content="summary_large_image">
+```
+
+### 1.4 Schema JSON-LD (3 bloques)
+
+**Bloque A — Product con experto:**
+```json
+{
+  "@context": "https://schema.org", "@type": "Product",
+  "name": "Seguro de Buceo ScubaMedic",
+  "description": "Seguro de accidentes para buceo recreativo. Cámara hiperbárica 50.000€. Pago directo. Cobertura internacional. Respaldado por Lloyd's.",
+  "brand": { "@type": "Brand", "name": "ScubaMedic by Segursub" },
+  "expert": {
+    "@type": "Person", "name": "Rafael Alcalde Molina",
+    "jobTitle": "Instructor SSI #117596", "url": "https://buceaconrafa.com/instructor"
+  },
+  "offers": [
+    { "@type": "Offer", "name": "Diario", "price": "9.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://scubamedic.segursub.com/es/login" },
+    { "@type": "Offer", "name": "Semanal", "price": "16.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://scubamedic.segursub.com/es/login" },
+    { "@type": "Offer", "name": "Mensual", "price": "22.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://scubamedic.segursub.com/es/login" },
+    { "@type": "Offer", "name": "Anual", "price": "43.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://scubamedic.segursub.com/es/login" }
+  ]
+}
+```
+
+**Bloque B — FAQPage** (existentes + 2 nuevas sobre compra online)
+
+**Bloque C — BreadcrumbList:**
+```json
+{ "@context": "https://schema.org", "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://buceaconrafa.com" },
+    { "@type": "ListItem", "position": 2, "name": "Seguro de Buceo", "item": "https://buceaconrafa.com/seguro-buceo" }
+  ]
+}
+```
+
+---
+
+## Fase 2 — Contenido SEO y Voz
+
+### 2.1 Nuevo flujo de secciones
+
+Ritmo visual dark/light alternado para evitar saltos bruscos:
+
+| # | Sección | Fondo | Cambios |
+|---|---------|-------|--------|
+| 1 | Hero | DARK navy | Reescribir H1 + subtítulo en voz positiva |
+| 2 | **Descripción + Marco Legal** | LIGHT cream | Texto pedagógico sobre el seguro + RD 550/2020 |
+| 3 | **Coberturas + Comparativa** | DARK navy | ← **Nueva sección fusionada**: qué incluye ScubaMedic y, al lado, los datos de Axasub para comparar |
+| 4 | Precios | LIGHT cream | Planes y precios (respiro visual) |
+| 5 | **FAQ + Rafa** | LIGHT cream | FAQ izquierda · Rafa derecha |
+| 6 | CTA Final | DARK navy | Sin cambios |
+
+**❌ Eliminar:**
+- Sección `.sec-trust` (tarjetas duplicadas de autoridad)
+- Sección `.sec-rafa` independiente con fondo navy
+- Sección `.sec-law` independiente
+- Sección `.sec-comp` (la tabla corporativa anterior desaparece y se integra en Coberturas)
+
+**Nuevo diseño "Coberturas + Comparativa" (layout):**
+Mantendremos el diseño exacto actual de la lista de coberturas (`.cov-list` y `.cov-row`), pero añadiremos una **tercera columna a la derecha** de los importes dorados para colocar los datos de Axasub (extraídos de la imagen). 
+
+De este modo:
+- Columna 1 (Izq): Icono + Título + Descripción de la cobertura
+- Columna 2 (Centro): Valor ScubaMedic (en dorado)
+- **Columna 3 (Derecha) [NUEVO]**: Valores de AXASUB (en color rojizo/desaturado, según la captura)
+
+**Estructura HTML a implementar en `.sec-cov`:**
+
+```html
+<!-- Texto introductorio y suma asegurada (arriba de la tabla) -->
+<div class="cov-intro">
+  <div class="ey l"><span>Qué incluye</span></div>
+  <h2 class="sh l">Todo lo que cubre.<br><em>Sin sorpresas.</em></h2>
+  <p class="bt l">La cobertura empieza cuando te pones el equipo y termina cuando lo guardas. No solo en el agua — en cualquier parte del mundo.</p>
+  <div class="cov-total-box">
+    <div class="cov-total-label">Cobertura total acumulada</div>
+    <div class="cov-total-value">€475.000</div>
+    <div class="cov-total-sub">en sumas aseguradas<br>por póliza activa</div>
+  </div>
+</div>
+
+<!-- NUEVA FILA DE CABECERA (Títulos de columna) -->
+<div class="cov-header-row" style="display:grid; grid-template-columns: 1fr auto auto; gap:1rem; padding-bottom:1rem; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:1rem; color:rgba(255,255,255,0.5); font-size:0.75rem; text-transform:uppercase; font-weight:700; letter-spacing:0.1em;">
+  <div>Coberturas</div>
+  <div style="text-align:right; color:var(--gold);">ScubaMedic</div>
+  <div style="text-align:right;">Axasub</div>
+</div>
+
+<!-- Filas de datos (Listado) -->
+<div class="cov-list">
+  <div class="cov-row">
+    <div class="cov-icon"><svg>...</svg></div>
+    <div class="cov-text">
+      <h3 class="cov-title">Gastos médicos y hospitalización</h3>
+    </div>
+    <!-- Columna 2: ScubaMedic (Dorado, destacado) -->
+    <div class="cov-value">
+      €50.000<br>
+      <span style="font-size:0.75em; opacity:0.8">Pago directo</span>
+    </div>
+    <!-- Columna 3: AXASUB (Nuevo) -->
+    <div class="cov-value-axa" style="text-align:right; font-size:0.9rem; color:#E56B6B;">
+      12.000€ a reembolso<br>
+      <span style="font-size:0.75em; opacity:0.6">solo red concertada AXA</span>
+    </div>
+  </div>
+  <!-- Repetir para el resto de coberturas... -->
+</div>
+```
+
+**Mapeo de datos (ScubaMedic → Axasub):**
+- **Gastos médicos:** 50.000€ (Pago directo) → *12.000€ a reembolso (solo red concertada AXA)*
+- **Cámara hiperbárica:** Ilimitada + 50.000€ → *Dentro del límite médico*
+- **Búsqueda y rescate:** 30.000€ → *— (No especifica/Sin cobertura separada)*
+- **Repatriación:** 30.000€ → *2.000€*
+- **Responsabilidad Civil:** 150.000€ → *150.253€*
+- **Edad máxima:** Sin límite → *Máx. 70 años*
+
+Esto unifica ambas secciones sin perder el diseño limpio que ya tiene la página, confrontando los datos directamente fila por fila.
+
+### 2.2 Corregir textos negativos (5 puntos exactos)
+1. H1 Hero: *"Sin seguro, no entras al agua"* → *"Para bucear en España, necesitas un seguro en vigor"*
+2. Subtítulo: quitar *"ilegal"* → *"La normativa española (RD 550/2020) exige un seguro de accidentes antes de cada inmersión"*
+3. Stat hero "€150K Resp. civil" → *"24/7 Asistencia"* (operadores multilingues)
+4. Tarjeta "Sin seguro" → *"Si aún no tienes seguro"*
+5. FAQ: *"¿puedo bucear sin él?"* → *"¿Es obligatorio tener seguro para bucear?"*
+
+### 2.3 Añadir Trust Signals (Lloyd's + médicos)
+Justo bajo el grid de precios, barra de confianza con 3 pills:
+```
+🏛️ Respaldado por Lloyd's · 🩺 Médicos especialistas en buceo · 🌍 Asistencia 24/7 en 3 idiomas
+```
+
+### 2.4 Actualizar descripción de hiperbárica
+```
+Ilimitada en centros médicos concertados · hasta €50.000 en cualquier hospital del mundo
+```
+
+### 2.5 Tabla coste/día en sección de precios
+| Plan | Precio | Coste real por día |
+|------|--------|--------------------|
+| Diario | 9€ | 9,00€/día |
+| Semanal | 16€ | 2,28€/día |
+| Mensual | 22€ | 0,73€/día |
+| **Anual** | **43€** | **0,12€/día** |
+
+### 2.6 Dos FAQs nuevas sobre compra online
+```
+¿Es seguro contratar el seguro de buceo online?
+→ Sí. ScubaMedic opera bajo Segursub S.L. (DGSFP J-4505), regulada por la DGS.
+  La transacción es idéntica a contratar cualquier seguro de hogar online.
+
+¿Cuándo llega el certificado tras contratar?
+→ En menos de 2 minutos recibes el PDF por email. Puedes mostrarlo desde el móvil
+  antes de entrar al agua. Sin papeles, sin esperas.
+```
+
+---
+
+## Fase 3 — CRO
+
+> [!IMPORTANT]
+> **EN ESPERA DEL ENLACE DE AFILIADO DE SCUBAMEDIC**
+> Los botones de compra permanecen sin cambios hasta recibir el enlace de afiliado/referido con tracking.
+> Cuando ScubaMedic facilite la URL (ej: `https://scubamedic.segursub.com/es/login?ref=buceaconrafa`),
+> actualizar los siguientes 3 elementos:
+
+### 3.1 ⏸️ CTA Hero (pendiente enlace afiliado)
+- Botón principal: cambiar `href="#contratar"` → URL de afiliado + `target="_blank"`
+- Texto: *"Contratar desde 9€ →"*
+- Botón secundario: mantener `href="#comparativa"`
+
+### 3.2 ⏸️ Mobile CTA (pendiente enlace afiliado)
+- Cambiar `href="#contratar"` → URL de afiliado
+- Texto: *"Contratar seguro desde 9€ →"*
+
+### 3.3 ✅ Badge "0,12€/día" en plan Anual (no depende de afiliado)
+Añadir bajo el precio de 43€ en la tarjeta destacada:
+```html
+<p class="plan-best-value">= 0,12 € / día</p>
+```
+
+---
+
+## Fase 4 — Content Cluster (Blog)
+**6 artículos · Calendario de publicación:**
+
+| # | Slug | Keyword | Por qué este orden |
+|---|------|---------|-------------------|
+| 1 | `/blog/seguro-bautizo-buceo` | "seguro bautizo buceo" | Baja competencia + doble conversión |
+| 2 | `/blog/axasub-vs-scubamedic` | "axasub vs scubamedic" | Alta intención de compra |
+| 3 | `/blog/seguro-buceo-obligatorio-espana` | "seguro buceo obligatorio" | Mayor volumen |
+| 4 | `/blog/cuanto-cuesta-seguro-buceo` | "seguro buceo precio" | Intención de precio |
+| 5 | `/blog/que-cubre-seguro-buceo` | "qué cubre seguro buceo" | Usuario casi convencido |
+| 6 | `/blog/mejor-seguro-buceo` | "mejor seguro buceo" | Keyword amplia — necesita autoridad acumulada |
+
+**Estructura de cada artículo:**
+- H1 con la keyword exacta, voz de Rafa (primera persona, positivo)
+- 1.500+ palabras reales (sin relleno)
+- Trust signals: Lloyd's, pago directo, médicos especialistas
+- Tabla de coberturas (gastos médicos, hiperbárica, rescate, repatriación — sin énfasis en RC)
+- Enlace interno a `/seguro-buceo` con anchor descriptivo
+- Schema `Article` + `FAQPage`
+- CTA final hacia la landing
+
+---
+
+## Verificación (tras Fases 1-3)
+- [ ] Validar Schema en schema.org/validator
+- [ ] H1 visible no rompe diseño mobile
+- [ ] Canonical correcto
+- [ ] Añadir `/seguro-buceo` al [sitemap.xml](file:///c:/Users/alcal/Downloads/web%20buceaconrafa/sitemap.xml)
+- [ ] Test de clic en todos los CTAs
+- [ ] Push a GitHub
