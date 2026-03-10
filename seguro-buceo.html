@@ -1876,11 +1876,15 @@
       box-shadow: 0 10px 30px rgba(14, 32, 48, 0.05);
       overflow: hidden;
       backface-visibility: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translateZ(0);
     }
 
     /* Posiciones del carrusel */
     .plan.pos-active {
-      transform: translate3d(0, 0, 100px) scale(1.1);
+      transform: translate3d(0, 0, 0) scale(1.0);
+      transform-style: flat;
       z-index: 10;
       opacity: 1 !important;
       filter: none !important;
@@ -1966,7 +1970,8 @@
       }
 
       .plan.pos-active {
-        transform: translate3d(0, 0, 50px) scale(1.05);
+        transform: translate3d(0, 0, 0) scale(1.0);
+        transform-style: flat;
       }
 
       .c-btn {
