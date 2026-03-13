@@ -24,6 +24,252 @@ function tp(el) {
   if (!isOpen) el.classList.add('o');
 }
 
+// ─── AZOHÍA TOGGLE (MOBILE) ───
+document.addEventListener('DOMContentLoaded', () => {
+  const azBtn = document.getElementById('azToggleBtn');
+  const azContent = document.getElementById('azMoreContent');
+  
+  if (azBtn && azContent) {
+    azBtn.addEventListener('click', () => {
+      const isExpanded = azBtn.classList.toggle('active');
+      azContent.classList.toggle('show');
+      
+      const btnText = azBtn.querySelector('span:first-child');
+      const btnIcon = azBtn.querySelector('.material-icons');
+      
+      if (isExpanded) {
+        btnText.innerText = 'Leer menos';
+      } else {
+        btnText.innerText = 'Leer más sobre el entorno';
+        // Scroll suave hacia arriba si el texto era muy largo
+        const azSection = document.getElementById('azohia');
+        if (azSection) {
+          azSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  }
+
+  const sobreBtn = document.getElementById('sobreToggleBtn');
+  const sobreContent = document.getElementById('sobreMoreContent');
+  
+  if (sobreBtn && sobreContent) {
+    sobreBtn.addEventListener('click', () => {
+      const isExpanded = sobreBtn.classList.toggle('active');
+      sobreContent.classList.toggle('show');
+      sobreBtn.querySelector('span:first-child').innerText = isExpanded ? 'Leer menos' : 'Conocer más sobre Rafa';
+    });
+  }
+
+  // ─── DYNAMIC SKILL DOTS (HABILIDADES) ───
+  const hgrid = document.querySelector('.hgrid');
+  const hdots = document.querySelectorAll('.hdot');
+  if (hgrid && hdots.length > 0) {
+    const cards = hgrid.querySelectorAll('.fi');
+    const observerOptions = {
+      root: hgrid,
+      threshold: 0.6
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = Array.from(cards).indexOf(entry.target);
+          if (index !== -1) {
+            hdots.forEach((dot, i) => {
+              dot.classList.toggle('active', i === index);
+            });
+          }
+        }
+      });
+    }, observerOptions);
+
+    cards.forEach(card => observer.observe(card));
+  }
+});
+
+// ─── PARTNER BAND ROTATOR ────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  const partnerBand = document.querySelector('.partner-band');
+  if (!partnerBand) return;
+
+  const fixedLine = partnerBand.querySelector('.partner-fixedline');
+  const rotator = partnerBand.querySelector('.partner-rotator-line2');
+  if (!fixedLine || !rotator) return;
+
+  // Sticky fallback: en algunos layouts (p.ej. body flex + Tailwind) `position: sticky`
+  // puede fallar. Este pin por JS asegura que se ancle bajo el menú.
+  const setupPartnerBandPin = () => {
+    const nav = document.querySelector('nav');
+    const spacer = document.createElement('div');
+    spacer.className = 'partner-band-spacer';
+    partnerBand.insertAdjacentElement('afterend', spacer);
+
+    const getNavHeight = () => {
+      const fromVar = Number.parseFloat(
+        window
+          .getComputedStyle(document.documentElement)
+          .getPropertyValue('--nav-h')
+          .trim()
+      );
+      if (Number.isFinite(fromVar) && fromVar > 0) return fromVar;
+      const rect = nav?.getBoundingClientRect();
+      return rect?.height ? rect.height : 72;
+    };
+
+    const update = () => {
+      const navH = getNavHeight();
+      const anchorRect = partnerBand.classList.contains('is-fixed')
+        ? spacer.getBoundingClientRect()
+        : partnerBand.getBoundingClientRect();
+      const shouldFix = anchorRect.top <= navH + 0.5;
+
+      if (shouldFix) {
+        if (!partnerBand.classList.contains('is-fixed')) {
+          spacer.style.display = 'block';
+          spacer.style.height = `${partnerBand.offsetHeight}px`;
+          partnerBand.classList.add('is-fixed');
+        } else {
+          spacer.style.height = `${partnerBand.offsetHeight}px`;
+        }
+        partnerBand.style.top = `${navH}px`;
+      } else {
+        partnerBand.classList.remove('is-fixed');
+        partnerBand.style.top = '';
+        spacer.style.display = 'none';
+      }
+    };
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+  };
+
+  setupPartnerBandPin();
+
+  const prefersReducedMotion =
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const phrases = [
+    'VER DESDE 9€',
+    'BUCEO RECREATIVO Y TECNICO',
+    'HASTA 130 METROS',
+    'BUCEO EN CUEVAS',
+    'MEZCLA DE GASES',
+    'INCLUYE COBERTURA PRE-INMERSIÓN',
+    'VER DESDE 9€'
+  ];
+
+  let index = 0;
+  let timeoutId = null;
+  let started = false;
+  let isVisible = false;
+
+  const timings = {
+    initialHoldMs: 1200,
+    fadeInMs: 2300,
+    holdMs: 1800,
+    fadeOutMs: 2300
+  };
+
+  const clearTimer = () => {
+    if (timeoutId) {
+      window.clearTimeout(timeoutId);
+      timeoutId = null;
+    }
+  };
+
+  const stepToNext = () => {
+    clearTimer();
+    if (!started || !isVisible) return;
+
+    rotator.classList.add('is-hidden');
+    timeoutId = window.setTimeout(() => {
+      index = (index + 1) % phrases.length;
+      rotator.textContent = phrases[index];
+      void rotator.offsetHeight;
+      rotator.classList.remove('is-hidden');
+
+      timeoutId = window.setTimeout(() => {
+        stepToNext();
+      }, timings.fadeInMs + timings.holdMs);
+    }, timings.fadeOutMs);
+  };
+
+  const begin = () => {
+    if (started) return;
+    started = true;
+
+    timeoutId = window.setTimeout(() => {
+      if (!isVisible) return;
+      stepToNext();
+    }, timings.initialHoldMs + timings.holdMs);
+  };
+
+  rotator.classList.remove('is-hidden');
+  rotator.textContent = phrases[index];
+
+  const isDesktop =
+    typeof window.matchMedia === 'function' &&
+    !window.matchMedia('(max-width: 700px)').matches;
+
+  if (isDesktop) {
+    // En web: 2 líneas sólidas (título centrado + detalles), sin apariciones/rotación.
+    rotator.style.display = 'none';
+
+    partnerBand.classList.add('partner-band--twoline');
+    fixedLine.innerHTML =
+      '<span class="partner-web-stack">' +
+      '<span class="partner-blue partner-web-title">SEGURO DE BUCEO SCUBAMEDIC</span>' +
+      '<span class="partner-web-sub">' +
+      '<span class="partner-web-item">DESDE 9€</span>' +
+      '<span class="partner-web-item">RECREATIVO</span>' +
+      '<span class="partner-web-item">TÉCNICO HASTA 130M</span>' +
+      '<span class="partner-web-item">CUEVAS</span>' +
+      '<span class="partner-web-item">MEZCLAS</span>' +
+      '<span class="partner-web-item">PRE‑INMERSIÓN</span>' +
+      '</span>' +
+      '</span>';
+    return;
+  }
+
+  if (prefersReducedMotion) return;
+
+  if (!('IntersectionObserver' in window)) {
+    isVisible = true;
+    begin();
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const entry = entries[0];
+      const nowVisible = !!entry?.isIntersecting && entry.intersectionRatio >= 0.6;
+
+      if (nowVisible) {
+        isVisible = true;
+        if (!started) {
+          begin();
+          return;
+        }
+
+        if (!timeoutId) {
+          timeoutId = window.setTimeout(() => {
+            stepToNext();
+          }, 1200);
+        }
+      } else {
+        isVisible = false;
+        clearTimer();
+      }
+    },
+    { threshold: [0, 0.6, 1] }
+  );
+
+  observer.observe(partnerBand);
+});
+
 // ─── REVIEWS CAROUSEL ───
 const REVIEWS = [
   { n: 'Pedro', i: 'P', t: 'Hace 5 meses', q: 'La profesionalidad, amabilidad y simpatía de Rafa te hacen estar a gusto desde el primer momento. Disfruté de la inmersión a pleno pulmón. Muy recomendable.' },
@@ -37,7 +283,7 @@ const REVIEWS = [
   { n: 'Pedro Muñoz', i: 'P', t: 'Hace 7 meses', q: 'Una experiencia inolvidable. Rafa es un instructor de categoría. Seguiremos evolucionando con él muy pronto.' },
 ];
 
-const slide = document.getElementById('rslide') || document.getElementById('reviewsSlider');
+const slide = document.getElementById('rslide'); // Only grab 'rslide' if it exists, leave 'reviewsSlider' for static HTML
 const dots = document.getElementById('rdots');
 
 function card(r) {
@@ -47,8 +293,8 @@ function card(r) {
     <div><strong>${r.n}</strong><small>Google · ${r.t}</small></div></div></div>`;
 }
 
-if (slide) {
-  // 1. Inyectar todas las cards una sola vez
+if (slide && slide.id === 'rslide') {
+  // 1. Inyectar todas las cards una sola vez SOLO si es rslide (evitar reviewsSlider del index.html que ahora es estático)
   slide.innerHTML = REVIEWS.map(card).join('');
   slide.querySelectorAll('.rc').forEach(el => el.classList.add('show'));
 
@@ -82,8 +328,7 @@ if (slide) {
     autoScrollInterval = null;
   };
 
-  // Iniciar por defecto
-  startAutoScroll();
+  // Auto-scroll deshabilitado intencionadamente para modo cuadrícula.
 
   // Flechas de navegación
   const btnPrev = document.getElementById('rnav-prev');
@@ -109,16 +354,6 @@ if (slide) {
     setTimeout(() => isAutoSliding = true, 2000);
   }, { passive: true });
 
-  // Permitir scroll horizontal con la rueda del ratón (desktop)
-  slide.addEventListener('wheel', (e) => {
-    if (window.innerWidth > 900 && e.deltaY !== 0) {
-      e.preventDefault();
-      slide.scrollBy({
-        left: e.deltaY > 0 ? 100 : -100,
-        behavior: 'auto'
-      });
-    }
-  }, { passive: false });
 }
 
 // ─── MODAL & FORM ───
@@ -342,7 +577,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ─── INTRO OVERLAY REVEAL ───
 document.addEventListener('DOMContentLoaded', () => {
-  // Asegurar que la página siempre cargue arriba
+  // Asegurar que la página siempre cargue arriba (Hero)
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
   window.scrollTo(0, 0);
 
   const overlay = document.getElementById('intro-overlay');
@@ -397,3 +635,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2400);
   }
 });
+
+
+

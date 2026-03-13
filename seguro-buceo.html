@@ -28,6 +28,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="https://www.buceaconrafa.com/img/favicon.png">
   <style>
     *,
@@ -2257,7 +2258,15 @@
       display: grid;
       grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
       gap: 6rem;
-      align-items: start
+      align-items: start;
+    }
+
+    .faq-rafa-grid .authority-card {
+      grid-column: 2;
+    }
+
+    .faq-rafa-grid .faq-grid {
+      grid-column: 1;
     }
 
     .faq-grid {
@@ -2344,7 +2353,9 @@
       box-shadow: 0 10px 24px rgba(14, 32, 48, 0.05);
       overflow: hidden;
       position: relative;
-      order: 1
+      display: flex;
+      flex-direction: column;
+      order: 1;
     }
 
     .authority-card::before {
@@ -2353,19 +2364,20 @@
       top: 0;
       left: 0;
       right: 0;
-      aspect-ratio: 4/5;
+      bottom: 0;
       pointer-events: none;
       background: linear-gradient(180deg, rgba(14, 32, 48, 0.32) 0%, rgba(14, 32, 48, 0.18) 40%, rgba(14, 32, 48, 0.08) 75%, rgba(14, 32, 48, 0) 100%);
-      z-index: 1
+      z-index: 1;
     }
 
     .authority-card img {
       width: 100%;
       display: block;
-      aspect-ratio: 4/5;
+      flex-grow: 1;
+      min-height: 0;
       object-fit: cover;
       position: relative;
-      z-index: 0
+      z-index: 0;
     }
 
     .authority-copy {
@@ -2525,8 +2537,17 @@
       }
 
       .faq-rafa-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 4rem;
+      }
+
+      .faq-rafa-grid .authority-card {
+        order: 1;
+      }
+
+      .faq-rafa-grid .faq-grid {
+        order: 2;
       }
     }
 
@@ -2622,8 +2643,17 @@
       }
 
       .faq-rafa-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 4rem;
+      }
+
+      .faq-rafa-grid .authority-card {
+        order: 1;
+      }
+
+      .faq-rafa-grid .faq-grid {
+        order: 2;
       }
     }
 
@@ -2772,7 +2802,7 @@
     .scuba-details-grid {
       display: grid;
       grid-template-columns: 320px 1fr;
-      gap: 3rem;
+      gap: clamp(3rem, 4vw, 4.25rem);
       align-items: start;
       max-width: 1200px;
       margin: 6rem auto 0;
@@ -2783,6 +2813,7 @@
       flex-direction: column;
       justify-content: flex-start;
       margin-top: 1.5rem;
+      padding-left: clamp(10px, 1.6vw, 26px);
     }
 
     /* Clases de texto elegantes exclusivas para la vista unificada */
@@ -2798,6 +2829,7 @@
       color: var(--navy);
       letter-spacing: -0.01em;
       margin-bottom: 1rem;
+      text-align: center;
     }
 
     .rt-desc {
@@ -2807,6 +2839,9 @@
       color: rgba(14, 32, 48, 0.65);
       margin-bottom: 2.5rem;
       max-width: 90%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .rt-grid {
@@ -2815,12 +2850,29 @@
       gap: 2.5rem 3rem;
     }
 
+    .rt-grid>div {
+      text-align: center;
+    }
+
     .rt-feat-title {
       font-family: var(--fb);
       font-size: 1.05rem;
       font-weight: 600;
       color: var(--navy);
       margin-bottom: 0.35rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .rt-feat-title::before {
+      content: "\2726";
+      display: block;
+      font-size: 0.8rem;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: var(--gold);
+      opacity: 0.95;
     }
 
     .rt-feat-desc {
@@ -2858,6 +2910,7 @@
       .rt-grid {
         grid-template-columns: 1fr;
         gap: 1.75rem;
+        padding: 0 20px;
       }
 
       .rt-title {
@@ -2891,8 +2944,17 @@
       }
 
       .faq-rafa-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .faq-rafa-grid .authority-card {
+        order: 1;
+      }
+
+      .faq-rafa-grid .faq-grid {
+        order: 2;
       }
 
       .trust-grid {
@@ -3249,9 +3311,9 @@
           <a href="/curso-science-of-diving">Science of Diving</a>
         </div>
       </div>
-      <a href="/instructor">Instructor</a>
-      <a href="/seguro-buceo" class="active">Seguro de buceo</a>
-      <a href="/blog">Blog</a>
+      <a href="instructor.html">Instructor</a>
+      <a href="seguro-buceo.html" class="active">Seguro de buceo</a>
+      <a href="blog.html">Blog</a>
       <a href="https://wa.me/34611469469" class="ncta">Reservar plaza</a>
     </div>
     <button class="ham" id="ham" aria-label="Abrir menú"><span></span><span></span><span></span></button>
@@ -3494,115 +3556,138 @@
     </div>
   </section>
 
-  <section class="sec sec-faq">
-    <div class="sec-inner fi">
-      <div class="faq-rafa-grid">
-        <aside class="authority-card">
-          <img src="https://www.buceaconrafa.com/img/instructor-buceo-buceaconrafa.jpg"
-            alt="Instructor de buceo en Murcia recomendando seguro de buceo obligatorio en España" loading="lazy" />
-          <div class="authority-copy">
-            <div class="ey l"><span>Rafa recomienda ScubaMedic</span></div>
-            <blockquote>"Cuando recomiendo un seguro, no pienso en trámites. Pienso en si pagará el hospital, en si la
-              cámara hiperbárica está bien resuelta y en si el buceador tendrá asistencia clara cuando más lo necesite.
-              Por eso prefiero una póliza que cubra bien lo importante y emita el certificado al momento."</blockquote>
-            <div class="rpills">
-              <span class="rpill">+12 años buceando</span>
-              <span class="rpill">SSI Instructor</span>
-              <span class="rpill">Full Cave Diver</span>
-              <span class="rpill">+120 alumnos</span>
-              <span class="rpill">La Azohía · Murcia</span>
-            </div>
-          </div>
-        </aside>
 
-        <div class="faq-grid" style="max-width:560px;">
-          <div class="ey l" style="justify-content:flex-start;"><span>FAQ</span></div>
-          <h2 class="sh l" style="text-align:left;">Las dudas de siempre.<br><em>Resueltas.</em></h2>
-          <p class="bt l" style="margin-top:1rem;font-size:.9rem;text-align:left;">Aquí tienes las dudas más habituales
-            resueltas de
-            forma directa.</p>
-          <br>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Qué exige el Real Decreto 550/2020 para poder bucear en España?</div>
-            <div class="fa">El <strong>Real Decreto 550/2020</strong>, en vigor desde el <strong>1 de julio de
-                2020</strong>, exige que todo practicante de buceo recreativo en España acredite un <strong>seguro de
-                accidentes con gastos médicos</strong> y una <strong>responsabilidad civil incluida en la
-                póliza</strong> antes de entrar al agua. Si buceas con centro, con club o por libre, debes llevar la
-              cobertura activa.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Por qué ScubaMedic y no Axasub, que es más barato?</div>
-            <div class="fa">Axasub <strong>funciona a reembolso</strong> con un techo real de 12.000€ en centros
-              privados no concertados. Si tienes un accidente en un hospital fuera de la red AXA — algo habitual en el
-              extranjero — primero pagas tú. ScubaMedic <strong>paga directamente al hospital</strong>, 50.000€, en
-              cualquier parte del mundo. La diferencia es de unos 10–13€ al año.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Cuándo empieza la cobertura?</div>
-            <div class="fa">En la <strong>fecha que tú eliges al contratar</strong>. Para contrataciones online, la
-              fecha de inicio debe ser al menos el día siguiente a la solicitud. Planifica con un mínimo de 24 horas de
-              antelación.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Es seguro contratar el seguro de buceo online?</div>
-            <div class="fa">Sí. ScubaMedic opera bajo Segursub S.L. (DGSFP J-4505), regulada por la Dirección General de
-              Seguros. La contratación online funciona como cualquier otro seguro digital, con emisión inmediata del
-              certificado.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Cuándo llega el certificado tras contratar?</div>
-            <div class="fa">Lo habitual es recibir el PDF en menos de 2 minutos por email. Puedes enseñarlo desde el
-              móvil antes de entrar al agua, sin imprimir nada.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Cubre buceo técnico, apnea y pesca submarina?</div>
-            <div class="fa">Sí. <strong>Una sola póliza cubre todas las modalidades</strong>: buceo recreativo, buceo
-              técnico, apnea y pesca submarina. Axasub ya no cubre pesca submarina desde hace un par de años.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Qué pasa si tengo un accidente de descompresión?</div>
-            <div class="fa">La póliza cubre <strong>50.000€ específicamente para tratamientos hiperbáricos</strong>, de
-              forma directa. Una sesión en el extranjero puede costar entre 3.000€ y 15.000€. Con el seguro anual a 43€
-              tienes esa cobertura los 365 días del año.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Cómo acredito el seguro ante el instructor o centro?</div>
-            <div class="fa">Al contratar recibes un <strong>certificado digital por email</strong> inmediatamente.
-              Puedes mostrarlo desde el móvil. Incluye tus datos, coberturas y periodo de vigencia. Sin papeles, sin
-              esperas.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Quién respalda y garantiza este seguro?</div>
-            <div class="fa">La póliza de ScubaMedic cuenta con el <strong>respaldo de Lloyd's</strong>, una de las
-              instituciones aseguradoras más solventes y respetadas del mundo. Esto garantiza que habrá fondos y
-              solvencia real para cualquier siniestro, por grave que sea.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿A qué tipo de médicos podré acudir en caso de accidente?</div>
-            <div class="fa">Tendrás acceso directo a <strong>médicos especialistas en medicina hiperbárica y de
-                buceo</strong>. No son médicos generales, sino profesionales que entienden perfectamente las patologías
-              específicas del medio subacuático y cómo tratarlas con urgencia.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿En qué idiomas ofrecen la asistencia de emergencia?</div>
-            <div class="fa">ScubaMedic ofrece <strong>asistencia 24/7 en español, inglés y alemán</strong>. Ante una
-              emergencia real en el extranjero, no tendrás que preocuparte por las barreras idiomáticas para recibir
-              ayuda técnica y médica inmediata.</div>
-          </div>
-          <div class="fitem">
-            <div class="fq" onclick="tf(this)">¿Qué debo hacer en caso de accidente de buceo?</div>
-            <div class="fa">Diríjase inmediatamente al hospital más cercano y contacte con
-              <strong>admin@segursub.com</strong> o al <strong>+34 971 693 930</strong> si requiere ingreso o cámara.
-              Para reembolsos de visitas menores, envíe factura e informe médico por email. Consulte el procedimiento
-              completo en <a href="https://scubamedic.segursub.com/es/caso-accidente" target="_blank"
-                class="text-link">este enlace</a>.
-            </div>
-          </div>
+  <!-- ─── FAQ + RAFA CARD ─── -->
+  <section class="nfaq-section">
+    <style>
+      .nfaq-section {
+        background: #FFFFFF;
+        padding: clamp(3rem, 6vw, 5rem) clamp(20px, 4vw, 80px);
+      }
+      .nfaq-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 5rem;
+        align-items: start;
+      }
+      .nfaq-card {
+        background: #FBF9F5;
+        border: 1px solid rgba(14,32,48,0.06);
+        border-radius: 12px;
+        box-shadow: 0 10px 24px rgba(14,32,48,0.05);
+        overflow: hidden;
+      }
+      .nfaq-card img {
+        width: 100%;
+        display: block;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        object-position: top center;
+      }
+      .nfaq-card-copy {
+        padding: 1.75rem;
+        text-align: center;
+      }
+      .nfaq-card-copy blockquote {
+        font-family: var(--fs);
+        font-size: 1rem;
+        font-style: italic;
+        color: #000;
+        line-height: 1.85;
+        border-left: 2px solid var(--gold);
+        padding-left: 1.4rem;
+        text-align: left;
+        margin: 1.25rem 0 1.5rem;
+      }
+      .nfaq-card-copy .rpills { gap:.4rem; justify-content:center; }
+      .nfaq-card-copy .rpill { background:#FDFBF8; border-color:rgba(14,32,48,0.07); color:#000; }
+      @media (max-width:1024px) {
+        .nfaq-wrap { grid-template-columns:1fr; gap:3rem; }
+        .nfaq-card { max-width:400px; margin:0 auto; }
+      }
+    </style>
+
+    <div class="nfaq-wrap">
+
+      <!-- COLUMNA IZQUIERDA: FAQ -->
+      <div class="nfaq-col fi">
+        <div class="ey l" style="justify-content:flex-start;"><span>FAQ</span></div>
+        <h2 class="sh l" style="text-align:left;">Las dudas de siempre.<br><em>Resueltas.</em></h2>
+        <br>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Qué exige el Real Decreto 550/2020 para poder bucear en España?</div>
+          <div class="fa">El <strong>Real Decreto 550/2020</strong>, en vigor desde el <strong>1 de julio de 2020</strong>, exige que todo practicante de buceo recreativo en España acredite un <strong>seguro de accidentes con gastos médicos</strong> y una <strong>responsabilidad civil incluida en la póliza</strong> antes de entrar al agua. Si buceas con centro, con club o por libre, debes llevar la cobertura activa.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Por qué ScubaMedic y no Axasub, que es más barato?</div>
+          <div class="fa">Axasub <strong>funciona a reembolso</strong> con un techo real de 12.000€ en centros privados no concertados. Si tienes un accidente en un hospital fuera de la red AXA — algo habitual en el extranjero — primero pagas tú. ScubaMedic <strong>paga directamente al hospital</strong>, 50.000€, en cualquier parte del mundo. La diferencia es de unos 10–13€ al año.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Cuándo empieza la cobertura?</div>
+          <div class="fa">En la <strong>fecha que tú eliges al contratar</strong>. Para contrataciones online, la fecha de inicio debe ser al menos el día siguiente a la solicitud. Planifica con un mínimo de 24 horas de antelación.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Es seguro contratar el seguro de buceo online?</div>
+          <div class="fa">Sí. ScubaMedic opera bajo Segursub S.L. (DGSFP J-4505), regulada por la Dirección General de Seguros. La contratación online funciona como cualquier otro seguro digital, con emisión inmediata del certificado.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Cuándo llega el certificado tras contratar?</div>
+          <div class="fa">Lo habitual es recibir el PDF en menos de 2 minutos por email. Puedes enseñarlo desde el móvil antes de entrar al agua, sin imprimir nada.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Cubre buceo técnico, apnea y pesca submarina?</div>
+          <div class="fa">Sí. <strong>Una sola póliza cubre todas las modalidades</strong>: buceo recreativo, buceo técnico, apnea y pesca submarina. Axasub ya no cubre pesca submarina desde hace un par de años.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Qué pasa si tengo un accidente de descompresión?</div>
+          <div class="fa">La póliza cubre <strong>50.000€ específicamente para tratamientos hiperbáricos</strong>, de forma directa. Una sesión en el extranjero puede costar entre 3.000€ y 15.000€. Con el seguro anual a 43€ tienes esa cobertura los 365 días del año.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Cómo acredito el seguro ante el instructor o centro?</div>
+          <div class="fa">Al contratar recibes un <strong>certificado digital por email</strong> inmediatamente. Puedes mostrarlo desde el móvil. Incluye tus datos, coberturas y periodo de vigencia. Sin papeles, sin esperas.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Quién respalda y garantiza este seguro?</div>
+          <div class="fa">La póliza de ScubaMedic cuenta con el <strong>respaldo de Lloyd's</strong>, una de las instituciones aseguradoras más solventes y respetadas del mundo. Esto garantiza que habrá fondos y solvencia real para cualquier siniestro, por grave que sea.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿A qué tipo de médicos podré acudir en caso de accidente?</div>
+          <div class="fa">Tendrás acceso directo a <strong>médicos especialistas en medicina hiperbárica y de buceo</strong>. No son médicos generales, sino profesionales que entienden perfectamente las patologías específicas del medio subacuático y cómo tratarlas con urgencia.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿En qué idiomas ofrecen la asistencia de emergencia?</div>
+          <div class="fa">ScubaMedic ofrece <strong>asistencia 24/7 en español, inglés y alemán</strong>. Ante una emergencia real en el extranjero, no tendrás que preocuparte por las barreras idiomáticas para recibir ayuda técnica y médica inmediata.</div>
+        </div>
+        <div class="fitem">
+          <div class="fq" onclick="tf(this)">¿Qué debo hacer en caso de accidente de buceo?</div>
+          <div class="fa">Diríjate inmediatamente al hospital más cercano y contacta con <strong>admin@segursub.com</strong> o al <strong>+34 971 693 930</strong> si requieres ingreso o cámara. Para reembolsos de visitas menores, envía factura e informe médico por email. Consulta el procedimiento completo en <a href="https://scubamedic.segursub.com/es/caso-accidente" target="_blank" class="text-link">este enlace</a>.</div>
         </div>
       </div>
+
+      <!-- COLUMNA DERECHA: CARD INSTRUCTOR -->
+      <aside class="nfaq-card fi">
+        <img src="https://www.buceaconrafa.com/img/instructor-buceo-buceaconrafa.jpg"
+          alt="Instructor de buceo en Murcia recomendando seguro de buceo obligatorio en España" loading="lazy" />
+        <div class="nfaq-card-copy">
+          <div class="ey l"><span>Rafa recomienda ScubaMedic</span></div>
+          <blockquote>"Cuando recomiendo un seguro, no pienso en trámites. Pienso en si pagará el hospital, en si la cámara hiperbárica está bien resuelta y en si el buceador tendrá asistencia clara cuando más lo necesite. Por eso prefiero una póliza que cubra bien lo importante y emita el certificado al momento."</blockquote>
+          <div class="rpills">
+            <span class="rpill">+12 años buceando</span>
+            <span class="rpill">SSI Instructor</span>
+            <span class="rpill">Full Cave Diver</span>
+            <span class="rpill">+120 alumnos</span>
+            <span class="rpill">La Azohía · Murcia</span>
+          </div>
+        </div>
+      </aside>
+
     </div>
   </section>
+
   <!-- ─── SECCIÓN SEO: CURSOS SIGUIENTE PASO ─── -->
+
   <section class="sec-next-steps">
     <div id="nextStepsVideo" class="video-bg-wrapper"></div>
     <div class="sec-inner fi next-steps-inner">
@@ -3978,6 +4063,7 @@
   <div class="mobile-cta">
     <a href="#contratar">Contratar seguro →</a>
   </div>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
