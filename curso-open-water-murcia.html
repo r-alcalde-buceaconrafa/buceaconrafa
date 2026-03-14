@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Curso Open Water SSI en Murcia | Aprende con un instructor (Rafa) en La Azohía (Cartagena)</title>
     <meta name="description"
-        content="Obtén tu certificado de buceo hasta 18 metros acompañado de un instructor (Rafa) dedicado solo para ti. Ratio 2:1, sin rodillas y a tu ritmo en La Azohía (Cartagena - Murcia).">
+        content="Aprende a bucear en La Azohía con un instructor dedicado solo a ti. Certificación SSI internacional, ratio máximo 2:1, sin prisas y a tu ritmo. Cartagena, Murcia.">
     <!-- Open Graph / RRSS -->
     <meta property="og:title"
         content="Curso Open Water SSI en Murcia | Aprende con un instructor (Rafa) en La Azohía (Cartagena)">
     <meta property="og:description"
-        content="Obtén tu certificado de buceo hasta 18 metros acompañado de un instructor (Rafa) dedicado solo para ti. Ratio 2:1, sin rodillas y a tu ritmo en La Azohía (Cartagena - Murcia).">
+        content="Aprende a bucear en La Azohía con un instructor dedicado solo a ti. Certificación SSI internacional, ratio máximo 2:1, sin prisas y a tu ritmo. Cartagena, Murcia.">
     <meta property="og:image"
         content="https://buceaconrafa.com/img/instructor-buceo-buceaconrafa-curso-open-water-diver-ssi-iniciacion-la-azohia-cartagena-murcia.png">
     <meta property="og:url" content="https://buceaconrafa.com/curso-open-water-murcia">
@@ -25,6 +25,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&amp;family=Cormorant+Garamond:ital,wght@1,300;1,400&amp;family=Outfit:wght@300;400;700&amp;display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="icon" type="image/png" href="img/favicon.png">
@@ -40,7 +41,7 @@
         "name": "¿Cuánto dura el curso Open Water SSI en La Azohía?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El curso tiene una duración mínima de 4 días, aunque el ritmo lo marcas tú. El e-learning puede hacerse antes de empezar las sesiones presenciales."
+          "text": "El curso tiene una duración mínima de 3 días, aunque el ritmo lo marcas tú. El e-learning puede hacerse antes de empezar las sesiones presenciales."
         }
       },
       {
@@ -58,10 +59,101 @@
           "@type": "Answer",
           "text": "Sí, en La Azohía buceamos todo el año. Utilizamos neoprenos adecuados a la temperatura del agua o trajes secos si decides combinarlo con la especialidad Dry Suit. El mar en invierno aquí suele estar más tranquilo y la visibilidad es excelente."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es este el equivalente al curso PADI Open Water?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, es el equivalente directo. Ambas certificaciones siguen los estándares internacionales de la WRSTC. Con tu título de Open Water SSI podrás bucear en cualquier centro del mundo, incluidos todos los centros PADI."
+        }
       }
     ]
   }
   </script>
+    <style>
+        /* Estilos específicos para el Mapa de Habilidades */
+        #skill-map .fitem {
+            margin-bottom: 12px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.015);
+            transition: all 0.3s ease;
+        }
+
+        #skill-map .fitem:hover {
+            border-color: rgba(194, 149, 71, 0.3);
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        #skill-map .fbtn {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+            text-align: left;
+            padding: 20px 24px;
+            color: var(--navy);
+            font-family: var(--fd);
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        #skill-map .fbtn .icon-box {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(194, 149, 71, 0.1);
+            border-radius: 8px;
+            color: var(--gold);
+        }
+
+        #skill-map .fico {
+            margin-left: auto;
+            color: var(--gold);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        #skill-map .fitem.o .fico {
+            transform: rotate(45deg);
+        }
+
+        #skill-map .fans {
+            display: none;
+            padding: 0 24px 24px 24px;
+        }
+
+        #skill-map .fitem.o .fans {
+            display: block;
+        }
+
+        #skill-map .skill-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+        }
+
+        #skill-map .skill-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: rgba(14, 32, 48, 0.7);
+            font-family: var(--fb);
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        #skill-map .skill-item svg {
+            color: var(--gold);
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -138,20 +230,15 @@
             <div class="hey fi"><span>Curso Open Water Diver · La Azohía, Murcia · SSI</span></div>
             <h1 class="fi d1" style="opacity: 1; color: var(--white);">Curso Open Water en Murcia.<br>Aprende a bucear
                 en <em>La Azohía.</em></h1>
-            <p class="hsub fi d2">Con la confianza y las habilidades para bucear donde quieras. Ratio 1:2, filosofía DIR
-                y
-                configuración hogarthiana desde el primer día.</p>
-            <div class="hbtns fi d3">
-                <a href="#faq" class="bp">Reservar curso Open Water en Murcia →</a>
-                <a href="#bv" class="bs">Cómo funciona</a>
-            </div>
+            <p class="hsub fi d2">Con la confianza y las habilidades para bucear donde quieras.</p>
         </div>
     </section>
     <a class="partner-band" href="seguro-buceo.html#contratar"
         aria-label="Seguro de buceo SCUBAMEDIC. Ver precios desde 9 euros.">
         <div class="partner-band-inner fi d0">
             <div class="partner-rotator-stack" aria-hidden="true">
-                <span class="partner-fixedline"><span class="partner-blue">SEGURO DE BUCEO SCUBAMEDIC</span></span>
+                <span class="partner-fixedline"><span class="partner-blue">COMPRA TU SEGURO DE BUCEO
+                        SCUBAMEDIC</span></span>
                 <span class="partner-rotator partner-rotator-line2">VER DESDE 9€</span>
             </div>
         </div>
@@ -170,7 +257,7 @@
                 <div class="dbl">Ratio máximo</div>
             </div>
             <div class="dbc">
-                <div class="dbv">4 días</div>
+                <div class="dbv">3 días</div>
                 <div class="dbl">Duración mínima</div>
             </div>
             <div class="dbc">
@@ -186,37 +273,39 @@
             <div class="bvg">
                 <div class="fi">
                     <div class="ey l"><span>El primer curso real</span></div>
-                    <h2 class="sh l" style="color: var(--navy);">Tener el carnet no es lo mismo <em>que saber
-                            bucear.</em></h2>
-                    <p class="bt l">El modelo estándar funciona así: el instructor delante, los alumnos detrás siguiendo
-                        la
-                        linterna. Al terminar tienes la certificación, pero en el agua sigues necesitando a alguien que
-                        te diga por
-                        dónde ir. No es culpa tuya. Es el sistema.</p>
-                    <p class="bt l">Por eso aquí empezamos con DIR desde el primer día — Do It Right. No es una marca ni
-                        una moda,
-                        es el orden correcto: primero las habilidades, luego la profundidad. Y te explico el porqué de
-                        cada cosa,
-                        incluyendo lo que puede salir mal.</p>
+                    <h2 class="sh l" style="color: var(--navy);">Explora el mundo submarino <em>con seguridad y
+                            confianza</em></h2>
+                    <p class="bt l">¿Te gustaría iniciarte en el buceo? En el curso Open Water Diver en Murcia,
+                        aprenderás desde cero, de manera segura y personalizada.
+
+
+
+                        <br><br>Una formación práctica en aguas abiertas, con el enfoque puesto en la seguridad, la
+                        diversión y el cuidado del medio ambiente. <br><br>El curso tendrá una duración de 3 días donde
+                        trabajaremos una gran variedad de ejercicios tanto en aguas confinadas como hasta los 18 metros
+                        de profundidad.
+                    </p>
                 </div>
                 <div class="bvi fi d1">
                     <div class="bvcard">
                         <h4>Filosofía DIR desde el primer día</h4>
-                        <p>Todo en su sitio, todo accesible, nada que sobre. Los hábitos correctos son más fáciles de
-                            aprender que
-                            de corregir. Cambiarlos después cuesta el doble.</p>
+                        <p>Desde el primer dia aprenderemos a utilizar la
+                            configuración de buceo tradicional y la configuración Hogartiana, ademas trabajaremos
+                            siempre en flotabilidad neutra, es decir, aprenderemos a realizar todos los ejercicios sin
+                            apoyarnos en el fondo (a diferencia de otros centros, donde los alumnos son obligados a
+                            apoyarse en el fondo para realizar los ejercicios)</p>
                     </div>
                     <div class="bvcard">
-                        <h4>Última inmersión grabada + debriefing</h4>
-                        <p>La grabamos y revisamos juntos al salir del agua. Es el momento en que todo encaja — ves
-                            exactamente lo
-                            que hace tu cuerpo bajo el agua.</p>
+                        <h4>Repetición de ejercicios hasta adquirir memoría muscular</h4>
+                        <p>Tras finalizar la sesión de buceo analizamos juntos los ejercicios realizados y repetimos
+                            aquellos que no se hayan adquirido correctamente.Cada ejercicio está enfocado en cubrir una
+                            habilidad del buceo, para que puedas anticiparte a cualquier contingencia.</p>
                     </div>
                     <div class="bvcard">
-                        <h4>Ratio máximo 1:2</h4>
-                        <p>Frente al estándar habitual de 1:4 o más. La diferencia en la atención que recibes no tiene
-                            comparación
-                            posible.</p>
+                        <h4>Ratio máximo 1 Instructor : 2 Alumnos</h4>
+                        <p>Otros deciden incluir ratios de 1:4 o 1:8, considero que son ratios muy rentables pero que no
+                            permiten dar la atención que se merece a cada alumno. 1º seguridad, 2º aprendizaje y 3º
+                            diversión.</p>
                     </div>
                 </div>
             </div>
@@ -227,41 +316,295 @@
     <section id="met" style="background:var(--sand)">
         <div class="si" style="padding-bottom:0">
             <div class="ey l fi"><span>Metodología</span></div>
-            <h2 class="sh l fi d1" style="color: var(--navy);">Teoría, habilidades e inmersiones. <em>Las tres a la
-                    vez.</em></h2>
+            <h2 class="sh l fi d1" style="color: var(--navy);">Las 3 fases fundamentales <em>del curso.</em></h2>
         </div>
         <div class="mtrack">
             <div class="mcards">
-                <div class="mc">
+                <div class="mc" style="text-align: left;">
                     <div class="mcn">01</div>
                     <div class="mc-arr"></div>
                     <h3>Bloque teórico</h3>
-                    <p>E-learning SSI, Aula Virtual con materiales reales y Taller de Problemas. La teoría convertida en
-                        respuesta
-                        automática antes de entrar al agua.</p>
+                    <p>E-learning SSI y Aula Virtual. La teoría se convierte en respuesta automática antes de entrar al
+                        agua:
+                        <br><br>• El cuerpo en el agua.
+                        <br>• Uso del equipo.
+                        <br>• El gas respirable y sus efectos.
+                        <br>• La planificación de inmersiones.
+                    </p>
                 </div>
                 <div class="mc">
                     <div class="mcn">02</div>
                     <div class="mc-arr"></div>
-                    <h3>Aguas confinadas</h3>
-                    <p>De 3 metros a 18. Cada habilidad repetida hasta que sale sola. Con situaciones reales
-                        introducidas
-                        progresivamente — no ejercicios abstractos.</p>
+                    <h3>2 inmersiones en aguas confinadas</h3>
+                    <p>De 3 metros a 6 metros de profundidad. Realizaremos una batería de habilidades técnicas que
+                        mediante la repetición se convertirán en hábitos. Cada habilidad repetida hasta que sale sola.
+                        Progresivamente — no ejercicios abstractos.</p>
                 </div>
                 <div class="mc">
                     <div class="mcn">03</div>
                     <div class="mc-arr"></div>
-                    <h3>4 inmersiones en La Azohía</h3>
-                    <p>Cada inmersión con objetivo técnico concreto. Las tres primeras el instructor necesita las manos
-                        libres. La
-                        cuarta, grabada en vídeo con debriefing.</p>
+                    <h3>4 inmersiones en aguas abiertas</h3>
+                    <p>Todos los conocimientos y habilidades adquiridos en aguas confinadas se aplicarán en aguas
+                        abiertas. Se incorpora cada ejercicio a una situación real, el objetivo es adquirir memoria
+                        muscular desde los 6 a los 18 metros de profundidad..</p>
                 </div>
                 <div class="mc">
                     <div class="mcn">04</div>
                     <h3>Certificación Open Water SSI</h3>
-                    <p>Revisión conjunta de la grabación. Al terminar: Open Water Diver SSI con validez internacional en
-                        cualquier
-                        centro del mundo hasta 18 metros.</p>
+                    <p>Recibirás tu certificación internacional SSI. Recuerda que la marca de la agencia es lo que te
+                        permite bucear, pero es tu entrenamiento el que te permite disfrutar. Recibirás una formación
+                        muy por encima del estándar comercial, válida en todo el mundo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA DE HABILIDADES DETALLADO -->
+    <section id="skill-map" style="background:#FFF; padding: 100px 0;">
+        <div class="si">
+            <div class="ey l fi"><span>Habilidades prácticas que realizaremos</span></div>
+            <h2 class="sh l fi d1" style="color: var(--navy);">Todas las habilidades que realizaremos en nuestro <em
+                    class="text-gradient">Open Water Diver</em></h2>
+            <p class="bt l fi d1" style="color: rgba(14, 32, 48, 0.65); max-width: 800px; margin-bottom: 48px;">
+                En BuceaConRafa no nos limitamos a "firmar el carnet". Te llevamos a través de un programa de
+                entrenamiento riguroso donde desarrollarás memoria muscular real. Aquí tienes el detalle de todo lo que
+                dominarás:
+            </p>
+
+            <div class="fi d2">
+                <!-- Bloque 1: Entradas y Superficie -->
+                <div class="fitem">
+                    <button class="fbtn" onclick="tf(this)">
+                        <div class="icon-box"><span class="material-icons">anchor</span></div>
+                        <span>Entradas y Gestión en Superficie</span>
+                        <span class="fico">+</span>
+                    </button>
+                    <div class="fans">
+                        <div class="skill-list">
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Entrada con paso de gigante (Buceo/Snorkel)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Entrada de espaldas y sentada controlada</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Natación en superficie con equipo completo</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Establecer flotabilidad positiva inmediata</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Salida desde aguas profundas</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Quitarse/Ponerse unidad de buceo y lastre</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Intercambio tubo/regulador avanzado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque 2: Flotabilidad y Trim -->
+                <div class="fitem">
+                    <button class="fbtn" onclick="tf(this)">
+                        <div class="icon-box"><span class="material-icons">balance</span></div>
+                        <span>Dominio de la Flotabilidad y Trim</span>
+                        <span class="fico">+</span>
+                    </button>
+                    <div class="fans">
+                        <div class="skill-list">
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Ajuste maestro de lastre y centro de gravedad</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Flotabilidad neutra en posición de buceo (Trim)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Técnicas de aleteo eficiente (Frog Kick / Scissors)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Pivotación sobre aletas y flotabilidad precisa</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Establecimiento de flotabilidad neutra al tacto</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Técnicas de compensación continuas</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Buceo en flotabilidad neutra constante</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque 3: Manejo del Equipo -->
+                <div class="fitem">
+                    <button class="fbtn" onclick="tf(this)">
+                        <div class="icon-box"><span class="material-icons">architecture</span></div>
+                        <span>Manejo del Equipo y Gestión del Estrés</span>
+                        <span class="fico">+</span>
+                    </button>
+                    <div class="fans">
+                        <div class="skill-list">
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Vaciado de máscara parcial y total</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Natación sin máscara (Control de vía aérea)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Vaciado y recuperación del regulador</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Respiración en regulador en flujo continuo</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Gestión del latiguillo del hinchador</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Quitarse/Ponerse equipo y lastre bajo el agua</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Técnicas de ayuda al compañero</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque 4: Seguridad y Aire -->
+                <div class="fitem">
+                    <button class="fbtn" onclick="tf(this)">
+                        <div class="icon-box"><span class="material-icons">health_and_safety</span></div>
+                        <span>Seguridad y Gestión de Aire</span>
+                        <span class="fico">+</span>
+                    </button>
+                    <div class="fans">
+                        <div class="skill-list">
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Donación de aire en modo estacionario</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Ascenso compartido (Donante y Receptor)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Ascenso de emergencia a nado (CESA)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Ascenso de emergencia boyante</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Localización y zafado rápido de lastre</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Cálculo de tasa de consumo de gas (SCR)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Protocolos fundamentales de rescate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque 5: Navegación y Autonomía -->
+                <div class="fitem">
+                    <button class="fbtn" onclick="tf(this)">
+                        <div class="icon-box"><span class="material-icons">explore</span></div>
+                        <span>Navegación y Autonomía</span>
+                        <span class="fico">+</span>
+                    </button>
+                    <div class="fans">
+                        <div class="skill-list">
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Uso de brújula y rumbos recíprocos</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Lanzamiento de boya de señalización (SMB)</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Planificación autónoma de la inmersión</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Descensos y ascensos controlados</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Parada de seguridad y control de superficie</div>
+                            <div class="skill-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>Gestión de gas mínimo y puntos de reserva</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -420,7 +763,7 @@
                             <button class="fbtn" onclick="tf(this)">¿Cuánto dura el Open Water SSI en La Azohía?<span
                                     class="fico">+</span></button>
                             <div class="fans">
-                                <div class="fansi">Un mínimo de 4 días, aunque el ritmo lo marcas tú. El e-learning
+                                <div class="fansi">Un mínimo de 3 días, aunque el ritmo lo marcas tú. El e-learning
                                     puede hacerse antes
                                     de empezar las sesiones presenciales, así que si lo preparas bien puedes aprovechar
                                     al máximo los días
@@ -442,10 +785,12 @@
                             <button class="fbtn" onclick="tf(this)">¿Se graban todas las inmersiones?<span
                                     class="fico">+</span></button>
                             <div class="fans">
-                                <div class="fansi">Solo la última inmersión se graba en vídeo. Las tres primeras
-                                    necesito las manos
-                                    libres para estar pendiente de todo lo que ocurre y garantizar la seguridad en todo
-                                    momento.</div>
+                                <div class="fansi">Grabo exclusivamente la última sesión del curso. No tiene sentido
+                                    grabar algo que aún no está en fase de perfeccionamiento; lo importante al principio
+                                    es aprender a realizar cada técnica desde cero sin distracciones. Grabamos el final
+                                    para que tengas una referencia real de tus habilidades al terminar y, sobre todo,
+                                    para que en el futuro sepamos de qué punto exacto partimos para seguir
+                                    perfeccionando tu técnica.</div>
                             </div>
                         </div>
                         <div class="fitem">
@@ -466,6 +811,31 @@
                                     las indicadas en el formulario, necesitarás autorización médica antes de empezar. Si
                                     tienes dudas,
                                     escríbeme antes de reservar y lo valoramos.</div>
+                            </div>
+                        </div>
+                        <div class="fitem">
+                            <button class="fbtn" onclick="tf(this)">¿Tiene este carnet la misma validez que el de
+                                PADI?<span class="fico">+</span></button>
+                            <div class="fans">
+                                <div class="fansi">Exactamente la misma. Ambos títulos cumplen los estándares
+                                    internacionales de la WRSTC. La diferencia real es que aquí no solo buscas el
+                                    carnet; buscas saber bucear de verdad, con atención personalizada y sin grupos
+                                    grandes. Con tu título SSI podrás bucear en cualquier país y en cualquier centro del
+                                    mundo.</div>
+                            </div>
+                        </div>
+                        <div class="fitem">
+                            <button class="fbtn" onclick="tf(this)">He visto cursos más baratos, ¿por qué elegir
+                                este?<span class="fico">+</span></button>
+                            <div class="fans">
+                                <div class="fansi">El buceo es una actividad de soporte vital. Un curso barato suele
+                                    significar grupos de 6 u 8 personas con un solo instructor, donde apenas tienes
+                                    tiempo para practicar y se suele utilizar el método rápido de poner a todos de
+                                    rodillas en el fondo. En BuceaConRafa el ratio máximo es de 1:2 y trabajamos en
+                                    flotabilidad neutra desde el primer minuto. Esa diferencia de precio es tu seguro de
+                                    aprendizaje: tendrás mi atención total, repetirás cada ejercicio hasta que sea un
+                                    hábito y saldrás al mar con autonomía real, no solo con un carnet en el bolsillo.
+                                </div>
                             </div>
                         </div>
                         <div class="fitem">
@@ -505,11 +875,9 @@
                     <div class="pbox">
                         <div class="ptop">
                             <span class="plbl">Precio del curso</span>
-                            <span class="pamt">450 €<sup
-                                    style="font-size:1rem;vertical-align:super;margin-left:4px"></sup></span>
-                            <span class="pinc">Consulta precio actual por WhatsApp · Incluye equipo, e-learning SSI,
-                                vídeo y
-                                certificación</span>
+                            <span class="pamt">460 €</span>
+                            <span class="pinc">Incluye equipo completo, e-learning SSI, vídeo de la última inmersión y
+                                certificación internacional SSI.</span>
                         </div>
                         <div class="plist2">
                             <div class="pli"><span class="pdot"></span><span>Ratio 1:2 — nunca más de dos alumnos</span>
@@ -654,7 +1022,7 @@
       "courseLanguage": "es",
       "educationalCredentialAwarded": "Open Water Diver SSI",
       "url": "https://buceaconrafa.com/curso-open-water-murcia",
-      "offers": { "@type": "Offer", "price": "450.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://buceaconrafa.com/curso-open-water-murcia" },
+      "offers": { "@type": "Offer", "price": "460.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://buceaconrafa.com/curso-open-water-murcia" },
       "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "Onsite", "courseWorkload": "PT32H" }
     },
     {
