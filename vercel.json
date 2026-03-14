@@ -1,3 +1,10 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/curso-open-water-diver-murcia",
+      "destination": "/curso-open-water-murcia",
+      "permanent": true
+    }
+  ]
 }
